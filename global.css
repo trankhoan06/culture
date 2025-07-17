@@ -1,0 +1,38 @@
+@media only screen and  (min-width: 390px) {
+    html{
+        font-size: 2.5641025641vw;
+    }
+    
+}
+@media only screen and  (min-width: 768px) {
+    html{
+        font-size: 1.30208333333vw;
+    }
+}
+@media only screen and  (min-width: 992px) {
+    html{
+        font-size: 0.69444444444vw;
+    }
+}
+@media only screen and  (min-width: 1441px) {
+    html{
+        font-size: 10px;
+    }
+}
+.image__full img{
+    width: 100%;
+    object-fit: cover;
+}
+.image__fullfill img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+body{
+    color: #333;
+    font-size: 1.8rem;
+    box-sizing: border-box;
+}
+*{
+    box-sizing: border-box;
+}

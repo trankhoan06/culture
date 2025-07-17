@@ -1,0 +1,172 @@
+.project__intro{
+    margin-bottom: 5rem;
+}
+
+.project__intro__inner{
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+.project__intro__left{
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    width: 71rem;
+}
+.project__intro__right{
+    width: 55rem;
+    margin-left: 24.3rem;
+    
+}
+.project__intro__right__subtitle{
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #C78F50;
+}
+.project__intro__right__smalltitle{
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #1A3D54;
+}
+.project__intro__right__des{
+    font-size: 1.8rem;
+}
+.project__intro__right__wrap{
+    background: url("/image/Rectangle\ 43.png") no-repeat 100% 100%;
+    width: 63.611%;
+    height: 73.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        background-size: 100% 100%;
+}
+.project__intro__show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.project__intro__show__wrap{
+    width: 91.2rem;
+}
+.project__intro__show__title{
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 6rem;
+
+}
+.project__intro__show__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8.2rem;
+}
+.project__intro__show__card{
+width: 22rem;
+border: #1A3D54 1px solid;
+border-radius: .5rem;
+border-bottom-width: .6rem;
+}
+.project__intro__show__card__img{
+    width: 5.4rem;
+    margin: 3rem auto 0;
+}
+.project__intro__show__card__des{
+    margin: 3rem 3rem;
+}
+
+/* project__realestate */
+
+.project__realestate__menu{
+    background-color: #E0E0E0;
+}
+.project__realestate__menu__inner{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.project__realestate__menu__item{
+    padding: 1.65rem 1rem ;
+    font-weight: bold;
+    cursor: pointer;
+}
+.project__realestate__menu__item.active{
+    color: #fff;
+    background-color: #1A3D54;
+    border-radius: 1rem 1rem 0 0;
+}
+.project__realestate__title{
+background-color: #1A3D54;
+padding-left: 12rem;
+}
+.project__realestate__subtitle{
+    padding-top: 10rem;
+    margin-bottom: 1rem;
+    color: #C78F50;
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+.project__realestate__smalltitle{
+    color: #fff;
+    font-size: 4.8rem;
+    font-weight: bold;
+    line-height: 6.4rem;
+    padding-bottom: 6rem;
+}
+.project__realestate__detail{
+    margin: 10rem 17.1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project__realestate__detail__item{
+    width: 45.56%;
+    margin-bottom: 10rem;
+}
+.project__realestate__detail__item__inner{
+    position: relative;
+}
+.project__realestate__detail__item__des{
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    width: 28.5rem;
+    padding-left: 1rem;
+    border-radius: .5rem;
+}
+.project__realestate__detail__item__des *{
+    font-weight: bold;
+}
+.project__realestate__detail__item__des__locate{
+    color: #C78F50;
+}
+.project__realestate__detail__item__des__link{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+.project__realestate__detail__item__des__link__txt{
+    color: #333;
+    text-decoration: none;
+}
+.project__realestate__detail__item__des__link__icon{
+    width: 1.8rem;
+    margin-top: .8rem;
+    margin-left: .5rem;
+}
+.image__fullfill img{
+    aspect-ratio: 488/400;
+}
+.project__realestate__detail .project__realestate__detail__item:nth-child(2n){
+    margin-top: 10rem;
+}
+.project__realestate__detail__item__img{
+    position: relative;
+}
+.project__realestate__detail__item__img__overlay{
+position: absolute;
+background: linear-gradient(to bottom, #1a3d5400 0%, #1a3d5400 50%, #1A3D54 100%);
+}
