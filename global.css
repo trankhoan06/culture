@@ -32,25 +32,21 @@ html {
       display: none;
     }
   }
-  .image__full img{
+  
+.image__full img{
     width: 100%;
     object-fit: cover;
-  }
-  .image__fullfill img{
+}
+.image__fullfill img{
     width: 100%;
     object-fit: cover;
     height: 100%;
-  }
-  body{
+}
+body{
     color: #333;
     font-size: 1.8rem;
     box-sizing: border-box;
-  }
-  @media screen and (max-width: 991px){
-    body{
-      font-size: 1.5rem;
-    }
-  }
+}
 *{
     box-sizing: border-box;
 }
