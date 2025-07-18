@@ -1,0 +1,72 @@
+/* contact hero */
+.contact__hero__wrap{
+    position: relative;
+}
+.contact__hero__txt{
+    position: absolute;
+    top: 36.4rem;
+    left: 9rem;
+    z-index: 2;
+}
+.contact__hero__subtitle{
+    font-size: 3.8rem;
+    line-height: 2.6rem;
+    margin-bottom: 4rem;
+    color: #fff;
+}
+.contact__hero__smalltitle{
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 7rem;
+    color: #fff;
+}
+.contact__hero__des{
+    color: #fff;
+    line-height: 2.6rem;
+    max-width: 72rem;
+}
+.contact__hero__overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+/* contact content */
+.contact__content__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.contact__content__left{
+    width: 42.55%;
+    background-color: #EDEDED;
+    padding-left: 8.9rem;
+    border-radius: 0 2rem 2rem 0;
+}
+.contact__content__right{
+    width: 46.04%;
+    margin-top: 6.8rem;
+}
+.contact__content{
+    margin-right: 6.3rem;
+    margin-top: 10rem;
+}
+.contact__content__left__title{
+    color: #C48C5E;
+    font-size: 3rem;
+    line-height: 2.6rem;
+    margin-bottom: 1.6rem;
+    margin-top: 6.8rem;
+}
+.contact__content__right__title{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.contact__content__right__des{
+    margin-bottom: 1rem;
+    color: #555;
+}
+.contact__content__right__inner{
+    margin-bottom: 2rem;
+}
