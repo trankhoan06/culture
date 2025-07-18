@@ -1,0 +1,2955 @@
+<html lang="en">
+  <head>
+    <script src="https://codesandbox.io/p/preview-protocol.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIG</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/about-us.css" />
+    <link rel="stylesheet" href="assets/css/gioi-thieu.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header id="mainHeader" class="main-header">
+      <div class="container position-relative">
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap"
+        >
+          <!-- Left Nav -->
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="/">Trang chủ</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gioi-thieu.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="van-hoa-tap-doan.html"
+                >Văn hóa tập đoàn</a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Dự án</a></li>
+          </ul>
+
+          <!-- Center Logo -->
+          <div class="nav-center-logo logo">
+            <img src="assets/img/logo-mau.png" alt="logo" />
+          </div>
+
+          <!-- Right Nav -->
+          <ul class="nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quan hệ cổ đông</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tuyển dụng</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+            <li class="nav-item">
+              <span class="nav-link language-selector">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="header_mobile">
+      <!-- Mobile logo -->
+      <div class="mobile-logo container d-xl-none">
+        <img src="assets/img/logo-mau.png" alt="logo" />
+      </div>
+      <!-- Nút menu mobile (3 gạch) -->
+      <div class="mobile-menu-toggle d-xl-none">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- Menu mobile dạng popup -->
+    <div class="mobile-menu-overlay"></div>
+    <nav class="mobile-menu d-xl-none">
+      <div class="mobile-menu-header">
+        <span class="close-menu">&times;</span>
+      </div>
+      <ul class="mobile-nav">
+        <li><a href="/index.html">Trang chủ</a></li>
+        <li><a href="/gioi-thieu.html">Giới thiệu</a></li>
+        <li><a href="/van-hoa-tap-doan.html">Văn hóa tập đoàn</a></li>
+        <li><a href="#">Dự án</a></li>
+        <li><a href="#">Quan hệ cổ đông</a></li>
+        <li><a href="#">Tin tức</a></li>
+        <li><a href="#">Tuyển dụng</a></li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <section class="hero-banner position-relative">
+      <img
+        src="assets/img/ve_chung_toi.png"
+        alt="Banner"
+        class="w-100 img-banner"
+      />
+      <div class="hero-content container text-left text-white">
+        <h5 class="fs-36">Giới Thiệu</h5>
+        <h1 class="fs-56">Về Chúng tôi</h1>
+        <p></p>
+      </div>
+
+      <nav class="tabs-menu">
+        <ul class="tabs-menu-wrapper">
+          <li class="tabs-menu-item tab-title-intro active">
+            <a href="javascript:void(0)" class="tabs-menu-item-link fs-18"
+              >Về Chúng Tôi</a
+            >
+          </li>
+          <li class="tabs-menu-item tab-title-team">
+            <a href="javascript:void(0)" class="tabs-menu-item-link fs-18"
+              >Đội Ngũ Lãnh Đạo</a
+            >
+          </li>
+          <li class="tabs-menu-item tab-title-ecoSystem">
+            <a href="javascript:void(0)" class="tabs-menu-item-link fs-18"
+              >Hệ Sinh Thái</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <div class="tab-content-intro">
+      <section
+        class="hero-section"
+        style="background-image: url('assets/img/overlay1.png')"
+      >
+        <div class="container">
+          <div class="content-wrapper">
+            <div class="text-content">
+              <header class="section-header" data-animate="slide-down">
+                <h4 class="main-title">
+                  H Đông Dương <br>Kiến tạo hệ sinh thái đầu tư toàn diện
+                </h4>
+              </header>
+
+              <div class="description-content" data-animate="slide-left">
+                <p class="description-paragraph">
+                  Trên hành trình hơn 20 năm phát triển, Tập đoàn H Đông Dương
+                  đã định hình nên triết lý kinh doanh bền vững đầu tư và phối
+                  hợp sinh thái đa ngành.
+                </p>
+
+                <p class="description-paragraph">
+                  Chúng tôi không chỉ đầu tư - chúng tôi kết nối, hỗ trợ và nâng
+                  tầm từng mảng hoạt động trong hệ thống, từy bất động sản, xây
+                  dựng, tư vấn phân lý M&A đến thương mại, khái khoáng. Tập đoàn
+                  đang tạng dụng triển khai chiến lược mở rộng đầu tư vào các
+                  ngành nghề có tiềm năng tăng trưởng cao như công nghệ, tài
+                  chính, giáo dục và y tế, với mục tiêu đa dạng hóa danh mục đầu
+                  tư và kiểm tìm giá trị khai triển trên từng trọng đại hạn.
+                </p>
+
+                <p class="description-paragraph">
+                  Hoạt động theo mô hình F + F1 + F2, H Đông Dương tạo ra một hệ
+                  sinh thái mới, nơi các công ty thành viên của gián trong chuỗi
+                  giá trị đồng bộ, linh hoạt & hiệu quả nhằm kiến tạo những giá
+                  trị thực chất và bền vững cho khách hàng, đối tác và cộng
+                  đồng.
+                </p>
+              </div>
+            </div>
+
+            <div class="image-content">
+              <div class="image-grid">
+                <div
+                  class="image-item image-primary"
+                  data-animate="slide-right"
+                >
+                  <img
+                    src="assets/img/About-Intro1Image.jpg"
+                    alt="Modern skyscrapers and business buildings"
+                    class="building-image"
+                  />
+                </div>
+                <div
+                  class="image-item image-secondary"
+                  data-animate="slide-left"
+                >
+                  <img
+                    src="assets/img/About-Intro2Image.jpg"
+                    alt="H Indochina Group building facade"
+                    class="company-building-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="vision-section">
+        <div class="vision-bg" data-animate="rotate-right-to-left">
+          <img class="vision-bg-img" src="assets/img/gioi-thieu/element-pattern.png" alt="">
+        </div>
+        <div class="container">
+          <div class="vision-content">
+            <header class="vision-header" data-animate="slide-down">
+              <h2 class="section-title">Tầm Nhìn</h2>
+            </header>
+
+            <div class="vision-body">
+              <div class="slogan-container">
+                <h3 class="vision-slogan">
+                  KHÁT VỌNG VƯƠN XA, NỀN TẢNG VỮNG CHẮC
+                </h3>
+              </div>
+
+              <div class="description-container">
+                <p class="vision-description">
+                  H Đông Dương định hướng tầm nhìn trở thành một tập đoàn đa
+                  ngành vững mạnh, phát triển bền vững và nhân văn, giữ vai trò
+                  trung tâm trong liên kết đầu tư và xây dựng hệ sinh thái kinh
+                  tế – xã hội có chiều sâu tại Việt Nam và khu vực.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mission-section">
+        <div
+          class="background-container"
+          style="background-image: url('assets/img/overlay3.png')"
+        >
+          <div class="circle-background"></div>
+        </div>
+
+        <div class="container">
+          <div class="mission-content-wrap">
+            <div class="mission-header" data-animate="slide-down">
+              <h2 class="section-title">Sứ Mệnh</h2>
+            </div>
+            <div class="mission-content">
+              <p class="mission-slogan">PHỤNG SỰ BẰNG TRÍ TUỆ & TRÁCH NHIỆM</p>
+              <div class="mission-body">
+                <p class="main-description">
+                  Chúng tôi mang sứ mệnh phát triển những dự án có tầm vóc và
+                  giá trị lâu dài, tạo ra môi trường đầu tư minh bạch, hài hòa
+                  lợi ích giữa doanh nghiệp, đối tác & cộng đồng.
+                </p>
+
+                <ul class="mission-points">
+                  <li class="mission-point">
+                    <p class="point-text">
+                      Với khách hàng: Phát triển những dự án có quy mô lớn, đa
+                      dạng các loại hình sản phẩm, chất lượng và giá trị lâu dài
+                      để phục vụ cho nhiều đối tượng khách hàng và nhiều thế hệ
+                      trong cùng một gia đình.
+                    </p>
+                  </li>
+                  <li class="mission-point">
+                    <p class="point-text">
+                      Với cổ đông & đối tác: Xây dựng môi trường đầu tư minh
+                      bạch, bền vững và hài hòa lợi ích, dựa trên nền tảng trí
+                      tuệ, sự tử tế và khát vọng để cùng vươn xa.
+                    </p>
+                  </li>
+                  <li class="mission-point">
+                    <p class="point-text">
+                      Với cộng đồng xã hội: Thúc đẩy sự phát triển cơ sở vật
+                      chất và nâng cao môi trường sống cùng với các giá trị tốt
+                      đẹp và các hoạt động chia sẻ, gắn kết, đồng hành, lấy con
+                      người làm trọng tâm.
+                    </p>
+                  </li>
+                  <li class="mission-point">
+                    <p class="point-text">
+                      Với đội ngũ: Xây dựng một tập thể đoàn kết, trung thực,
+                      giỏi chuyên môn, gắn kết bằng môi trường làm việc chuyên
+                      nghiệp, tạo cơ hội cho sự phát triển, gia tăng giá trị cho
+                      mỗi cá nhân.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="core-values-section">
+        <div
+          class="background-container"
+          style="background-image: url('assets/img/overlay4.jpg')"
+        >
+          <div class="background-texture"></div>
+        </div>
+
+        <div class="container">
+          <div class="core-values-content">
+            <div class="values-grid">
+              <div class="value-card">
+                <div class="section-header" data-animate="slide-down">
+                  <h2 class="section-title">Giá Trị Cốt Lõi</h2>
+                  <p class="section-subtitle" data-animate="slide-up">
+                    NỀN TẢNG CỦA MỌI HÀNH ĐỘNG
+                  </p>
+                </div>
+              </div>
+              <div class="value-card" data-animate="slide-up">
+                <div class="card-icon">
+                  <div class="icon-circle">
+                    <img src="assets/img/gioi-thieu/protection.png" alt="" />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">Đoàn kết (Unity)</h3>
+                  <p class="card-description">
+                    Lấy sức mạnh tập thể làm nền tảng cho mọi thành công. Đồng
+                    hành cùng đối tác và cộng đồng, hướng đến mục tiêu chung.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value-card" data-animate="slide-up">
+                <div class="card-icon">
+                  <div class="icon-circle">
+                    <img src="assets/img/gioi-thieu/heart.png" alt="" />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">Cống hiến (Dedication)</h3>
+                  <p class="card-description">
+                    Mỗi hành động đều xuất phát từ tâm chân thành và trách
+                    nhiệm, vì sự phát triển chung.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value-card" data-animate="slide-up">
+                <div class="card-icon">
+                  <div class="icon-circle">
+                    <img src="assets/img/gioi-thieu/green.png" alt="" />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">Bền vững (Sustainability)</h3>
+                  <p class="card-description">
+                    Tư duy dài hạn, tạo lập nền tảng vững chắc cho thế hệ hôm
+                    nay và mai sau.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value-card" data-animate="slide-up">
+                <div class="card-icon">
+                  <div class="icon-circle">
+                    <img src="assets/img/gioi-thieu/knowledge.png" alt="" />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">
+                    Tri thức & Chuyên nghiệp (Knowledge & Professionalism)
+                  </h3>
+                  <p class="card-description">
+                    Không ngừng đổi mới sáng tạo, hành động trên nền tảng hiểu
+                    biết, tuân thủ nguyên tắc và chuẩn mực chuyên môn.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value-card" data-animate="slide-up">
+                <div class="card-icon">
+                  <div class="icon-circle">
+                    <img src="assets/img/gioi-thieu/ethical.png" alt="" />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">Chính trực (Integrity)</h3>
+                  <p class="card-description">
+                    Minh bạch, trung thực và kiên định với chuẩn mực đạo đức
+                    trong mọi hoạt động.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quote-section">
+        <div
+          class="background-container"
+          style="background-image: url('assets/img/BGOverlay-Quote.png')"
+        >
+          <div class="background-image"></div>
+        </div>
+
+        <div class="container">
+          <div class="quote-content">
+            <blockquote class="quote-text" data-animate="scale-up">
+              Một tập đoàn bền vững không chỉ do bằng quy mô tài sản hay tốc độ
+              tăng trưởng, mà ở khả năng kiến tạo hệ sinh thái có tư duy dài
+              hạn, có con người đồng hành và có giá trị cộng hưởng đủ lớn để lan
+              tỏa ra cộng đồng, xã hội.
+            </blockquote>
+
+            <div class="quote-author" data-animate="slide-up">
+              <cite class="author-title">Chủ Tịch HĐQT</cite>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="tab-content-team">
+      <section class="chairman-quote-section">
+        <div class="background-container">
+          <div class="background-pattern"></div>
+          <div class="background-dots"></div>
+        </div>
+
+        <div class="container">
+          <div class="quote-content">
+            <div class="quote-text-section">
+              <div class="opening-quote">
+                <img src="assets/img/quote1.png" alt="quote" />
+              </div>
+
+              <blockquote class="quote-text" data-animate="zoom-slide-right">
+                Một tập đoàn bền vững không chỉ do bằng quy mô tài sản hay tốc
+                độ tăng trưởng, mà ở khả năng kiến tạo hệ sinh thái có tư duy
+                dài hạn, có con người đồng hành và có giá trị cộng hưởng đủ lớn
+                để lan tỏa ra cộng đồng, xã hội.
+              </blockquote>
+              <div
+                class="quote-line quote-line-pulse"
+                data-animate="expand-line"
+              >
+                <hr />
+              </div>
+
+              <div class="close-quote">
+                <img src="assets/img/quote2.png" alt="quote" />
+              </div>
+              <div class="quote-author-section" data-animate="slide-up">
+                <div class="author-name">Ông NGUYỄN HỒNG HẢI</div>
+                <div class="author-title">Chủ tịch Hội đồng quản trị</div>
+              </div>
+            </div>
+
+            <div class="quote-image-section">
+              <img
+                src="assets/img/person1.png"
+                data-animate="slide-left"
+                alt=""
+              />
+
+              <div class="closing-quote"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chairperson-of-the-board">
+        <div class="background-container">
+          <div class="background-pattern"></div>
+          <div class="background-watermark">LEADERSHIP</div>
+        </div>
+
+        <div class="container">
+          <!-- Ông Dư Hoài Văn -->
+          <div class="leader-profile">
+            <div class="profile-content text-right">
+              <div class="profile-image-section" data-animate="slide-right">
+                <div class="gray-theme">
+                  <img src="assets/img/ong-nguyen-hong-hai.png" alt="" />
+                </div>
+              </div>
+
+              <div class="profile-text-section" data-animate="slide-left">
+                <p class="profile-description">
+                  Ông Nguyễn Hồng Hải hiện là Chủ tịch Hội đồng Quản trị Tập
+                  đoàn H Đông Dương, người giữ vai trò định hướng chiến lược và
+                  bảo trợ cho tầm nhìn phát triển dài hạn của tập đoàn. Với hơn
+                  20 năm kinh nghiệm trong lĩnh vực đầu tư và vận hành doanh
+                  nghiệp đa ngành, Ông không chỉ là một nhà lãnh đạo dẫn dắt
+                  doanh nghiệp hiệu quả mà còn đóng vai trò kết nối chiến lược
+                  giữa các đối tác trong và ngoài nước. Tư duy lãnh đạo sắc bén,
+                  kinh nghiệm thực tiễn dày dạn cùng khả năng định hướng vĩ mô
+                  đã giúp ông khẳng định vị thế trong giới doanh nghiệp và có
+                  những đóng góp tích cực cho sự phát triển kinh tế tư nhân Việt
+                  Nam.
+                </p>
+
+                <p class="profile-description">
+                  Tầm nhìn chiến lược của ông thể hiện rõ qua các định hướng chủ
+                  chốt:
+                </p>
+
+                <ul class="achievements-list">
+                  <li class="achievement-item">
+                    Đầu tư giá trị dài hạn, tập trung vào các lĩnh vực có tiềm
+                    năng tăng trưởng bền vững;
+                  </li>
+                  <li class="achievement-item">
+                    Xây dựng hệ sinh thái liên kết đa ngành - nhằm tối ưu nguồn
+                    lực, tạo giá trị dài hạn và thích ứng linh hoạt với những
+                    biến động của thị trường;
+                  </li>
+                  <li class="achievement-item">
+                    Hợp tác trên nền tảng đồng hành và cùng phát triển, hướng
+                    đến lợi ích dài hạn và cân bằng;
+                  </li>
+                  <li class="achievement-item">
+                    Mở rộng hiện diện trên bản đồ quốc tế từng bước khẳng định
+                    vị thế của Tập đoàn tại các thị trường chiến lược như
+                    Singapore, UAE, Nhật Bản và ASEAN;
+                  </li>
+                  <li class="achievement-item">
+                    Quản trị minh bạch, hiệu quả, hướng đến các tiêu chuẩn quốc
+                    tế về quản lý, vận hành và kiểm soát rủi ro.
+                  </li>
+                </ul>
+                <p class="profile-description">
+                  Dưới sự dẫn dắt của ông, H Đông Dương không chỉ là một tổ chức
+                  đầu tư mạnh về quy mô tài sản mà còn ngày càng khẳng định vai
+                  trò là trung tâm kết nối giá trị giữa vốn, công nghệ, con
+                  người và thị trường trong khu vực.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="leadership-section">
+        <div class="background-container">
+          <div class="background-pattern"></div>
+          <div class="background-watermark">LEADERSHIP</div>
+        </div>
+
+        <div class="container">
+          <!-- Ông Kishimoto Takaharu -->
+          <div class="leader-profile">
+            <div class="profile-content text-left">
+              <div class="profile-text-section" data-animate="slide-right">
+                <p class="profile-description">
+                  Ông Kishimoto Takaharu là chuyên gia người Nhật Bản với hơn 30
+                  năm kinh nghiệm trong ngành xây dựng đồ gỗ nội thất, với khát
+                  khao tìm một giải pháp có truyền thống lâu đời trong nghề mộc,
+                  ông đã kể thừa và phát triển xưởng sản xuất đồ gỗ định thành
+                  một hiện thực tiêu biểu trong ngành chế tác đồ gỗ tại Nhật
+                  Bản.
+                </p>
+
+                <p class="profile-description">
+                  Năm 2010, ông được mời tham nhập vào tập đoàn vào khi cần cho
+                  một trong những tập đoàn sản xuất và bán lê nội thất cao chất
+                  lượng tại Tây Âu. Với teo quan trọng việc tối ưu hóa chuyên
+                  môn cùng năng cao hiểu biểu chuẩn chất lượng, và xây dựng
+                  chương trình đào tạo đội ngũ thợ có kỹ thuật tốt thể hiện ảo
+                  các khu vực trong lập đoàn.
+                </p>
+
+                <p class="profile-description">
+                  Hiện tại, ông Kishimoto Takaharu giữ vai trò Phó Chủ tịch Tập
+                  đoàn, và là đồng thời kiêm nhiệm Giám đốc Nhà máy của bộ phận
+                  sản xuất Tập đoàn - đơn vị phát triển các sản phẩm nội thất và
+                  định hướng thiết kế mỹ thuật tại, bộ giải pháp chế trung trong
+                  thương hiệu theo phong cách Nhật Bản. Với vai trò chiến lược
+                  này, ông phụ
+                </p>
+
+                <ul class="achievements-list">
+                  <li class="achievement-item">
+                    Kết nối và phát triển quan hệ đối tác quốc tế, đặc biệt tại
+                    thị trường Nhật Bản và các nước có nền công nghiệp sản xuất
+                    tiên tiến;
+                  </li>
+                  <li class="achievement-item">
+                    Tư vấn chiến lược và định hướng phát triển chuỗi cung ứng,
+                    tập trung vào tối ưu hóa quy trình vận hành, kiểm soát chất
+                    lượng và gia tăng hiệu quả toàn hệ thống sản xuất;
+                  </li>
+                  <li class="achievement-item">
+                    Xây dựng mô hình vận hành kiểu Nhật chuyên sâu cũng các
+                    nguyên lý sản xuất hiệu quả kết hợp với truyền thống và kỹ
+                    năng thợ công quy mô;
+                  </li>
+                  <li class="achievement-item">
+                    Có sáng kiến được lồng nhả cho Tập đoàn, với mục tiêu phát
+                    triển bền vững, chuẩn hóa tất cả trường và tạo lối ứt thể
+                    cảnh tranh dài hạn.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="profile-image-section" data-animate="slide-left">
+                <div class="gray-theme">
+                  <img src="assets/img/person3.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ông Dư Hoài Văn -->
+          <div class="leader-profile">
+            <div class="profile-content text-right">
+              <div class="profile-image-section" data-animate="slide-right">
+                <div class="gray-theme">
+                  <img src="assets/img/person4.png" alt="" />
+                </div>
+              </div>
+
+              <div class="profile-text-section" data-animate="slide-left">
+                <p class="profile-description">
+                  Tốt nghiệp chuyên ngành Kinh tế học và quản trị kinh doanh
+                  (Economics and Business Management) tại Đại học Aix-Marseille
+                  II - một trong những trường đại học danh tiếng của Cộng hòa
+                  Pháp, nổi bật về đào tạo và nghiên cứu trong lĩnh vực quản trị
+                  và đại định hướng kinh tế.
+                </p>
+
+                <p class="profile-description">
+                  Với nền tảng lý luận và học thuật chuẩn châu Âu kết hợp với
+                  kinh nghiệm thực tế quản trị đa ngành tại Việt Nam, ông đạt
+                  được Hoài Văn đã dần trở thành một trong những lãnh đạo phẫn
+                  hưa đa chị từ định hướng và chiến lược phát triển đa ngành,
+                  một thương hại đầu tư sản xuất, dịch vụ, thực phẩm, y tế, công
+                  nghệ và thương mại quốc tế.
+                </p>
+
+                <p class="profile-description">
+                  Tự dạy lành đạo của các cấp, khả năng điều hành linh hoạt và
+                  tạo môi trường tối ưu trong công tác quản lý đại Hoài Văn đã
+                  thu trọn ủng hộ từ tầm vóc quốc tế.
+                </p>
+
+                <p class="profile-description">
+                  Hiện nay, ông Dư Hoài Văn đang thúc đẩy triển khai chiến lược
+                  phát triển do Hội đồng Quản trị bào gồm Tập đoàn, theo kế định
+                  hướng tăng cường sở nút tại các thị trường quốc tế. Trong cuộc
+                  hành trình đó, H Đông Dương có:
+                </p>
+
+                <ul class="achievements-list">
+                  <li class="achievement-item">
+                    Đẩnh mực đầu tư đa quốc gia, hoạt động trong 6 lĩnh vực có
+                    lợi từ 12 công ty thành viên và liên doanh;
+                  </li>
+                  <li class="achievement-item">
+                    Hợp tác chiến lược với các định chế tài chính và doanh
+                    nghiệp tại Nhật Bản, UAE, Singapore và Malaysia.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="vice-director-container">
+        <div class="container">
+          <h4 class="vice-director-title">Phó Tổng Giám đốc Tập đoàn</h4>
+
+          <div class="vice-director-grid">
+            <div
+              class="vice-director-card vice-director-ta-trung-dung"
+              data-bs-toggle="modal"
+              data-bs-target="#profileModalTaTrungDung"
+            >
+              <div class="vice-director-image">
+                <img src="assets/img/vice-director.jpg" alt="" />
+              </div>
+              <div class="vice-director-info">
+                <div class="vice-director-name">Ông TẠ TRUNG DŨNG</div>
+                <div class="vice-director-role">
+                  Phụ trách Đầu tư & Phát triển dự án
+                </div>
+                <div class="vice-director-arrow"></div>
+              </div>
+            </div>
+
+            <div
+              class="vice-director-card vice-director-du-hoai-thu"
+              data-bs-toggle="modal"
+              data-bs-target="#profileModalDuHoaiThu"
+            >
+              <div class="vice-director-image">
+                <img src="assets/img/default_profile.png" alt="" />
+              </div>
+              <div class="vice-director-info">
+                <div class="vice-director-name">Bà DƯ HOÀI THU</div>
+                <div class="vice-director-role">
+                  Phụ trách Hành chính & Vận hành
+                </div>
+                <div class="vice-director-arrow"></div>
+              </div>
+            </div>
+
+            <div
+              class="vice-director-card vice-director-phan-dong-giai"
+              data-bs-toggle="modal"
+              data-bs-target="#profileModalPhanDongGiai"
+            >
+              <div class="vice-director-image">
+                <img src="assets/img/default_profile.png" alt="" />
+              </div>
+              <div class="vice-director-info">
+                <div class="vice-director-name">Bà PHAN ĐÔNG GIAI</div>
+                <div class="vice-director-role">Phụ trách Miền Nam</div>
+                <div class="vice-director-arrow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="manage-container"
+        data-bs-toggle="modal"
+        data-bs-target="#profileModalLeDucHuyen"
+      >
+        <div class="container">
+          <h1 class="vice-director-title">
+            Chủ tịch - Tổng Giám đốc<br />Các Công ty thành viên
+          </h1>
+          <div class="manage-grid">
+            <div class="manage-card manage-card-gray hover-profile">
+              <div class="manage-name">Ông LÊ ĐỨC HUYỀN</div>
+              <div class="manage-position">
+                Tổng Giám đốc<br>Công Ty Tư Vấn Đầu Tư H Đông Dương
+              </div>
+              <div class="manage-arrow"></div>
+              <div
+                class="manage-arrow"
+                data-bs-toggle="modal"
+                data-bs-target="#profileModalLeDucHuyen"
+              ></div>
+            </div>
+            <div class="manage-card manage-card-gray hover-profile"  data-bs-toggle="modal"
+                data-bs-target="#profileModalTranLeNgoc">
+              <div class="manage-name">Ông TRẦN LÊ NGỌC</div>
+              <div class="manage-position">
+                Chủ Tịch<br>Công Ty Savvy Land
+              </div>
+              <div class="manage-arrow"></div>
+              <div
+                class="manage-arrow"
+              ></div>
+            </div>
+            <div class="manage-card manage-card-gray hover-profile" data-bs-toggle="modal"
+                data-bs-target="#profileModalVuHoangLinh">
+              <div class="manage-name">Ông VŨ HOÀNG LINH</div>
+              <div class="manage-position">
+                Tổng Giám Đốc<br>Công Ty Savvy Land
+              </div>
+              <div class="manage-arrow"></div>
+              <div
+                class="manage-arrow"
+                
+              ></div>
+            </div>
+            <div class="manage-card manage-card-gray hover-profile" data-bs-toggle="modal"
+                data-bs-target="#profileModalDaoVanMinh">
+              <div class="manage-name">Ông ĐÀO VĂN MINH</div>
+              <div class="manage-position">
+                Tổng Giám Đốc (Chuyên dân dụng, công nghiệp)<br>Công Ty Solid Construction
+              </div>
+              <div class="manage-arrow"></div>
+              <div
+                class="manage-arrow"
+              ></div>
+            </div>
+            <div class="manage-card manage-card-gray hover-profile" data-bs-toggle="modal"
+                data-bs-target="#profileModalTranVanGiang">
+              <div class="manage-name">Ông TRẦN VĂN GIANG</div>
+              <div class="manage-position">
+                Tổng Giám Đốc<br>Công Ty Umimoto Furniture
+              </div>
+              <div class="manage-arrow"></div>
+              <div
+                class="manage-arrow"                
+              ></div>
+            </div>
+            <div class="manage-card manage-card-gray hover-profile"  data-bs-toggle="modal"
+                data-bs-target="#profileModalNguyenManhTuan">
+              <div class="manage-name">Ông NGUYỄN MẠNH TUẤN</div>
+              <div class="manage-position">
+                Chủ Tịch Và Người Sáng Lập<br>Công Ty Meditronic
+              </div>
+              <div class="manage-arrow"></div>
+              <div
+                class="manage-arrow"
+               
+              ></div>
+            </div>
+            <div class="manage-card manage-card-gray hover-profile" data-bs-toggle="modal"
+                data-bs-target="#profileModalTranDinhCuong">
+              <div class="manage-name">Ông TRẦN ĐÌNH CƯƠNG</div>
+              <div class="manage-position">
+                Thành Viên Hội Đồng Quản Trị<br>Công Ty H Đông Dương Food International
+              </div>
+              <div class="manage-arrow"></div>
+              <div
+                class="manage-arrow"
+                
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="manageModal" class="manage-modal">
+      <div class="manage-modal-content">
+        <span class="manage-modal-close">&times;</span>
+        <div
+          class="manage-card manage-card-featured manage-le-duc-huyen-featured"
+        >
+          <div class="manage-featured-image">
+            <img src="assets/img/le-duc-huyen-ceo.jpg" alt="" />
+          </div>
+          <div class="manage-featured-content">
+            <div class="manage-featured-description">
+              Ông Lê Đức Huyền là chuyên gia trong lĩnh vực đầu tư và tài chính
+              với hơn 17 năm kinh nghiệm. Ông đã có những đóng góp quan trọng
+              trong việc phát triển các dự án bất động sản trong và ngoài nước,
+              thành lập thực hiện các quyết định chiến lược và cải thiện doanh
+              nghiệp và khen thưởng của tập đoàn. Ông cũng được biết đến với
+              tính cách nghiêm túc và tinh thần trách nhiệm cao. Với tinh thần
+              tiếng kiến thức vững chắc về tài chính thị trường, ông tài chính
+              ngân hàng quy mô lớn các phát triển Huyền có những cội nguồn tri
+              thức nông sâu và triển hành nghề quỹ sở hợp lòng nghiêm yêu hành
+              thành chính. Bên cạnh đó, ông có nhiều kinh nghiệm trong việc phối
+              hợp dự án, xây dựng mô hình tài chính như tính toán chi xây dự
+              thảo gói đầu tư và có kinh nghiệm được bài bống gồm.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content-ecoSystem">
+      <div class="bio-system-container">
+        <div class="bio-system-overlay"></div>
+        <div class="container">
+          <div class="bio-system-header">
+            <div class="bio-system-title-section">
+              <h1 class="bio-system-main-title">
+                Hệ Sinh Thái<br />H Đông Dương
+              </h1>
+            </div>
+
+            <div class="bio-system-description-section">
+              <p class="bio-system-description">
+                Tập đoàn H Đông Dương định hướng phát triển theo mô hình liên
+                kết đa ngành, xây dựng một hệ sinh thái tròn vòng và tối ưu hóa
+                về hiệu quả đầu tư vận hành thông qua hai nguyên tắc cốt lõi:
+                Liên kết đa ngành - Tạo giá trị cộng hưởng Hợp tác cùng phát
+                triển - Mở rộng hệ sinh thái linh hoạt
+              </p>
+            </div>
+          </div>
+
+          <div class="bio-system-grid">
+            <div class="bio-system-card bio-system-investment">
+              <div class="bio-system-card-bg"></div>
+              <div class="bio-system-card-title">
+                Lĩnh Vực<br />Đầu Tư &<br />Tư Vấn Đầu Tư
+              </div>
+              <div
+                class="bio-system-card-arrow"
+                data-target="investment-container"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 17L17 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 7H17V17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="bio-system-card bio-system-real-estate">
+              <div class="bio-system-card-bg"></div>
+              <div class="bio-system-card-title">
+                Lĩnh Vực<br />Bất Động Sản
+              </div>
+              <div
+                class="bio-system-card-arrow"
+                data-target="investment-2-container"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 17L17 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 7H17V17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="bio-system-card bio-system-construction">
+              <div class="bio-system-card-bg"></div>
+              <div class="bio-system-card-title">Lĩnh Vực<br />Xây Dựng</div>
+              <div
+                class="bio-system-card-arrow"
+                data-target="investment-3-container"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 17L17 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 7H17V17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="bio-system-card bio-system-interior-design">
+              <div class="bio-system-card-bg"></div>
+              <div class="bio-system-card-title">
+                Lĩnh Vực<br />Tư Vấn Thiết Kế,<br />Nội Thất
+              </div>
+              <div
+                class="bio-system-card-arrow"
+                data-target="investment-4-container"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 17L17 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 7H17V17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="bio-system-card bio-system-medical-equipment">
+              <div class="bio-system-card-bg"></div>
+              <div class="bio-system-card-title">
+                Lĩnh Vực<br />Thiết Bị Y Tế
+              </div>
+              <div
+                class="bio-system-card-arrow"
+                data-target="investment-5-container"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 17L17 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 7H17V17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="bio-system-card bio-system-import-export">
+              <div class="bio-system-card-bg"></div>
+              <div class="bio-system-card-title">
+                Lĩnh Vực<br />Thương Mại<br />Xuất Nhập Khẩu
+              </div>
+              <div
+                class="bio-system-card-arrow"
+                data-target="investment-6-container"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 17L17 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 7H17V17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="bio-system-card bio-system-education-gaming">
+              <div class="bio-system-card-bg"></div>
+              <div class="bio-system-card-title">
+                Lĩnh Vực<br />Giáo Dục &<br />Game Trực Tuyến
+              </div>
+              <div
+                class="bio-system-card-arrow"
+                data-target="investment-7-container"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 17L17 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 7H17V17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="bio-system-card bio-system-mining">
+              <div class="bio-system-card-bg"></div>
+              <div class="bio-system-card-title">
+                Lĩnh Vực<br />Khai Thác<br />Khoáng Sản
+              </div>
+              <div
+                class="bio-system-card-arrow"
+                data-target="investment-8-container"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 17L17 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 7H17V17"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="investment-container">
+        <div class="investment-bg">
+          <img src="assets/img/investment-bg.png" alt="" />
+        </div>
+        <div class="investment-content">
+          <h1 class="investment-title" data-aos="fade-down">
+            <span class="investment-title-main">Lĩnh Vực </span>
+            <span class="investment-title-sub">Đầu Tư & Tư Vấn Đầu Tư</span>
+          </h1>
+
+          <div class="investment-description" data-aos="fade-up">
+            H Đông Dương định vị là nhà đầu tư chiến lược, tập trung vào các
+            lĩnh vực có tiềm năng tăng trưởng dài hạn và tạo giá trị thực chất
+            cho cộng đồng. Chúng tôi đồng thời cung cấp dịch vụ tư vấn đầu tư,
+            pháp lý và M&A chuyên sâu, hỗ trợ đối tác và doanh nghiệp hoạch định
+            chiến lược, tối ưu hiệu quả và kiểm soát rủi ro trong từng thương vụ
+            và dự án.
+          </div>
+
+          <div class="investment-companies-label" data-aos="fade-up">
+            Các công ty thành viên:
+          </div>
+
+          <div class="investment-companies-grid" data-aos="fade-up">
+            <div class="investment-company-item">TẬP ĐOÀN H ĐÔNG DƯƠNG</div>
+            <div class="investment-company-item">
+              CÔNG TY CỔ PHẦN ĐẦU TƯ & KINH DOANH BẤT ĐỘNG SẢN H ĐÔNG DƯƠNG
+            </div>
+            <div class="investment-company-item">
+              CÔNG TY TƯ VẤN ĐẦU TƯ H ĐÔNG DƯƠNG
+            </div>
+          </div>
+
+          <button class="investment-arrow-button" data-aos="zoom-in">
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.25 12.25L29.75 29.75"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.75 12.25V29.75H12.25"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="investment-image-section">
+          <div class="investment-image-overlay" data-aos="fade-left"></div>
+          <div
+            class="investment-number"
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            1
+          </div>
+        </div>
+      </div>
+      <div class="investment-container investment-2-container">
+        <div class="investment-bg">
+          <img src="assets/img/investment-bg.png" alt="" />
+        </div>
+        <div class="investment-content">
+          <h1 class="investment-title" data-aos="fade-down">
+            <span class="investment-title-main">Lĩnh Vực </span>
+            <span class="investment-title-sub">Bất Động Sản</span>
+          </h1>
+
+          <div class="investment-description" data-aos="fade-up">
+            H Đông Dương sở hữu hệ thống phân phối chuyên nghiệp thông qua các
+            công ty thành viên. Chúng tôi cung cấp dịch vụ môi giới, tư vấn đầu
+            tư và tiếp thị bất động sản toàn diện.
+          </div>
+
+          <div class="investment-companies-label" data-aos="fade-up">
+            Các công ty thành viên:
+          </div>
+
+          <div class="investment-companies-grid" data-aos="fade-up">
+            <div class="investment-company-item">CÔNG TY SAVVY LAND</div>
+            <div class="investment-company-item">CÔNG TY SAVVY PROPERTY</div>
+          </div>
+
+          <button class="investment-arrow-button" data-aos="zoom-in">
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.25 12.25L29.75 29.75"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.75 12.25V29.75H12.25"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="investment-image-section">
+          <div class="investment-image-overlay" data-aos="fade-left"></div>
+          <div
+            class="investment-number"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            2
+          </div>
+        </div>
+      </div>
+      <div class="investment-container investment-3-container">
+        <div class="investment-bg">
+          <img src="assets/img/investment-bg.png" alt="" />
+        </div>
+        <div class="investment-content">
+          <h1 class="investment-title" data-aos="fade-down">
+            <span class="investment-title-main">Lĩnh Vực </span>
+            <span class="investment-title-sub">Xây Dựng</span>
+          </h1>
+
+          <div class="investment-description" data-aos="fade-up">
+            Với năng lực tổng thầu thi công từ dân dụng đến công nghiệp, hạ
+            tầng, H Đông Dương triển khai các dự án quy mô lớn bằng hệ thống
+            thiết bị hiện đại và quy trình thi công đồng bộ, bảo đảm tiến độ,
+            chất lượng và an toàn trong mọi công trình.
+          </div>
+
+          <div class="investment-companies-label" data-aos="fade-up">
+            Các công ty thành viên:
+          </div>
+
+          <div class="investment-companies-grid" data-aos="fade-up">
+            <div class="investment-company-item">
+              CÔNG TY SOLID CONSTRUCTION
+            </div>
+            <div class="investment-company-item">
+              CÔNG TY VIỄN THÔNG ĐÔNG DƯƠNG
+            </div>
+          </div>
+
+          <button class="investment-arrow-button" data-aos="zoom-in">
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.25 12.25L29.75 29.75"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.75 12.25V29.75H12.25"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="investment-image-section">
+          <div class="investment-image-overlay" data-aos="fade-left"></div>
+          <div
+            class="investment-number"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            3
+          </div>
+        </div>
+      </div>
+      <div class="investment-container investment-4-container">
+        <div class="investment-bg">
+          <img src="assets/img/investment-bg.png" alt="" />
+        </div>
+        <div class="investment-content">
+          <h1 class="investment-title" data-aos="fade-down">
+            <span class="investment-title-main">Lĩnh Vực </span>
+            <span class="investment-title-sub">Tư Vấn Thiết Kế, Nội Thất</span>
+          </h1>
+
+          <div class="investment-description" data-aos="fade-up">
+            Chúng tôi tạo ra không gian sống và làm việc hài hòa giữa công năng
+            - thẩm mỹ - bản sắc, đồng thời đáp ứng yêu cầu khắt khe về tiêu
+            chuẩn kỹ thuật và phong cách riêng của từng dự án.
+          </div>
+
+          <div class="investment-companies-label" data-aos="fade-up">
+            Các công ty thành viên:
+          </div>
+
+          <div class="investment-companies-grid" data-aos="fade-up">
+            <div class="investment-company-item">CÔNG TY UMIMOTO FURNITURE</div>
+          </div>
+
+          <button class="investment-arrow-button" data-aos="zoom-in">
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.25 12.25L29.75 29.75"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.75 12.25V29.75H12.25"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="investment-image-section">
+          <div class="investment-image-overlay" data-aos="fade-left"></div>
+          <div
+            class="investment-number"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            4
+          </div>
+        </div>
+      </div>
+      <div class="investment-container investment-5-container">
+        <div class="investment-bg">
+          <img src="assets/img/investment-bg.png" alt="" />
+        </div>
+        <div class="investment-content">
+          <h1 class="investment-title" data-aos="fade-down">
+            <span class="investment-title-main">Lĩnh Vực </span>
+            <span class="investment-title-sub">Thiết Bị Y Tế</span>
+          </h1>
+
+          <div class="investment-description" data-aos="fade-up">
+            Chúng tôi phân phối, lắp đặt và chuyển giao công nghệ các dòng thiết
+            bị hiện đại, góp phần nâng cao chất lượng khám chữa bệnh và thúc đẩy
+            phát triển hạ tầng y tế bền vững.
+          </div>
+
+          <div class="investment-companies-label" data-aos="fade-up">
+            Các công ty thành viên:
+          </div>
+
+          <div class="investment-companies-grid" data-aos="fade-up">
+            <div class="investment-company-item">CÔNG TY MEDITRONIC</div>
+          </div>
+
+          <button class="investment-arrow-button" data-aos="zoom-in">
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.25 12.25L29.75 29.75"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.75 12.25V29.75H12.25"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="investment-image-section">
+          <div class="investment-image-overlay" data-aos="fade-left"></div>
+          <div
+            class="investment-number"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            5
+          </div>
+        </div>
+      </div>
+      <div class="investment-container investment-6-container">
+        <div class="investment-bg">
+          <img src="assets/img/investment-bg.png" alt="" />
+        </div>
+        <div class="investment-content">
+          <h1 class="investment-title" data-aos="fade-down">
+            <span class="investment-title-main">Lĩnh Vực </span>
+            <span class="investment-title-sub">Thương Mại Xuất Nhập Khẩu</span>
+          </h1>
+
+          <div class="investment-description" data-aos="fade-up">
+            H Đông Dương hoạt động trong lĩnh vực thương mại và xuất nhập khẩu
+            với mạng lưới đối tác rộng khắp trong và ngoài nước. Chúng tôi tập
+            trung vào các nhóm hàng chiến lược nhằm kết nối chuỗi cung ứng hiệu
+            quả và mở rộng thị trường toàn cầu cho hệ sinh thái Tập đoàn.
+          </div>
+
+          <div class="investment-companies-label" data-aos="fade-up">
+            Các công ty thành viên:
+          </div>
+
+          <div class="investment-companies-grid" data-aos="fade-up">
+            <div class="investment-company-item">
+              CÔNG TY H ĐÔNG DƯƠNG FOOD INTERNATIONAL
+            </div>
+            <div class="investment-company-item">CÔNG TY MISTRAL</div>
+          </div>
+
+          <button class="investment-arrow-button" data-aos="zoom-in">
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.25 12.25L29.75 29.75"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.75 12.25V29.75H12.25"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="investment-image-section">
+          <div class="investment-image-overlay" data-aos="fade-left"></div>
+          <div
+            class="investment-number"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            6
+          </div>
+        </div>
+      </div>
+      <div class="investment-container investment-7-container">
+        <div class="investment-bg">
+          <img src="assets/img/investment-bg.png" alt="" />
+        </div>
+        <div class="investment-content">
+          <h1 class="investment-title" data-aos="fade-down">
+            <span class="investment-title-main">Lĩnh Vực</span>
+            <span class="investment-title-sub">Giáo Dục & Game Trực Tuyến</span>
+          </h1>
+
+          <div class="investment-description" data-aos="fade-up">
+            Đón đầu xu hướng chuyển đổi số, H Đông Dương đầu tư vào lĩnh vực
+            giáo dục và game trực tuyến với mục tiêu kết hợp công nghệ, nội dung
+            & trải nghiệm người dùng. Chúng tôi phát triển các nền tảng học tập
+            số và sản phẩm game mang tính giáo dục, giải trí lành mạnh, hướng
+            tới thế hệ người dùng trẻ, sáng tạo và toàn cầu hóa.
+          </div>
+
+          <div class="investment-companies-label" data-aos="fade-up">
+            Các công ty thành viên:
+          </div>
+
+          <div class="investment-companies-grid" data-aos="fade-up">
+            <div class="investment-company-item">VTC ONLINE</div>
+          </div>
+
+          <button class="investment-arrow-button" data-aos="zoom-in">
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.25 12.25L29.75 29.75"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.75 12.25V29.75H12.25"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="investment-image-section">
+          <div class="investment-image-overlay" data-aos="fade-left"></div>
+          <div
+            class="investment-number"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            7
+          </div>
+        </div>
+      </div>
+      <div class="investment-container investment-8-container">
+        <div class="investment-bg">
+          <img src="assets/img/investment-bg.png" alt="" />
+        </div>
+        <div class="investment-content">
+          <h1 class="investment-title" data-aos="fade-down">
+            <span class="investment-title-main">Lĩnh Vực</span>
+            <span class="investment-title-sub">Khai Thác Khoáng Sản</span>
+          </h1>
+
+          <div class="investment-description" data-aos="fade-up">
+            Chúng tôi tham gia đầu tư và vận hành các dự án khai thác khoáng sản
+            với định hướng hiệu quả, bền vững và tuân thủ nghiêm ngặt các quy
+            định về môi trường, đảm bảo cung ứng nguyên vật liệu xây dựng chất
+            lượng cao phục vụ cho các dự án hạ tầng, công nghiệp và xây dựng
+            trong hệ sinh thái Tập đoàn và đối tác bên ngoài.
+          </div>
+
+          <div class="investment-companies-label" data-aos="fade-up">
+            Các công ty thành viên:
+          </div>
+
+          <div class="investment-companies-grid" data-aos="fade-up">
+            <div class="investment-company-item">CÔNG TY DNU</div>
+          </div>
+
+          <button class="investment-arrow-button" data-aos="zoom-in">
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.25 12.25L29.75 29.75"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.75 12.25V29.75H12.25"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="investment-image-section">
+          <div class="investment-image-overlay" data-aos="fade-left"></div>
+          <div
+            class="investment-number"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            8
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+  <footer class="footer">
+      <div class="overlay-pattern"></div>
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Left -->
+          <div class="col-lg-4">
+            <img
+              src="assets/img/logo-mau.png"
+              alt="HIG Logo"
+              style="width: 60px"
+            />
+            <h5 class="mt-3">H INDOCHINA GROUP (HIG)</h5>
+            <h6 class="mt-4" style="color: #fff !important">
+              ĐĂNG KÝ NHẬN THÔNG TIN
+            </h6>
+            <p>
+              Đăng ký ngay để nhận những thông tin, cơ hội đầu tư và cập nhật
+              mới nhất từ chúng tôi!
+            </p>
+            <input type="email" id="email" placeholder="Email" />
+            <button class="btn btn-subscribe" id="subscribe-btn">
+              ĐĂNG KÝ
+            </button>
+          </div>
+
+          <!-- Middle -->
+          <div class="col-lg-4 col_middle d-flex justify-content-center">
+            <div class="text-start">
+              <h6>Sitemap</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Trang chủ</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Giới thiệu Tập đoàn</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Văn hoá Tập đoàn</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none">Dự án</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Quan hệ cổ đông</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Tin tức</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Tuyển dụng</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Liên hệ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="col-lg-4 col_final">
+            <h6>Trụ sở chính</h6>
+            <p>
+              Tòa nhà VTC Online, số 18 Tam Trinh, phường Tương Mai, thành phố
+              Hà Nội
+            </p>
+            <h6>Văn Phòng Miền Nam</h6>
+            <p>Số 17/2 Trần Văn Sắc, phường An Khánh, thành phố Hồ Chí Minh</p>
+            <h6>Văn Phòng Tại Nhật Bản</h6>
+            <div class="pra">
+              <p>
+                Tòa nhà Sunnet Sendagaya Tầng 3 phía Đông, 4-19-14 Sendagaya, Shibuya-ku, Tokyo
+              </p>
+              <p>Hotline: 0966.060.608</p>
+              <p>
+                Email:
+                <a href="mailto:hdongduong@dongduonggroup.vn" class="text-white"
+                  >hdongduong@h-indochina.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div
+          class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3"
+        >
+          <p class="mb-0 col-8" style="color: #a4aabb">
+            © 2025 HIG. All Rights Reserved.<br />Designed & Maximize Online
+            Power by THEMAX
+          </p>
+          <div class="social-icons col-4 mt-3 mt-md-0">
+            <a href="#">
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  y="0.96582"
+                  width="39.176"
+                  height="39.176"
+                  rx="19.588"
+                  fill="#E0E2E2"
+                />
+                <path
+                  d="M21.3882 32.7506V22.2088H24.9267L25.4565 18.1004H21.3882V15.4774C21.3882 14.2879 21.7186 13.4773 23.4244 13.4773L25.5999 13.4763V9.80185C25.2235 9.75196 23.9322 9.64014 22.4298 9.64014C19.2932 9.64014 17.1458 11.5546 17.1458 15.0707V18.1005H13.5981V22.2089H17.1457V32.7507L21.3882 32.7506Z"
+                  fill="#1E4966"
+                />
+              </svg>
+            </a>  
+            <a href="#">
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.607666"
+                  y="0.96582"
+                  width="39.176"
+                  height="39.176"
+                  rx="19.588"
+                  fill="#E0E2E2"
+                />
+                <path 
+                class="st0" d="M28.4,9.5H11.6c-1.4,0-2.6,1.2-2.6,2.6v16.8c0,1.4,1.2,2.6,2.6,2.6h16.8c1.4,0,2.6-1.2,2.6-2.6V12.1c0-1.4-1.2-2.6-2.6-2.6ZM15.8,17.9v10h-3.1v-10h3.1ZM12.7,15c0-.7.6-1.3,1.6-1.3s1.5.6,1.6,1.3c0,.7-.6,1.3-1.6,1.3s-1.6-.6-1.6-1.3ZM27.3,27.8h-3.1v-5.2c0-1-.5-2.1-1.8-2.1h0c-1.3,0-1.8,1.1-1.8,2.1v5.2h-3.1v-10h3.1v1.3s1-1.3,3-1.3,3.8,1.4,3.8,4.3v5.6Z"
+                fill="#1E4966"
+                />
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.823975"
+                  y="0.96582"
+                  width="39.176"
+                  height="39.176"
+                  rx="19.588"
+                  fill="#E0E2E2"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.0866 13.6025C13.2986 12.328 13.7269 11.9705 14.2434 11.8042C14.6008 11.7107 14.9757 11.7055 15.3355 11.789C15.8093 11.9265 15.9346 12.031 17.4882 13.5764C18.853 14.9334 18.9894 15.0805 19.1202 15.3459C19.3704 15.8117 19.4095 16.3619 19.2276 16.8583C19.0899 17.2364 18.8944 17.4866 18.0666 18.3157L17.5267 18.856C17.385 18.9998 17.3516 19.2183 17.4441 19.3977C18.6436 21.4406 20.3454 23.1442 22.3884 24.3473C22.6236 24.473 22.9132 24.4325 23.1046 24.247L23.6238 23.7369C23.9447 23.4085 24.2846 23.0991 24.6416 22.8102C25.2024 22.4665 25.9011 22.4358 26.4899 22.7291C26.7777 22.8666 26.8727 22.9518 28.2803 24.3542C29.7319 25.7992 29.7732 25.8446 29.933 26.176C30.2336 26.7245 30.2305 27.3888 29.9247 27.9345C29.7691 28.2424 29.6741 28.3538 28.8574 29.187C28.3643 29.6902 27.9002 30.1494 27.8258 30.2168C27.1521 30.7737 26.2876 31.0468 25.4156 30.9785C23.8201 30.8333 22.2759 30.341 20.8914 29.5362C17.8244 27.9141 15.2135 25.5506 13.2972 22.6617C12.8798 22.0571 12.5088 21.422 12.1872 20.7616C11.3244 19.2855 10.8789 17.6034 10.8981 15.8945C10.9639 15.0005 11.3934 14.1723 12.0866 13.6025Z"
+                  fill="#1E4966"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a
+        href="javascript:void(0)"
+        id="backToTop"
+        class="back-to-top"
+        style="display: none"
+      >
+        <!--        <svg class="icon__arrow-up" viewBox="0 0 24 24">-->
+        <!--            <title>Back to top</title>-->
+        <!--            <path d="M18.71,11.71a1,1,0,0,1-1.42,0L13,7.41V19a1,1,0,0,1-2,0V7.41l-4.29,4.3a1,1,0,0,1-1.42-1.42l6-6a1,1,0,0,1,1.42,0l6,6A1,1,0,0,1,18.71,11.71Z"/>-->
+        <!--        </svg>-->
+        <svg
+          class="icon__arrow-up"
+          width="13"
+          height="7"
+          viewBox="0 0 13 7"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 6L6.5 1L1 6"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+      <div class="user">
+        <a href="javascript:void(0)" class="user_fixed">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 5C0 2.23858 2.23858 0 5 0H64V50H5C2.23858 50 0 47.7614 0 45V5Z"
+              fill="#204A65"
+            />
+            <path
+              d="M5 0.5H63.5V49.5H5C2.51472 49.5 0.5 47.4853 0.5 45V5C0.500001 2.51472 2.51472 0.5 5 0.5Z"
+              stroke="#E8E8E8"
+              stroke-opacity="0.5"
+            />
+            <path
+              d="M25.4997 25.5C29.5268 25.5 32.7913 22.2354 32.7913 18.2083C32.7913 14.1812 29.5268 10.9166 25.4997 10.9166C21.4726 10.9166 18.208 14.1812 18.208 18.2083C18.208 22.2354 21.4726 25.5 25.4997 25.5Z"
+              fill="#E6AF6C"
+            />
+            <path
+              opacity="0.7"
+              d="M25.5004 29.1459C18.1942 29.1459 12.2441 34.0459 12.2441 40.0834C12.2441 40.4917 12.565 40.8125 12.9733 40.8125H38.0276C38.4359 40.8125 38.7567 40.4917 38.7567 40.0834C38.7567 34.0459 32.8067 29.1459 25.5004 29.1459Z"
+              fill="#E0E2E2"
+            />
+            <path
+              d="M39.252 29.4959C37.9395 28.1834 36.9042 28.6063 36.0146 29.4959L30.852 34.6584C30.6479 34.8626 30.4583 35.2417 30.4145 35.5188L30.1375 37.4875C30.0354 38.2021 30.5312 38.6979 31.2458 38.5958L33.2145 38.3188C33.4916 38.275 33.8854 38.0854 34.075 37.8813L39.2374 32.7188C40.1416 31.8438 40.5645 30.8084 39.252 29.4959Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="profileModalTaTrungDung"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Header -->
+          <div
+            class="modal-header text-white"
+            style="background-color: #c78f50"
+          >
+            <div>
+              <p
+                class="fw-bold mb-1"
+                style="color: #163142"
+                id="exampleModalLabel"
+              >
+                Ông TẠ TRUNG DŨNG
+              </p>
+              <p class="fw-bold mb-0">Phụ trách Đầu tư & Phát triễn dự án</p>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Đóng"
+            ></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-4 text-center">
+                <img
+                  src="assets/img/vice-director.jpg"
+                  alt="Ảnh Ông Lê Đức Huyền"
+                  class="img-fluid rounded shadow"
+                />
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Ông Tạ Trung Dũng có kinh nghiệm toàn diện trong quản lý pháp
+                  lý dự án, điều phối đối tác, nhà thầu, nhà tư vấn và làm việc
+                  với cơ quan chức năng, đảm bảo tuân thủ pháp luật về đầu tư,
+                  đất đai và xây dựng. Ông cũng là người tham gia hoạch định
+                  chiến lược và giám sát triển khai các dự án theo đúng định
+                  hướng phát triển bền vững của Tập đoàn.
+                </p>
+
+                <h5 class="mt-4 mb-2">Kinh nghiệm làm việc:</h5>
+                <ul>
+                  <li>
+                    Trực tiếp phụ trách pháp lý, đầu tư và phát triển nhiều dự
+                    án thuộc các lĩnh vực bất động sản với tổng vốn đầu tư lên
+                    tới hàng chục nghìn tỷ đồng.
+                  </li>
+                  <li>
+                    Có hơn 23 năm kinh nghiệm trong lĩnh vực đầu tư và pháp lý
+                    dự án tại các tập đoàn lớn trong nước.
+                  </li>
+                  <li>
+                    Từng làm việc với nhiều đối tác chiến lược và cơ quan nhà
+                    nước tại các địa phương trọng điểm như TP.HCM, Hà Nội, Đà
+                    Nẵng, Quảng Nam, Phú Quốc, Bình Định, Khánh Hoà.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="profileModalDuHoaiThu"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabelDuHoaiThu"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Header -->
+          <div
+            class="modal-header text-white"
+            style="background-color: #c78f50"
+          >
+            <div>
+              <p
+                class="fw-bold mb-1"
+                style="color: #163142"
+                id="exampleModalLabelDuHoaiThu"
+              >
+                Bà DƯ HOÀI THU
+              </p>
+              <p class="fw-bold mb-0">Phụ trách Hành chính & Vận hành</p>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Đóng"
+            ></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-4 text-center">
+                <img
+                  src="assets/img/default_profile.png"
+                  alt="Ảnh Bà Dư Hoài Thu"
+                  class="img-fluid rounded shadow"
+                />
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Bà Dư Hoài Thu là một trong những nhân sự chủ chốt trong bộ
+                  máy điều hành của Tập đoàn H Đông Dương. Tốt nghiệp Cử nhân
+                  chuyên ngành Viễn thông, bà sở hữu nền tảng chuyên môn vững
+                  chắc và đã tích lũy nhiều năm kinh nghiệm trong lĩnh vực hạ
+                  tầng kỹ thuật và viễn thông.
+                </p>
+
+                <p>
+                  Bà hiện đảm nhiệm vai trò điều hành toàn bộ hoạt động hành
+                  chính - vận hành của Tập đoàn, đồng thời trực tiếp phụ trách
+                  chuyên môn tại các công ty thành viên trong mạng hạ tầng viễn
+                  thông. Ngoài ra, bà còn tham gia quản lý và tổ chức các hoạt
+                  động đấu giá tranh nghệ thuật, góp phần tạo nên sự phong phú
+                  về văn hóa và thương mại cho Tập đoàn. Bà cũng trực tiếp giám
+                  sát và vận hành tòa nhà văn phòng trụ sở chính, đảm bảo các
+                  hoạt động vận hành tòa nhà diễn ra suôn sẻ, an toàn và hiệu
+                  quả, đồng thời nâng cao trải nghiệm môi trường làm việc chuyên
+                  nghiệp cho toàn bộ cán bộ nhân viên.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="profileModalPhanDongGiai"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabelPhanDongGiai"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Header -->
+          <div
+            class="modal-header text-white"
+            style="background-color: #c78f50"
+          >
+            <div>
+              <p
+                class="fw-bold mb-1"
+                style="color: #163142"
+                id="exampleModalLabelPhanDongGiai"
+              >
+                Bà PHAN ĐÔNG GIAI
+              </p>
+              <p class="fw-bold mb-0">Phụ trách Miền Nam</p>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Đóng"
+            ></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-4 text-center">
+                <img
+                  src="assets/img/default_profile.png"
+                  alt="Ảnh Bà Phan Đông Giai"
+                  class="img-fluid rounded shadow"
+                />
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Bà Phan Đông Giai là nhân sự trẻ đầy tiềm năng với nền tảng đa
+                  dạng trong các lĩnh vực đầu tư, vận hành và phát triển kinh
+                  doanh. Trước khi gia nhập Tập đoàn H Đông Dương, bà đã đảm
+                  nhận nhiều vị trí quan trọng tại các công ty trong lĩnh vực
+                  đầu tư, sản xuất và thương mại, trực tiếp tham gia xây dựng
+                  quy trình, phát triển sản phẩm, phân tích hiệu suất đầu tư,
+                  xây dựng hồ sơ dự án, nghiên cứu thị trường và hỗ trợ đàm phán
+                  với các đối tác trong và ngoài nước.
+                </p>
+
+                <p>
+                  Ngoài ra bà Giai tốt nghiệp đại học tại Hoa Kỳ, nơi bà được
+                  trang bị kiến thức nền tảng vững chắc về kinh doanh và tư duy
+                  toàn cầu. Nền tảng học vấn quốc tế kết hợp với kinh nghiệm làm
+                  việc trong môi trường nghiên cứu tại Đại học California,
+                  Irvine, giúp nâng cao tư duy phân tích và khả năng phối hợp
+                  hiệu quả trong môi trường làm việc đa ngành, đa văn hóa.
+                </p>
+
+                <p>
+                  Hiện tại, bà phụ trách điều hành hoạt động của Tập đoàn tại
+                  khu vực miền Nam, góp phần mở rộng quy mô và nâng cao năng lực
+                  vận hành trong thị trường trọng điểm này, phù hợp với chiến
+                  lược phát triển bền vững dài hạn của H Đông Dương.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="profileModalLeDucHuyen"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabelLeDucHuyen"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Header -->
+          <div
+            class="modal-header text-white"
+            style="background-color: #c78f50"
+          >
+            <div>
+              <p
+                class="fw-bold mb-1"
+                style="color: #163142"
+                id="exampleModalLabelLeDucHuyen"
+              >
+                Ông Lê Đức Huyền
+              </p>
+              <p class="fw-bold mb-0">
+                Tổng Giám đốc - Công Ty Tư Vấn Đầu Tư H Đông Dương
+              </p>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Đóng"
+            ></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-4 text-center">
+                <img
+                  src="assets/img/le-duc-huyen-ceo.jpg"
+                  alt="Ảnh Ông Lê Đức Huyên"
+                  class="img-fluid rounded shadow"
+                />
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Ông Lê Đức Huyên là chuyên gia trong lĩnh vực đầu tư và tài
+                  chính với hơn 17 năm kinh nghiệm thực tiễn. Ông từng đảm nhận
+                  nhiều vị trí điều hành tại các tập đoàn trong và ngoài nước,
+                  tham gia trực tiếp vào quá trình đàm phán hợp tác, tái cấu
+                  trúc doanh nghiệp và triển khai các thương vụ M&A quy mô lớn.
+                </p>
+
+                <p>
+                  Với nền tảng kiến thức vững chắc về thị trường vốn, tài chính
+                  ngân hàng và pháp lý đầu tư, ông Huyên cũng sở hữu chứng chỉ
+                  hành nghề quản lý quỹ và từng phụ trách vận hành danh mục đầu
+                  tư cho các tổ chức tài chính.
+                </p>
+
+                <p>
+                  Bên cạnh đó, ông có nhiều kinh nghiệm trong việc điều phối dự
+                  án, xây dựng mô hình tài chính và xử lý hồ sơ pháp lý trong
+                  các giao dịch liên quan đến bất động sản.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="profileModalTranLeNgoc"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabelTranLeNgoc"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Header -->
+          <div
+            class="modal-header text-white"
+            style="background-color: #c78f50"
+          >
+            <div>
+              <p
+                class="fw-bold mb-1"
+                style="color: #163142"
+                id="exampleModalLabelTranLeNgoc"
+              >
+                Trần Lê Ngọc
+              </p>
+              <p class="fw-bold mb-0">
+                Chủ tịch - Công Ty Savvy Land
+              </p>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Đóng"
+            ></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-4 text-center">
+                <img
+                  src="assets/img/le-duc-huyen-ceo.jpg"
+                  alt="Ảnh Ông Trần Lê Ngọc"
+                  class="img-fluid rounded shadow"
+                />
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Ông Trần Lê Ngọc là chuyên gia trong lĩnh vực đầu tư và tài
+                  chính với hơn 17 năm kinh nghiệm thực tiễn. Ông từng đảm nhận
+                  nhiều vị trí điều hành tại các tập đoàn trong và ngoài nước,
+                  tham gia trực tiếp vào quá trình đàm phán hợp tác, tái cấu
+                  trúc doanh nghiệp và triển khai các thương vụ M&A quy mô lớn.
+                </p>
+
+                <p>
+                  Với nền tảng kiến thức vững chắc về thị trường vốn, tài chính
+                  ngân hàng và pháp lý đầu tư, ông Huyên cũng sở hữu chứng chỉ
+                  hành nghề quản lý quỹ và từng phụ trách vận hành danh mục đầu
+                  tư cho các tổ chức tài chính.
+                </p>
+
+                <p>
+                  Bên cạnh đó, ông có nhiều kinh nghiệm trong việc điều phối dự
+                  án, xây dựng mô hình tài chính và xử lý hồ sơ pháp lý trong
+                  các giao dịch liên quan đến bất động sản.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       <div
+      class="modal fade"
+      id="profileModalVuHoangLinh"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabelVuHoangLinh"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Header -->
+          <div
+            class="modal-header text-white"
+            style="background-color: #c78f50"
+          >
+            <div>
+              <p
+                class="fw-bold mb-1"
+                style="color: #163142"
+                id="exampleModalLabelLeDucHuyen"
+              >
+                Vũ Hoàng Linh
+              </p>
+              <p class="fw-bold mb-0">
+                Tổng Giám đốc - Công Ty Savvy Land
+              </p>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Đóng"
+            ></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-4 text-center">
+                <img
+                  src="assets/img/le-duc-huyen-ceo.jpg"
+                  alt="Ảnh Vũ Hoàng Linh"
+                  class="img-fluid rounded shadow"
+                />
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Vũ Hoàng Linh là chuyên gia trong lĩnh vực đầu tư và tài
+                  chính với hơn 17 năm kinh nghiệm thực tiễn. Ông từng đảm nhận
+                  nhiều vị trí điều hành tại các tập đoàn trong và ngoài nước,
+                  tham gia trực tiếp vào quá trình đàm phán hợp tác, tái cấu
+                  trúc doanh nghiệp và triển khai các thương vụ M&A quy mô lớn.
+                </p>
+
+                <p>
+                  Với nền tảng kiến thức vững chắc về thị trường vốn, tài chính
+                  ngân hàng và pháp lý đầu tư, ông Huyên cũng sở hữu chứng chỉ
+                  hành nghề quản lý quỹ và từng phụ trách vận hành danh mục đầu
+                  tư cho các tổ chức tài chính.
+                </p>
+
+                <p>
+                  Bên cạnh đó, ông có nhiều kinh nghiệm trong việc điều phối dự
+                  án, xây dựng mô hình tài chính và xử lý hồ sơ pháp lý trong
+                  các giao dịch liên quan đến bất động sản.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div
+      class="modal fade"
+      id="profileModalDaoVanMinh"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabelDaoVanMinh"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Header -->
+          <div
+            class="modal-header text-white"
+            style="background-color: #c78f50"
+          >
+            <div>
+              <p
+                class="fw-bold mb-1"
+                style="color: #163142"
+                id="exampleModalLabelDaoVanMinh"
+              >
+                Vũ Hoàng Linh
+              </p>
+              <p class="fw-bold mb-0">
+                Tổng Giám đốc (Chuyên dân dụng, công nghiệp) - Công ty Solid Consruction
+              </p>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Đóng"
+            ></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-4 text-center">
+                <img
+                  src="assets/img/le-duc-huyen-ceo.jpg"
+                  alt="Ảnh Đào Văn Minh"
+                  class="img-fluid rounded shadow"
+                />
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Đào Văn Minh là chuyên gia trong lĩnh vực đầu tư và tài
+                  chính với hơn 17 năm kinh nghiệm thực tiễn. Ông từng đảm nhận
+                  nhiều vị trí điều hành tại các tập đoàn trong và ngoài nước,
+                  tham gia trực tiếp vào quá trình đàm phán hợp tác, tái cấu
+                  trúc doanh nghiệp và triển khai các thương vụ M&A quy mô lớn.
+                </p>
+
+                <p>
+                  Với nền tảng kiến thức vững chắc về thị trường vốn, tài chính
+                  ngân hàng và pháp lý đầu tư, ông Huyên cũng sở hữu chứng chỉ
+                  hành nghề quản lý quỹ và từng phụ trách vận hành danh mục đầu
+                  tư cho các tổ chức tài chính.
+                </p>
+
+                <p>
+                  Bên cạnh đó, ông có nhiều kinh nghiệm trong việc điều phối dự
+                  án, xây dựng mô hình tài chính và xử lý hồ sơ pháp lý trong
+                  các giao dịch liên quan đến bất động sản.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div
+      class="modal fade"
+      id="profileModalTranVanGiang"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabelTranHoangGiang"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Header -->
+          <div
+            class="modal-header text-white"
+            style="background-color: #c78f50"
+          >
+            <div>
+              <p
+                class="fw-bold mb-1"
+                style="color: #163142"
+                id="exampleModalLabelTranHoangGiang"
+              >
+                Trần Văn Giang
+              </p>
+              <p class="fw-bold mb-0">
+                Tổng Giám đốc - Công ty Umimoto Furniture
+              </p>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Đóng"
+            ></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-4 text-center">
+                <img
+                  src="assets/img/le-duc-huyen-ceo.jpg"
+                  alt="Ảnh Trần Van Giang"
+                  class="img-fluid rounded shadow"
+                />
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Trần Văn Giang là chuyên gia trong lĩnh vực đầu tư và tài
+                  chính với hơn 17 năm kinh nghiệm thực tiễn. Ông từng đảm nhận
+                  nhiều vị trí điều hành tại các tập đoàn trong và ngoài nước,
+                  tham gia trực tiếp vào quá trình đàm phán hợp tác, tái cấu
+                  trúc doanh nghiệp và triển khai các thương vụ M&A quy mô lớn.
+                </p>
+
+                <p>
+                  Với nền tảng kiến thức vững chắc về thị trường vốn, tài chính
+                  ngân hàng và pháp lý đầu tư, ông Huyên cũng sở hữu chứng chỉ
+                  hành nghề quản lý quỹ và từng phụ trách vận hành danh mục đầu
+                  tư cho các tổ chức tài chính.
+                </p>
+
+                <p>
+                  Bên cạnh đó, ông có nhiều kinh nghiệm trong việc điều phối dự
+                  án, xây dựng mô hình tài chính và xử lý hồ sơ pháp lý trong
+                  các giao dịch liên quan đến bất động sản.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       <div
+      class="modal fade"
+      id="profileModalNguyenManhTuan"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabelNguyenManhTuan"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Header -->
+          <div
+            class="modal-header text-white"
+            style="background-color: #c78f50"
+          >
+            <div>
+              <p
+                class="fw-bold mb-1"
+                style="color: #163142"
+                id="exampleModalLabelNguyenManhTuan"
+              >
+                Nguyễn Mạnh Tuấn
+              </p>
+              <p class="fw-bold mb-0">
+                Chủ tịch - Người sáng Lập Công ty Meditronic
+              </p>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Đóng"
+            ></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-4 text-center">
+                <img
+                  src="assets/img/le-duc-huyen-ceo.jpg"
+                  alt="Ảnh Nguyễn Mạnh Tuấn"
+                  class="img-fluid rounded shadow"
+                />
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Nguyễn Mạnh Tuấn là chuyên gia trong lĩnh vực đầu tư và tài
+                  chính với hơn 17 năm kinh nghiệm thực tiễn. Ông từng đảm nhận
+                  nhiều vị trí điều hành tại các tập đoàn trong và ngoài nước,
+                  tham gia trực tiếp vào quá trình đàm phán hợp tác, tái cấu
+                  trúc doanh nghiệp và triển khai các thương vụ M&A quy mô lớn.
+                </p>
+
+                <p>
+                  Với nền tảng kiến thức vững chắc về thị trường vốn, tài chính
+                  ngân hàng và pháp lý đầu tư, ông Huyên cũng sở hữu chứng chỉ
+                  hành nghề quản lý quỹ và từng phụ trách vận hành danh mục đầu
+                  tư cho các tổ chức tài chính.
+                </p>
+
+                <p>
+                  Bên cạnh đó, ông có nhiều kinh nghiệm trong việc điều phối dự
+                  án, xây dựng mô hình tài chính và xử lý hồ sơ pháp lý trong
+                  các giao dịch liên quan đến bất động sản.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div
+      class="modal fade"
+      id="profileModalTranDinhCuong"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabelTranDinhCuong"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Header -->
+          <div
+            class="modal-header text-white"
+            style="background-color: #c78f50"
+          >
+            <div>
+              <p
+                class="fw-bold mb-1"
+                style="color: #163142"
+                id="exampleModalLabelTranDinhCuong"
+              >
+                Trần Đình Cương
+              </p>
+              <p class="fw-bold mb-0">
+                Thành viên Hội đồng Quản trị - Công ty H Đông Dương Food International
+              </p>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Đóng"
+            ></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-4 text-center">
+                <img
+                  src="assets/img/le-duc-huyen-ceo.jpg"
+                  alt="Ảnh Trân Đình Cương"
+                  class="img-fluid rounded shadow"
+                />
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Trần Đình Cương là chuyên gia trong lĩnh vực đầu tư và tài
+                  chính với hơn 17 năm kinh nghiệm thực tiễn. Ông từng đảm nhận
+                  nhiều vị trí điều hành tại các tập đoàn trong và ngoài nước,
+                  tham gia trực tiếp vào quá trình đàm phán hợp tác, tái cấu
+                  trúc doanh nghiệp và triển khai các thương vụ M&A quy mô lớn.
+                </p>
+
+                <p>
+                  Với nền tảng kiến thức vững chắc về thị trường vốn, tài chính
+                  ngân hàng và pháp lý đầu tư, ông Huyên cũng sở hữu chứng chỉ
+                  hành nghề quản lý quỹ và từng phụ trách vận hành danh mục đầu
+                  tư cho các tổ chức tài chính.
+                </p>
+
+                <p>
+                  Bên cạnh đó, ông có nhiều kinh nghiệm trong việc điều phối dự
+                  án, xây dựng mô hình tài chính và xử lý hồ sơ pháp lý trong
+                  các giao dịch liên quan đến bất động sản.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        console.log('=== TAB SYSTEM WITH SCROLL ANIMATIONS ===');
+
+        AOS.init({
+          duration: 1000,
+          offset: 100,
+        });
+
+        let currentObserver = null;
+
+        // Khởi tạo trạng thái ban đầu
+        function initializeTabs() {
+          console.log('Initializing tabs...');
+
+          // Ẩn tất cả tab
+          $('.tab-content-team, .tab-content-ecoSystem')
+            .removeClass('tab-active')
+            .addClass('tab-hidden')
+            .hide();
+
+          // Hiển thị tab intro
+          $('.tab-content-intro')
+            .removeClass('tab-hidden')
+            .addClass('tab-active')
+            .show();
+
+          console.log('Tabs initialized');
+        }
+
+        // Reset animations cho tab
+        function resetAnimationsForTab(tabSelector) {
+          console.log('Resetting animations for:', tabSelector);
+
+          // Cleanup existing observer
+          if (currentObserver) {
+            currentObserver.disconnect();
+            currentObserver = null;
+          }
+
+          // Reset tất cả elements trong tab
+          $(tabSelector)
+            .find('[data-animate]')
+            .each(function () {
+              $(this).removeClass('animated');
+              console.log('Reset animation for element:', this);
+            });
+        }
+
+        // Setup scroll animations cho tab hiện tại
+        function setupScrollAnimationsForTab(tabSelector) {
+          console.log('Setting up scroll animations for:', tabSelector);
+
+          const $activeTab = $(tabSelector + '.tab-active');
+          if ($activeTab.length === 0) {
+            console.log('No active tab found for:', tabSelector);
+            return;
+          }
+
+          const animatedElements = $activeTab.find('[data-animate]');
+          console.log('Found elements to animate:', animatedElements.length);
+
+          if (animatedElements.length === 0) return;
+
+          const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -30px 0px',
+          };
+
+          currentObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (
+                entry.isIntersecting &&
+                !entry.target.classList.contains('animated')
+              ) {
+                console.log('Animating element:', entry.target);
+                requestAnimationFrame(() => {
+                  entry.target.classList.add('animated');
+                });
+                // Không unobserve để có thể re-animate khi cần
+              }
+            });
+          }, observerOptions);
+
+          // Observe tất cả elements
+          animatedElements.each(function () {
+            currentObserver.observe(this);
+          });
+
+          // Check ngay cho elements đã visible
+          setTimeout(() => {
+            animatedElements.each(function () {
+              const rect = this.getBoundingClientRect();
+              const isVisible =
+                rect.top < window.innerHeight && rect.bottom > 0;
+
+              if (isVisible && !this.classList.contains('animated')) {
+                console.log('Initially visible element animated:', this);
+                this.classList.add('animated');
+              }
+            });
+          }, 100);
+        }
+
+        // Hàm chuyển tab - HOÀN TOÀN MỚI
+        function switchToTab(targetTab) {
+          console.log('=== SWITCHING TO TAB ===', targetTab);
+
+          // Cleanup observer cũ
+          if (currentObserver) {
+            currentObserver.disconnect();
+            currentObserver = null;
+          }
+
+          // Reset animations cho TẤT CẢ tabs trước
+          $(
+            '.tab-content-intro, .tab-content-team, .tab-content-ecoSystem'
+          ).each(function () {
+            $(this).find('[data-animate]').removeClass('animated');
+          });
+
+          // Ẩn tất cả tab
+          $('.tab-content-intro, .tab-content-team, .tab-content-ecoSystem')
+            .removeClass('tab-active')
+            .addClass('tab-hidden')
+            .hide();
+
+          // Hiển thị tab được chọn
+          $(targetTab)
+            .removeClass('tab-hidden')
+            .addClass('tab-active')
+            .show()
+            .css({
+              display: 'block',
+              opacity: '1',
+              visibility: 'visible',
+              position: 'relative',
+              left: '0',
+              'z-index': '1',
+            });
+
+          console.log('Tab switched to:', targetTab);
+
+          // Setup animations cho tab mới SAU khi tab đã visible
+          requestAnimationFrame(() => {
+            setTimeout(() => {
+              setupScrollAnimationsForTab(targetTab);
+              AOS.refresh();
+            }, 150); // Delay để đảm bảo tab đã render xong
+          });
+        }
+
+        // Khởi tạo
+        initializeTabs();
+
+        // Setup animation cho tab intro ban đầu
+        setTimeout(() => {
+          setupScrollAnimationsForTab('.tab-content-intro');
+        }, 200);
+
+        // Tab click events - SỬA HOÀN TOÀN
+        $('.tabs-menu-item').each(function () {
+          $(this)
+            .off('click')
+            .on('click', function (e) {
+              e.preventDefault();
+              e.stopPropagation();
+
+              console.log('=== TAB CLICKED ===');
+              console.log('Clicked tab classes:', $(this).attr('class'));
+
+              const $clickedTab = $(this);
+
+              // Kiểm tra active
+              if ($clickedTab.hasClass('active')) {
+                console.log('Tab already active, return');
+                return false;
+              }
+
+              // Update active class cho navigation
+              $('.tabs-menu-item').removeClass('active');
+              $clickedTab.addClass('active');
+              // ĐỔI TIÊU ĐỀ THEO TAB
+              if ($clickedTab.hasClass('tab-title-intro')) {
+                $('.hero-content h5').text('Giới Thiệu');
+                $('.hero-content h1').text('Về Chúng tôi');
+                $('.hero-content p').text('Trên hành trình hơn 20 năm phát triển, Tập đoàn H Đông Dương đã định hình nên triết lý kinh doanh bền vững đầu tư và phối hợp sinh thái đa ngành.');
+                $('.img-banner').attr('src', 'assets/img/ve_chung_toi.png');
+              } else if ($clickedTab.hasClass('tab-title-team')) {
+                $('.hero-content h5').text('Giới Thiệu');
+                $('.hero-content h1').text('Đội Ngũ Lãnh Đạo');
+                $('.hero-content p').text(
+                  'Tập đoàn H Đông Dương được dẫn dắt bởi đội ngũ lãnh đạo có bề dày kinh nghiệm, tư duy chiến lược và tinh thần phụng sự, đồng hành cùng tập đoàn kiến tạo một hệ sinh thái đầu tư chuyên nghiệp, phát triển bền vững và hội nhập quốc tế.'
+                );
+                $('.img-banner').attr(
+                  'src',
+                  'assets/img/About-HeroBackground.png'
+                );
+              } else if ($clickedTab.hasClass('tab-title-ecoSystem')) {
+                $('.hero-content h5').text('Giới Thiệu');
+                $('.hero-content h1').text('Hệ sinh thái');
+                $('.hero-content p').text(
+                  'Mỗi công ty thành viên trong hệ sinh thái H Đông Dương là một mắt xích chiến lược, đảm nhiệm vai trò chuyên môn riêng biệt nhưng được kết nối một cách chặt chẽ. Sự cộng hưởng giữa các lĩnh vực không chỉ giúp tối ưu nguồn lực mà còn tạo ra giá trị gia tăng vượt trội cho toàn bộ hệ thống.'
+                );
+                $('.img-banner').attr(
+                  'src',
+                  'assets/img/About-HeroBackground3.png'
+                );
+              }
+
+              // Xác định target tab
+              let targetTab = '';
+              if ($clickedTab.hasClass('tab-title-intro')) {
+                targetTab = '.tab-content-intro';
+                console.log('Target: Intro tab');
+              } else if ($clickedTab.hasClass('tab-title-team')) {
+                targetTab = '.tab-content-team';
+                console.log('Target: Team tab');
+              } else if ($clickedTab.hasClass('tab-title-ecoSystem')) {
+                targetTab = '.tab-content-ecoSystem';
+                console.log('Target: EcoSystem tab');
+              }
+
+              // Chuyển tab
+              if (targetTab) {
+                switchToTab(targetTab);
+              }
+
+              return false;
+            });
+        });
+
+        // Test function - có thể gọi từ console
+        window.testTabSwitch = function (tabName) {
+          console.log('Testing tab switch to:', tabName);
+          if (tabName === 'team') {
+            $('.tab-title-team').trigger('click');
+          } else if (tabName === 'eco') {
+            $('.tab-title-ecoSystem').trigger('click');
+          } else {
+            $('.tab-title-intro').trigger('click');
+          }
+        };
+
+        // Hover effects
+        $('.tabs-menu-item').hover(
+          function () {
+            $(this).addClass('hover-effect');
+          },
+          function () {
+            $(this).removeClass('hover-effect');
+          }
+        );
+
+        // Keyboard navigation
+        $(document).on('keydown', function (e) {
+          const $activeTabs = $('.tabs-menu-item.active');
+          let $nextTab;
+
+          if (e.keyCode === 37) {
+            // Left arrow
+            $nextTab = $activeTabs.prev('.tabs-menu-item');
+            if ($nextTab.length === 0) {
+              $nextTab = $('.tabs-menu-item').last();
+            }
+            $nextTab.trigger('click');
+          } else if (e.keyCode === 39) {
+            // Right arrow
+            $nextTab = $activeTabs.next('.tabs-menu-item');
+            if ($nextTab.length === 0) {
+              $nextTab = $('.tabs-menu-item').first();
+            }
+            $nextTab.trigger('click');
+          }
+        });
+
+        // Modal functionality
+        $('.manage-single-featured').click(function () {
+          $('#manageModal').fadeIn(300);
+          $('body').css('overflow', 'hidden');
+        });
+
+        $('.manage-modal-close').click(function () {
+          $('#manageModal').fadeOut(300);
+          $('body').css('overflow', 'auto');
+        });
+
+        $(window).click(function (event) {
+          if (event.target.id === 'manageModal') {
+            $('#manageModal').fadeOut(300);
+            $('body').css('overflow', 'auto');
+          }
+        });
+
+        $(document).keydown(function (event) {
+          if (event.keyCode === 27) {
+            // ESC key
+            $('#manageModal').fadeOut(300);
+            $('body').css('overflow', 'auto');
+          }
+        });
+
+        $('.manage-modal-close').hover(
+          function () {
+            $(this).css('background-color', 'rgba(255, 255, 255, 0.3)');
+          },
+          function () {
+            $(this).css('background-color', 'rgba(255, 255, 255, 0.2)');
+          }
+        );
+
+        console.log('=== TAB SYSTEM WITH ANIMATIONS READY ===');
+      });
+
+      // Scroll to section when clicking bio-system-card-arrow
+      $('.bio-system-card-arrow').on('click', function (e) {
+        e.preventDefault();
+        console.log('Bio-system card arrow clicked');
+
+        // Get the target section from data-target attribute
+        const targetSection = $(this).data('target');
+        console.log('Target section:', targetSection);
+        scrollToSection(targetSection);
+      });
+
+      // Function to handle smooth scrolling
+      function scrollToSection(targetSection) {
+        const $target = $(`.${targetSection}`);
+        if ($target.length) {
+          console.log('Scrolling to:', targetSection);
+          $('html, body').animate(
+            {
+              scrollTop: $target.offset().top - 100,
+            },
+            500
+          );
+        } else {
+          console.log('Target section not found:', targetSection);
+        }
+      }
+    </script>
+  </body>
+</html>

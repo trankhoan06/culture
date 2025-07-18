@@ -1,0 +1,61 @@
+/* gioi-thieu.css */
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  /* Ensure animations are ready for scroll triggering */
+  will-change: opacity, transform;
+}
+
+[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Zoom-in from left to right animation for quote text */
+.quote-text-zoom {
+  opacity: 0;
+  transform: translateX(-150px) scale(0.6);
+  transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-delay: 0.3s;
+}
+
+.quote-text-zoom.animated {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/* Animation for quote elements sequence */
+.chairman-quote-section .opening-quote {
+  animation-delay: 0s;
+}
+
+.chairman-quote-section .quote-text-zoom {
+  animation-delay: 0.3s;
+}
+
+.chairman-quote-section .close-quote {
+  animation-delay: 0.6s;
+}
+
+.chairman-quote-section .quote-author-section {
+  animation-delay: 0.9s;
+}
+
+/* Tab switching smooth transitions - Optimized for crossfade */
+.tab-content-intro, 
+.tab-content-team, 
+.tab-content-ecoSystem {
+  display: none;
+  opacity: 0;
+  position: relative;
+  will-change: opacity;
+}
+
+.tab-content-intro.active, 
+.tab-content-team.active, 
+.tab-content-ecoSystem.active {
+  display: block !important;
+  o

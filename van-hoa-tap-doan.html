@@ -1,0 +1,1116 @@
+<html lang="en">
+  <head>
+    <script src="https://codesandbox.io/p/preview-protocol.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIG</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/van-hoa-tap-doan.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/menu.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header id="mainHeader" class="main-header">
+      <div class="container position-relative">
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap"
+        >
+          <!-- Left Nav -->
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="/">Trang chủ</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="gioi-thieu.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Văn hóa tập đoàn</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Dự án</a></li>
+          </ul>
+
+          <!-- Center Logo -->
+          <div class="nav-center-logo logo">
+            <img src="assets/img/logo-mau.png" alt="logo" />
+          </div>
+
+          <!-- Right Nav -->
+          <ul class="nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quan hệ cổ đông</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tuyển dụng</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+            <li class="nav-item">
+              <span class="nav-link language-selector">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="header_mobile">
+      <!-- Mobile logo -->
+      <div class="mobile-logo container d-xl-none">
+        <img src="assets/img/logo-mau.png" alt="logo" />
+      </div>
+      <!-- Nút menu mobile (3 gạch) -->
+      <div class="mobile-menu-toggle d-xl-none">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- Menu mobile dạng popup -->
+    <div class="mobile-menu-overlay"></div>
+    <nav class="mobile-menu d-xl-none">
+      <div class="mobile-menu-header">
+        <span class="close-menu">&times;</span>
+      </div>
+      <ul class="mobile-nav">
+        <li><a href="/index.html">Trang chủ</a></li>
+        <li><a href="/gioi-thieu.html">Giới thiệu</a></li>
+        <li><a href="/van-hoa-tap-doan.html">Văn hóa tập đoàn</a></li>
+        <li><a href="#">Dự án</a></li>
+        <li><a href="#">Quan hệ cổ đông</a></li>
+        <li><a href="#">Tin tức</a></li>
+        <li><a href="#">Tuyển dụng</a></li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <section class="hero-banner position-relative">
+      <img
+        src="assets/img/van-hoa-tap-doan/banner.gif"
+        alt="Banner"
+        class="w-100 img-banner"
+      />
+      <div class="hero-content container text-left text-white">
+        <h5 class="fs-36">Văn Hoá Tập Đoàn</h5>
+        <h1 class="fs-64" id="bannerTitle">Văn Hoá<br />Doanh Nghiệp</h1>
+      </div>
+      <nav class="tabs-menu">
+        <ul class="tabs-menu-wrapper">
+          <li class="tabs-menu-item tab-title-1 active">
+            <a href="javascript:void(0)" class="tabs-menu-item-link fs-18"
+              >Văn Hóa Doanh Nghiệp</a
+            >
+          </li>
+          <li class="tabs-menu-item tab-title-2">
+            <a href="javascript:void(0)" class="tabs-menu-item-link fs-18"
+              >Trách Nhiệm Xã Hội</a
+            >
+          </li>
+          <li class="tabs-menu-item tab-title-3">
+            <a href="javascript:void(0)" class="tabs-menu-item-link fs-18"
+              >Đối Tác & Khách Hàng</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <div class="tab-content-1">
+      <div class="highway-container">
+        <div class="highway-overlay"></div>
+        <div class="container">
+          <div class="highway-content" data-aos="fade-up">
+            <div class="highway-header">
+              <div class="highway-title-section">
+                <h1 class="highway-main-title section-title">
+                  HIGHWAY - Con đường rộng mở cho những hành trình vươn xa
+                </h1>
+              </div>
+
+              <div class="highway-description-section">
+                <div class="highway-description">
+                  Văn hóa doanh nghiệp tại H Đông Dương không chỉ là tập hợp các
+                  giá trị mà còn là nền tảng vững chắc để xây dựng tương lai.
+                  Một “cao tốc” để có thể đi nhanh và đi xa phải được kiến tạo
+                  trên nền móng bền vững và chắc chắn, cũng giống như cách chúng
+                  tôi theo đuổi triết lý tạo giá trị dài hạn, phát triển bền
+                  vững và đồng hành cùng nhau tiến xa hơn mỗi ngày.
+                </div>
+
+                <div class="highway-vision">
+                  Mỗi chữ cái là một lời cam kết, mỗi hành động là một phần của
+                  hành trình kiến tạo nên những giá trị khác biệt.
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="highway-footer">
+              <div class="highway-footer-text">
+                Văn hóa HIGHWAY không chỉ được thể hiện bằng tài năng mà được
+                lan tỏa qua từng hành vi, quyết định và dự án mà HIG để lại
+                trong lòng dự án, từng con người.
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="highway-watermark">
+          <div class="highway-watermark-item">
+            <img src="assets/img/van-hoa-tap-doan/logo-white.png" alt="" />
+            <div>HIGHWAY</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="highway-blocks">
+        <span class="highway-block-text" data-aos="fade-down">
+          <div class="container">
+            Văn hóa HIGHWAY không chỉ được thể hiện bằng lời nói, mà được lan
+            tỏa qua từng hành vi, quyết định và dấu ấn mà HIG để lại trong từng
+            dự án, từng con người.
+          </div>
+        </span>
+        <div class="highway-block flip-card" data-aos="fade-up">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-char">H</div>
+              <div class="highway-block-category">Harmony</div>
+              <div class="highway-block-title">Hài hòa & Đồng lòng</div>
+            </div>
+            <div class="flip-card-back">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-category">Harmony</div>
+              <div class="highway-block-title">Hài hòa & Đồng lòng</div>
+              <div class="highway-block-description">
+                Chúng tôi đề cao sự đoàn kết nội bộ và sự phối hợp chặt chẽ giữa
+                các đơn vị thành viên. Mọi cá nhân đều là một phần không thể
+                thiếu trong hành trình phát triển chung, cùng tạo nên giá trị
+                toàn diện và hài hòa với cộng đồng, môi trường và xã hội.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="highway-block flip-card" data-aos="fade-up">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-char">I</div>
+              <div class="highway-block-category">Integrity</div>
+              <div class="highway-block-title">Chính trực & Trách nhiệm</div>
+            </div>
+            <div class="flip-card-back">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-category">Integrity</div>
+              <div class="highway-block-title">
+                Integrity Chính trực & Trách nhiệm
+              </div>
+              <div class="highway-block-description">
+                Luôn trung thực, minh bạch và tuân thủ đạo đức nghề nghiệp trong
+                mọi hành vi và quyết định. Chúng tôi cam kết nói đúng, làm đúng
+                và giữ đúng lời hứa với đối tác, khách hàng và đồng nghiệp.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="highway-block flip-card" data-aos="fade-up">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-char">G</div>
+              <div class="highway-block-category">Growth</div>
+              <div class="highway-block-title">Phát triển không ngừng</div>
+            </div>
+            <div class="flip-card-back">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-category">Growth</div>
+              <div class="highway-block-title">Phát triển không ngừng</div>
+              <div class="highway-block-description">
+                Chúng tôi coi trọng tinh thần học hỏi, đổi mới và cầu tiến. Mỗi
+                thành viên HIG đều có cơ hội phát triển nghề nghiệp và cá nhân
+                trong một môi trường khuyến khích sáng tạo, tư duy chiến lược và
+                khát vọng vươn tầm.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="highway-block flip-card" data-aos="fade-up">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-char">H</div>
+              <div class="highway-block-category">Humanity</div>
+              <div class="highway-block-title">Nhân văn</div>
+            </div>
+            <div class="flip-card-back">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-category">Humanity</div>
+              <div class="highway-block-title">Nhân văn</div>
+              <div class="highway-block-description">
+                Chúng tôi luôn đặt con người trong mọi quyết định và hành động
+                với mục tiêu không chỉ triển khai các dự án thành công, mà còn
+                lan toả những giá trị tốt đẹp đến cộng đồng và góp phần cải
+                thiện chất lượng cuộc sống một cách bền vững.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="highway-block flip-card" data-aos="fade-up">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-char">W</div>
+              <div class="highway-block-category">Win Together</div>
+              <div class="highway-block-title">Chiến thắng cùng nhau</div>
+            </div>
+            <div class="flip-card-back">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-category">Win Together</div>
+              <div class="highway-block-title">Chiến thắng cùng nhau</div>
+              <div class="highway-block-description">
+                HIG tin vào nguyên tắc "win-win" trong mọi mối quan hệ hợp tác.
+                Thành công của khách hàng, đối tác và cộng đồng cũng chính là
+                thành công của chúng tôi. Cùng nhau, chúng ta kiến tạo nên những
+                giá trị bền vững.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="highway-block flip-card" data-aos="fade-up">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-char">A</div>
+              <div class="highway-block-category">Accountability</div>
+              <div class="highway-block-title">Làm chủ & Cam kết</div>
+            </div>
+            <div class="flip-card-back">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-category">Accountability</div>
+              <div class="highway-block-title">Làm chủ & Cam kết</div>
+              <div class="highway-block-description">
+                Chúng tôi làm việc với tinh thần trách niệm cao nhất: dám nghĩ -
+                dám làm - dám chịu tráchh nhiệm. Chủ động trong hành động, không
+                đỗ lỗi, không khoái thác và luôn tìm giải pháp tối ưu để đạt
+                được mục tiêu đề ra.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="highway-block flip-card" data-aos="fade-up">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-char">Y</div>
+              <div class="highway-block-category">Yes to Challenge</div>
+              <div class="highway-block-title">Sẵn sàng vượt giới hạn</div>
+            </div>
+            <div class="flip-card-back">
+              <div class="flip-card-bg-image"></div>
+              <div class="highway-block-category">Yes to Challenge</div>
+              <div class="highway-block-title">Sẵn sàng vượt giới hạn</div>
+              <div class="highway-block-description">
+                Luôn giữ tinh thần tích cực và đón nhận thử thách như những cơ
+                hội để bứt phá. HIG khuyến khích sự dũng cảm, linh hoạt và khả
+                năng thích nghi trước mọi thay đổi của thị trường và môi trường
+                kinh doanh.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content-2">
+      <div class="intro-section base-section">
+        <div class="intro-section-bg"></div>
+        <div class="container" data-aos="fade-up">
+          <div class="intro-section-title section-title">
+            Chúng tôi xác định rõ
+          </div>
+          <div class="intro-section-description">
+            Phát triển kinh doanh phải gắn liền với phát triển cộng đồng, bảo vệ
+            môi trường và giữ gìn giá trị văn hóa - xã hội.
+            <br />
+            <br />
+            Đây không chỉ là định hướng chiến lược mà còn là lời cam kết dài hạn
+            thể hiện tinh thần trách nhiệm và tầm nhìn của một doanh nghiệp phát
+            triển bền vững.
+          </div>
+        </div>
+      </div>
+      <div class="development-section base-section">
+        <div class="container">
+          <div class="development-section-title" data-aos="fade-up">
+            PHÁT TRIỂN BỀN VỮNG
+          </div>
+          <div
+            class="development-section-sub"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="100"
+          >
+            <div class="development-section-sub-title section-title">
+              Từ triết lý đến hành động
+            </div>
+            <div class="development-section-sub-description">
+              Chúng tôi cam kết triển khai các dự án và hoạt động kinh doanh dựa
+              trên ba trụ cột
+            </div>
+          </div>
+          <div class="development-section-boxes">
+            <div
+              class="development-section-box"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="100"
+            >
+              <div class="development-section-box-bg">
+                <img
+                  src="assets/img/van-hoa-tap-doan/icon-development-1.png"
+                  alt=""
+                />
+              </div>
+              <div class="development-section-box-icon">
+                <img
+                  src="assets/img/van-hoa-tap-doan/icon-development-1.png"
+                  alt=""
+                />
+              </div>
+              <div class="development-section-box-text-title">Kinh tế</div>
+              <div class="development-section-box-text-description">
+                Tạo ra giá trị thực cho khách hàng, nhà đầu tư và đối tác; đảm
+                bảo hiệu quả tài chính và sự minh bạch trong mọi giao dịch.
+              </div>
+            </div>
+            <div
+              class="development-section-box"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+            >
+              <div class="development-section-box-bg">
+                <img
+                  src="assets/img/van-hoa-tap-doan/icon-development-2.png"
+                  alt=""
+                />
+              </div>
+              <div class="development-section-box-icon">
+                <img
+                  src="assets/img/van-hoa-tap-doan/icon-development-2.png"
+                  alt=""
+                />
+              </div>
+              <div class="development-section-box-text-title">Xã hội</div>
+              <div class="development-section-box-text-description">
+                Góp phần nâng cao chất lượng sống, thúc đẩy phát triển địa
+                phương nơi Tập đoàn H Đông Dương đầu tư và hoạt động.
+              </div>
+            </div>
+            <div
+              class="development-section-box"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="500"
+            >
+              <div class="development-section-box-bg">
+                <img
+                  src="assets/img/van-hoa-tap-doan/icon-development-3.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="development-section-box-icon">
+                <img
+                  src="assets/img/van-hoa-tap-doan/icon-development-3.png"
+                  alt=""
+                />
+              </div>
+              <div class="development-section-box-text-title">Môi trường</div>
+              <div class="development-section-box-text-description">
+                Tôn trọng và gìn giữ môi trường tự nhiên, hướng đến tiêu chuẩn
+                phát triển xanh - sạch - hiện đại.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="community-section">
+        <div class="community-section-bg"></div>
+        <div class="container">
+          <div class="community-section-head" data-aos="fade-up">
+            <div class="community-section-title section-title">
+              Phát triển bền vững
+            </div>
+            <div class="community-section-description">
+              Tập đoàn H Đông Dương thường xuyên triển khai các chương trình
+              hành động cộng đồng có chiều sâu và thực tế, cụ thể
+            </div>
+          </div>
+          <div
+            class="community-section-box option-1"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="400"
+          >
+            <div class="community-section-box-buttons">
+              <div class="community-section-box-button option-1 selected">
+                <div class="community-section-box-button-icon">
+                  <img src="assets/img/van-hoa-tap-doan/building.png" alt="" />
+                  <div class="community-section-box-button-icon-line"></div>
+                </div>
+                <div class="community-section-box-button-text">
+                  Đồng hành với các địa phương trong xây dựng cơ sở hạ tầng và
+                  cải thiện chất lượng sống cho người dân.
+                </div>
+              </div>
+              <div class="community-section-box-button option-2">
+                <div class="community-section-box-button-icon">
+                  <img src="assets/img/van-hoa-tap-doan/agreement.png" alt="" />
+                  <div class="community-section-box-button-icon-line"></div>
+                </div>
+                <div class="community-section-box-button-text">
+                  Hợp tác với chính quyền và tổ chức xã hội để nâng cao nhận
+                  thức cộng đồng về môi trường và phát triển bền vững.
+                </div>
+              </div>
+            </div>
+            <div class="community-section-box-circle">
+              <div class="community-section-box-circle-1"></div>
+              <div class="community-section-box-circle-2"></div>
+            </div>
+            <div class="community-section-box-buttons">
+              <div class="community-section-box-button option-3">
+                <div class="community-section-box-button-icon">
+                  <img src="assets/img/van-hoa-tap-doan/culture.png" alt="" />
+                  <div class="community-section-box-button-icon-line"></div>
+                </div>
+                <div class="community-section-box-button-text">
+                  Tài trợ và phối hợp tổ chức các hoạt động thiện nguyện, học
+                  bổng giáo dục, hỗ trợ vùng sâu vùng xa.
+                </div>
+              </div>
+              <div class="community-section-box-button option-4">
+                <div class="community-section-box-button-icon">
+                  <img src="assets/img/van-hoa-tap-doan/users.png" alt="" />
+                  <div class="community-section-box-button-icon-line"></div>
+                </div>
+                <div class="community-section-box-button-text">
+                  Ưu tiên tuyển dụng lao động tại địa phương và đào tạo nghề cho
+                  người dân sinh sống gần dự án.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quote-section">
+        <div class="quote-section-bg"></div>
+        <div class="container">
+          <div class="quote-section-content">
+            <img
+              class="quote-section-content-image"
+              src="assets/img/van-hoa-tap-doan/quote-left.png"
+              alt=""
+              data-aos="fade-right"
+            />
+            <div class="quote-section-content-text" data-aos="fade-up">
+              Với định hướng lấy phát triển bền vững làm trung tâm, Tập đoàn H
+              Đông Dương cam kết không ngừng đổi mới và tiên phong trong những
+              thay đổi mang hướng tích cực, không chỉ cho khách hàng mà còn cho
+              cộng đồng và thế hệ tương lai.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content-3">
+      <div class="partner-intro-section base-section">
+        <div class="container" data-aos="fade-up">
+          <div class="partner-intro-section-title section-title">
+            Tại H Đông Dương,<br />chúng tôi xác định rằng
+          </div>
+          <div class="partner-intro-section-description">
+            Đối tác chiến lược không đơn thuần là người đồng hành, mà chính là
+            những mắt xích quan trọng trong quá trình mở rộng hệ sinh thái đầu
+            tư, gia tăng giá trị dài hạn và tạo nên những lợi thế cạnh tranh bền
+            vững.
+            <br />
+            <br />
+            Trong bối cảnh thị trường ngày càng toàn cầu hóa, năng lực phát
+            triển của một tập đoàn không chỉ nằm ở nội lực tài chính hay đội ngũ
+            quản trị, mà còn ở khả năng liên kết giá trị, chia sẻ tầm nhìn &
+            đồng kiến tạo cơ hội với các đối tác uy tín trong và ngoài nước.
+            <br /><br />
+            Với triết lý "Đồng hành kiến tạo - Gắn kết vươn xa", H Đông Dương
+            luôn trân trọng và cam kết xây dựng quan hệ hợp tác bền vững, minh
+            bạch và đôi bên cùng phát triển với các đối tác chiến lược trên hành
+            trình chinh phục những cột mốc mới.
+          </div>
+        </div>
+      </div>
+      <div class="partner-list-section">
+        <div class="container">
+          <div
+            class="partner-list-section-title section-title"
+            data-aos="fade-up"
+          >
+            Đối tác của chúng tôi
+          </div>
+          <div class="partner-list-section-items partner-list-section-items-1">
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-land.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-gs.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-parkcity.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+          </div>
+          <div class="partner-list-section-items partner-list-section-items-2">
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-vcp.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-lienviet.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-sac.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-mb.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-vietinbank.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+          </div>
+          <div class="partner-list-section-items partner-list-section-items-3">
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-comba.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-huawei.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-viettel.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-mobi.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-vina.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="partner-marquee-container">
+        <div class="partner-marquee-bg"></div>
+        <div class="partner-marquee">
+          <div class="partner-marquee-text">
+            Đồng hành kiến tạo - Gắn kết vươn xa
+          </div>
+        </div>
+      </div>
+      <div class="client-list-section">
+        <div class="container">
+          <div
+            class="client-list-section-title section-title"
+            data-aos="fade-up"
+          >
+            Khách hàng của chúng tôi
+          </div>
+          <div class="partner-list-section-items partner-list-section-items-1">
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-land.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-gs.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-parkcity.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+          </div>
+          <div class="partner-list-section-items partner-list-section-items-2">
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-vcp.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-lienviet.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-sac.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-mb.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-vietinbank.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+          </div>
+          <div class="partner-list-section-items partner-list-section-items-3">
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-comba.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-huawei.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-viettel.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-mobi.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+
+            <img
+              src="assets/img/van-hoa-tap-doan/partner-vina.png"
+              alt=""
+              class="partner-list-section-item"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+     <footer class="footer">
+      <div class="overlay-pattern"></div>
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Left -->
+          <div class="col-lg-4">
+            <img
+              src="assets/img/logo-mau.png"
+              alt="HIG Logo"
+              style="width: 60px"
+            />
+            <h5 class="mt-3">H INDOCHINA GROUP (HIG)</h5>
+            <h6 class="mt-4" style="color: #fff !important">
+              ĐĂNG KÝ NHẬN THÔNG TIN
+            </h6>
+            <p>
+              Đăng ký ngay để nhận những thông tin, cơ hội đầu tư và cập nhật
+              mới nhất từ chúng tôi!
+            </p>
+            <input type="email" id="email" placeholder="Email" />
+            <button class="btn btn-subscribe" id="subscribe-btn">
+              ĐĂNG KÝ
+            </button>
+          </div>
+
+          <!-- Middle -->
+          <div class="col-lg-4 col_middle d-flex justify-content-center">
+            <div class="text-start">
+              <h6>Sitemap</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Trang chủ</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Giới thiệu Tập đoàn</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Văn hoá Tập đoàn</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none">Dự án</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Quan hệ cổ đông</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Tin tức</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Tuyển dụng</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Liên hệ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="col-lg-4 col_final">
+            <h6>Trụ sở chính</h6>
+            <p>
+              Tòa nhà VTC Online, số 18 Tam Trinh, phường Tương Mai, thành phố
+              Hà Nội
+            </p>
+            <h6>Văn Phòng Miền Nam</h6>
+            <p>Số 17/2 Trần Văn Sắc, phường An Khánh, thành phố Hồ Chí Minh</p>
+            <h6>Văn Phòng Tại Nhật Bản</h6>
+            <div class="pra">
+              <p>
+                Tòa nhà Sunnet Sendagaya Tầng 3 phía Đông, 4-19-14 Sendagaya, Shibuya-ku, Tokyo
+              </p>
+              <p>Hotline: 0966.060.608</p>
+              <p>
+                Email:
+                <a href="mailto:hdongduong@dongduonggroup.vn" class="text-white"
+                  >hdongduong@h-indochina.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div
+          class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3"
+        >
+          <p class="mb-0 col-8" style="color: #a4aabb">
+            © 2025 HIG. All Rights Reserved.<br />Designed & Maximize Online
+            Power by THEMAX
+          </p>
+          <div class="social-icons col-4 mt-3 mt-md-0">
+            <a href="#">
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  y="0.96582"
+                  width="39.176"
+                  height="39.176"
+                  rx="19.588"
+                  fill="#E0E2E2"
+                />
+                <path
+                  d="M21.3882 32.7506V22.2088H24.9267L25.4565 18.1004H21.3882V15.4774C21.3882 14.2879 21.7186 13.4773 23.4244 13.4773L25.5999 13.4763V9.80185C25.2235 9.75196 23.9322 9.64014 22.4298 9.64014C19.2932 9.64014 17.1458 11.5546 17.1458 15.0707V18.1005H13.5981V22.2089H17.1457V32.7507L21.3882 32.7506Z"
+                  fill="#1E4966"
+                />
+              </svg>
+            </a>  
+            <a href="#">
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.607666"
+                  y="0.96582"
+                  width="39.176"
+                  height="39.176"
+                  rx="19.588"
+                  fill="#E0E2E2"
+                />
+                <path 
+                class="st0" d="M28.4,9.5H11.6c-1.4,0-2.6,1.2-2.6,2.6v16.8c0,1.4,1.2,2.6,2.6,2.6h16.8c1.4,0,2.6-1.2,2.6-2.6V12.1c0-1.4-1.2-2.6-2.6-2.6ZM15.8,17.9v10h-3.1v-10h3.1ZM12.7,15c0-.7.6-1.3,1.6-1.3s1.5.6,1.6,1.3c0,.7-.6,1.3-1.6,1.3s-1.6-.6-1.6-1.3ZM27.3,27.8h-3.1v-5.2c0-1-.5-2.1-1.8-2.1h0c-1.3,0-1.8,1.1-1.8,2.1v5.2h-3.1v-10h3.1v1.3s1-1.3,3-1.3,3.8,1.4,3.8,4.3v5.6Z"
+                fill="#1E4966"
+                />
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.823975"
+                  y="0.96582"
+                  width="39.176"
+                  height="39.176"
+                  rx="19.588"
+                  fill="#E0E2E2"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.0866 13.6025C13.2986 12.328 13.7269 11.9705 14.2434 11.8042C14.6008 11.7107 14.9757 11.7055 15.3355 11.789C15.8093 11.9265 15.9346 12.031 17.4882 13.5764C18.853 14.9334 18.9894 15.0805 19.1202 15.3459C19.3704 15.8117 19.4095 16.3619 19.2276 16.8583C19.0899 17.2364 18.8944 17.4866 18.0666 18.3157L17.5267 18.856C17.385 18.9998 17.3516 19.2183 17.4441 19.3977C18.6436 21.4406 20.3454 23.1442 22.3884 24.3473C22.6236 24.473 22.9132 24.4325 23.1046 24.247L23.6238 23.7369C23.9447 23.4085 24.2846 23.0991 24.6416 22.8102C25.2024 22.4665 25.9011 22.4358 26.4899 22.7291C26.7777 22.8666 26.8727 22.9518 28.2803 24.3542C29.7319 25.7992 29.7732 25.8446 29.933 26.176C30.2336 26.7245 30.2305 27.3888 29.9247 27.9345C29.7691 28.2424 29.6741 28.3538 28.8574 29.187C28.3643 29.6902 27.9002 30.1494 27.8258 30.2168C27.1521 30.7737 26.2876 31.0468 25.4156 30.9785C23.8201 30.8333 22.2759 30.341 20.8914 29.5362C17.8244 27.9141 15.2135 25.5506 13.2972 22.6617C12.8798 22.0571 12.5088 21.422 12.1872 20.7616C11.3244 19.2855 10.8789 17.6034 10.8981 15.8945C10.9639 15.0005 11.3934 14.1723 12.0866 13.6025Z"
+                  fill="#1E4966"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a
+        href="javascript:void(0)"
+        id="backToTop"
+        class="back-to-top"
+        style="display: none"
+      >
+        <!--        <svg class="icon__arrow-up" viewBox="0 0 24 24">-->
+        <!--            <title>Back to top</title>-->
+        <!--            <path d="M18.71,11.71a1,1,0,0,1-1.42,0L13,7.41V19a1,1,0,0,1-2,0V7.41l-4.29,4.3a1,1,0,0,1-1.42-1.42l6-6a1,1,0,0,1,1.42,0l6,6A1,1,0,0,1,18.71,11.71Z"/>-->
+        <!--        </svg>-->
+        <svg
+          class="icon__arrow-up"
+          width="13"
+          height="7"
+          viewBox="0 0 13 7"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 6L6.5 1L1 6"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+      <div class="user">
+        <a href="javascript:void(0)" class="user_fixed">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 5C0 2.23858 2.23858 0 5 0H64V50H5C2.23858 50 0 47.7614 0 45V5Z"
+              fill="#204A65"
+            />
+            <path
+              d="M5 0.5H63.5V49.5H5C2.51472 49.5 0.5 47.4853 0.5 45V5C0.500001 2.51472 2.51472 0.5 5 0.5Z"
+              stroke="#E8E8E8"
+              stroke-opacity="0.5"
+            />
+            <path
+              d="M25.4997 25.5C29.5268 25.5 32.7913 22.2354 32.7913 18.2083C32.7913 14.1812 29.5268 10.9166 25.4997 10.9166C21.4726 10.9166 18.208 14.1812 18.208 18.2083C18.208 22.2354 21.4726 25.5 25.4997 25.5Z"
+              fill="#E6AF6C"
+            />
+            <path
+              opacity="0.7"
+              d="M25.5004 29.1459C18.1942 29.1459 12.2441 34.0459 12.2441 40.0834C12.2441 40.4917 12.565 40.8125 12.9733 40.8125H38.0276C38.4359 40.8125 38.7567 40.4917 38.7567 40.0834C38.7567 34.0459 32.8067 29.1459 25.5004 29.1459Z"
+              fill="#E0E2E2"
+            />
+            <path
+              d="M39.252 29.4959C37.9395 28.1834 36.9042 28.6063 36.0146 29.4959L30.852 34.6584C30.6479 34.8626 30.4583 35.2417 30.4145 35.5188L30.1375 37.4875C30.0354 38.2021 30.5312 38.6979 31.2458 38.5958L33.2145 38.3188C33.4916 38.275 33.8854 38.0854 34.075 37.8813L39.2374 32.7188C40.1416 31.8438 40.5645 30.8084 39.252 29.4959Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      function Marquee(selector, speed) {
+        const parentSelector = document.querySelector(selector);
+        const clone = parentSelector.innerHTML;
+        const firstElement = parentSelector.children[0];
+        let i = 0;
+
+        const cloneTimes = 20;
+        for (let i = 0; i < cloneTimes; i++) {
+          parentSelector.insertAdjacentHTML('beforeend', clone);
+        }
+
+        setInterval(function () {
+          firstElement.style.marginLeft = `-${i}px`;
+          if (i > firstElement.clientWidth * cloneTimes) {
+            i = 0;
+          }
+          i = i + speed;
+        }, 0);
+      }
+
+      $(document).ready(function () {
+        AOS.init({
+          duration: 1000,
+          offset: 100,
+        });
+
+        $('.tabs-menu-item-link').click(function () {
+          console.log('Tab clicked:', $(this).attr('href'));
+          console.log('Text:', $(this).text());
+          var navText = $(this).text();
+          $('#bannerTitle').text(navText);
+        });
+
+        Marquee('.highway-watermark', 0.7);
+        Marquee('.partner-marquee', 1);
+
+        $('.community-section-box-button').click(function () {
+          // Remove 'selected' class from all buttons
+          $('.community-section-box-button').removeClass('selected');
+
+          // Add 'selected' class to clicked button
+          $(this).addClass('selected');
+
+          // Get the option class (option-1, option-2, etc.) from clicked button
+          let optionClass = $(this)
+            .attr('class')
+            .split(' ')
+            .find(cls => cls.startsWith('option-'));
+
+          // Remove any existing option classes from parent
+          $('.community-section-box').removeClass(function (index, className) {
+            return (className.match(/option-\d/g) || []).join(' ');
+          });
+
+          // Add the corresponding option class to parent
+          $('.community-section-box').addClass(optionClass);
+        });
+
+        $('.flip-card').on('click', function () {
+          $(this).toggleClass('show');
+        });
+      });
+    </script>
+  </body>
+</html>

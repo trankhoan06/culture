@@ -1,0 +1,2670 @@
+/* gioi-thieu.css */
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  /* Ensure animations are ready for scroll triggering */
+  will-change: opacity, transform;
+}
+
+[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Zoom-in from left to right animation for quote text */
+.quote-text-zoom {
+  opacity: 0;
+  transform: translateX(-150px) scale(0.6);
+  transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-delay: 0.3s;
+}
+
+.quote-text-zoom.animated {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/* Animation for quote elements sequence */
+.chairman-quote-section .opening-quote {
+  animation-delay: 0s;
+}
+
+.chairman-quote-section .quote-text-zoom {
+  animation-delay: 0.3s;
+}
+
+.chairman-quote-section .close-quote {
+  animation-delay: 0.6s;
+}
+
+.chairman-quote-section .quote-author-section {
+  animation-delay: 0.9s;
+}
+
+/* Tab switching - Sửa hoàn toàn */
+.tab-content-intro,
+.tab-content-team,
+.tab-content-ecoSystem {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  transition: none !important;
+}
+
+/* Hiển thị tab intro mặc định */
+.tab-content-intro {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Ẩn hoàn toàn các tab khác */
+.tab-content-team,
+.tab-content-ecoSystem {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -9999px !important;
+  z-index: -1 !important;
+}
+
+/* Khi tab active - force hiển thị */
+.tab-content-team.tab-active,
+.tab-content-ecoSystem.tab-active {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative !important;
+  left: 0 !important;
+  z-index: 1 !important;
+}
+
+/* Ẩn intro khi tab khác active */
+.tab-content-intro.tab-hidden {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+  z-index: -1 !important;
+}
+
+/* Navigation tabs smooth hover and active effects - Optimized */
+.nav-item-about {
+  transition: transform 0.2s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-item-about:hover {
+  transform: translateY(-2px);
+}
+
+.nav-item-about::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #0066cc;
+  transition: width 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-item-about.active::after,
+.nav-item-about:hover::after {
+  width: 80%;
+}
+
+.nav-item-about.active {
+  color: #0066cc;
+  font-weight: 600;
+}
+
+[data-animate].slide-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition-delay: 0s; /* Remove delay for scroll-triggered */
+}
+
+[data-animate].slide-down.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fix slide-right animation - từ trái qua phải */
+[data-animate].slide-right {
+  transform: translateX(-80px) !important;
+  opacity: 0;
+}
+
+[data-animate].slide-right.animated {
+  transform: translateX(0) !important;
+  opacity: 1;
+  transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Override default data-animate behavior for slide-right specifically */
+[data-animate].slide-right:not(.animated) {
+  opacity: 0;
+  transform: translateX(-80px) !important;
+  will-change: opacity, transform;
+}
+
+/* Profile image section specific animation - từ trái qua phải */
+.profile-image-section[data-animate='slide-right']:not(.animated) {
+  opacity: 0;
+  transform: translateX(-80px) !important;
+  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.profile-image-section[data-animate='slide-right'].animated {
+  opacity: 1;
+  transform: translateX(0) !important;
+}
+
+[data-animate].slide-left {
+  transform: translateX(80px);
+  opacity: 0;
+}
+
+[data-animate].slide-left.animated {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Override default data-animate behavior for slide-left specifically */
+[data-animate].slide-left:not(.animated) {
+  opacity: 0;
+  transform: translateX(80px) !important;
+  will-change: opacity, transform;
+}
+
+/* Profile text section specific animation - từ phải qua trái */
+.profile-text-section[data-animate='slide-left']:not(.animated) {
+  opacity: 0;
+  transform: translateX(80px) !important;
+  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.profile-text-section[data-animate='slide-left'].animated {
+  opacity: 1;
+  transform: translateX(0) !important;
+}
+
+[data-animate].slide-up {
+  transform: translateY(80px);
+  opacity: 0;
+}
+
+[data-animate].slide-up.animated {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Fade in animation for tab content sections */
+.tab-switching .tab-content-intro,
+.tab-switching .tab-content-team,
+.tab-switching .tab-content-ecoSystem {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Đồng bộ animation cho title và description */
+.section-header[data-animate],
+.description-content[data-animate],
+.image-item[data-animate] {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+  /* Cùng timing để chạy đồng bộ */
+}
+
+/* Title slide từ trên xuống */
+.section-header[data-animate] {
+  transform: translateY(-50px);
+}
+
+.section-header[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Description slide từ phải qua trái */
+.description-content[data-animate] {
+  transform: translateX(80px);
+}
+
+.description-content[data-animate].animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Image primary slide từ trái qua phải */
+.image-item[data-animate='slide-right'] {
+  transform: translateX(-80px);
+}
+
+.image-item[data-animate='slide-right'].animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Image secondary slide từ phải qua trái */
+.image-item[data-animate='slide-left'] {
+  transform: translateX(80px);
+}
+
+.image-item[data-animate='slide-left'].animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Override các setting riêng lẻ để đảm bảo đồng bộ */
+.main-title[data-animate] {
+  font-family: 'Fz Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0%;
+  /* Sử dụng timing giống với parent */
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+  animation: none;
+}
+
+.main-title[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Đảm bảo hình ảnh có performance tốt */
+.image-item[data-animate] img {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/* Responsive cho animation hình ảnh */
+@media (max-width: 768px) {
+  .image-item[data-animate='slide-right'],
+  .image-item[data-animate='slide-left'] {
+    transform: translateY(30px);
+  }
+
+  .image-item[data-animate='slide-right'].animated,
+  .image-item[data-animate='slide-left'].animated {
+    transform: translateY(0);
+  }
+}
+
+/* Navigation hover effect improvements - Simplified */
+.nav-item-about.hover-effect {
+  transform: translateY(-2px);
+}
+
+/* Smooth color transitions */
+.nav-item-about,
+.nav-item-about a {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Simplified content switching animations */
+.tab-switching .tab-content-intro,
+.tab-switching .tab-content-team,
+.tab-switching .tab-content-ecoSystem {
+  animation: none;
+}
+
+/* Prevent double animation và override scroll triggers */
+[data-animate][data-tab-animated='true'] {
+  /* Đã được animated bởi tab system, không cần scroll trigger */
+  pointer-events: auto;
+}
+
+/* Override any external scroll-based animation libraries */
+.tab-content-intro [data-animate],
+.tab-content-team [data-animate],
+.tab-content-ecoSystem [data-animate] {
+  /* Chỉ sử dụng tab-controlled animations */
+  animation: none !important;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Performance improvements */
+.tab-content-intro,
+.tab-content-team,
+.tab-content-ecoSystem {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/* Smooth page loading animation */
+body.page-loading {
+  overflow: hidden;
+}
+
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-content {
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Animation chữ xuất hiện to dần từ trái qua phải - đồng bộ với tab 1 */
+.quote-text[data-animate] {
+  opacity: 0;
+  transform: scale(0.8) translateX(-80px);
+  transition: opacity 3s ease, transform 3.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.quote-text[data-animate].animated {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+}
+
+/* Scale animation for quote text - from small to large */
+.quote-section .quote-text[data-animate] {
+  opacity: 0;
+  transform: scale(0.3);
+  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.quote-section .quote-text[data-animate].animated {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Author title slide up animation - from bottom to top */
+.quote-section .author-title[data-animate] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: 0.5s;
+  will-change: opacity, transform;
+}
+
+.quote-section .author-title[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhanced slide up animation for quote author container */
+.quote-section .quote-author[data-animate] {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: 0.6s;
+  will-change: opacity, transform;
+}
+
+.quote-section .quote-author[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide animations */
+.slide-right[data-animate] {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 1s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.slide-right[data-animate].animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide from left to right animation */
+.slide-left-to-right {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slide-left-to-right.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide from right to left animation */
+.slide-right-to-left {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slide-right-to-left.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Author line animation - kéo dài từ giữa ra 2 bên với độ rộng bằng quote text */
+.author-line {
+  position: absolute;
+  top: auto;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.8);
+  width: 0;
+  margin: 0 auto;
+  transition: width 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 10;
+}
+
+.author-line.animated {
+  width: 100%;
+}
+
+/* Slide from right to left animation for person image */
+.person-slide-left {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.person-slide-left.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Quote author slide-up animation */
+.quote-author-slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1.2s ease-in-out;
+}
+
+.quote-author-slide-up.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Quote image section positioning for harmony and visual appeal */
+.quote-image-section {
+  margin-left: -21%;
+  /* margin-left: 4%; */
+  position: relative;
+  z-index: 5;
+  margin-top: 59px;
+  margin-right: 8%;
+}
+.quote-line {
+  background-color: white;
+  width: 67%;
+  margin-left: 145px;
+  width: 67%;
+  margin-left: 145px;
+}
+
+/* Ensure proper spacing and alignment */
+.chairman-quote-section .quote-content {
+  align-items: flex-start;
+}
+
+/* Quote text section positioning to align with person's head level */
+.quote-text-section {
+  margin-top: -50px;
+  position: relative;
+  z-index: 10;
+}
+.quote-text-section blockquote {
+  width: 71%;
+  margin-left: 19%;
+  margin-bottom: 75px !important;
+}
+.quote-text-section .opening-quote {
+  margin-left: 9%;
+}
+.close-quote {
+  margin-right: 77px;
+}
+/* Fine-tune quote text positioning specifically */
+.chairman-quote-section .quote-text {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+/* Adjust author section to maintain proper spacing */
+.chairman-quote-section .quote-author-section {
+  margin-top: 30px;
+}
+
+/* Vision header animation từ trên xuống */
+.vision-header[data-animate] {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.vision-header[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Vision section specific timing */
+.vision-header .section-title.slide-down {
+  transition-delay: 0s; /* Text và hình xuất hiện cùng lúc */
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 1024px) {
+  .quote-image-section {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .quote-text-section {
+    margin-top: 0;
+  }
+
+  .chairman-quote-section .quote-text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quote-image-section {
+    margin-top: 30px;
+  }
+
+  .quote-text-section {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .chairman-quote-section .quote-text {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+}
+
+/* Quote section content styling */
+.quote-section .quote-content {
+  text-align: center;
+  color: white;
+  width: 1000px;
+  position: relative;
+  z-index: 3;
+  padding: 40px 20px;
+}
+.quote-content blockquote {
+  line-height: 45px !important;
+}
+.quote-section .quote-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #1a3d54;
+  margin: 0 0 40px 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote-section .quote-author {
+  margin-top: 40px;
+}
+
+.quote-section .author-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #c78f50;
+  font-style: normal;
+}
+
+/* Responsive adjustments for quote section */
+@media (max-width: 768px) {
+  .quote-section .quote-text {
+    font-size: 28px;
+    padding: 0 15px;
+  }
+
+  .quote-section .author-title {
+    font-size: 20px;
+  }
+
+  .tab-content-intro .text-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-content-intro .text-content header,
+  .tab-content-intro .text-content .description-content {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 24px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-section .quote-text {
+    font-size: 24px;
+  }
+
+  .quote-section .author-title {
+    font-size: 18px;
+  }
+}
+
+/* Optimized performance for scroll animations */
+.tab-content-intro,
+.tab-content-team,
+.tab-content-ecoSystem {
+  contain: layout style paint;
+}
+
+/* Rotate animation from right to left for vision background */
+.rotate-right-to-left {
+  opacity: 0;
+  transform: translateX(100px) rotate(45deg);
+  transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.rotate-right-to-left.animated {
+  opacity: 1;
+  transform: translateX(0) rotate(0deg);
+}
+
+/* Vision background image animation - xoay nhẹ từ phải sang trái */
+.vision-bg[data-animate] {
+  opacity: 0;
+  transform: translateX(80px) rotate(15deg);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  will-change: opacity, transform;
+}
+
+.vision-bg[data-animate].animated {
+  opacity: 1;
+  transform: translateX(0) rotate(0deg);
+}
+
+/* Enhanced rotate animation with smooth entry */
+.rotate-right-to-left[data-animate] {
+  opacity: 0;
+  transform: translateX(80px) rotate(15deg);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  will-change: opacity, transform;
+}
+
+.rotate-right-to-left[data-animate].animated {
+  opacity: 1;
+  transform: translateX(0) rotate(0deg);
+}
+
+/* Vision section layout with specified dimensions */
+.vision-section {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  min-height: 400px;
+  background: #1e4966;
+  overflow: hidden;
+  background: #1e4966;
+}
+
+.vision-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.vision-bg img {
+    width: 71%;
+    height: 111%;
+    object-fit: cover;
+    opacity: 0.8;
+    display: block;
+    margin-left: 47%;
+}
+
+.vision-content {
+  position: relative;
+  z-index: 2;
+  padding: 80px 0;
+  width: 100%;
+  color: #fff;
+}
+
+/* Quote section background image styling */
+.quote-section {
+  position: relative;
+  min-height: 600px;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.quote-section .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.quote-section .background-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* Thêm filter để làm nổi bật hình nếu nó có màu nhạt */
+  filter: brightness(1.2) contrast(1.1);
+}
+
+.quote-section .background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.quote-section .background-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Giảm overlay xuống rất nhẹ để thấy hình rõ hơn */
+  background: rgba(30, 73, 102, 0.1);
+  z-index: 2;
+}
+
+.quote-section .container {
+  position: relative;
+  z-index: 3;
+  width: 1000px;
+}
+
+/* Thêm background màu tối cho quote section để test */
+.quote-section {
+  background-color: #f1f0f4;
+}
+
+/* Ensure responsive behavior */
+@media (max-width: 1440px) {
+  .vision-section {
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-section {
+    height: auto;
+    min-height: 600px;
+    padding: 60px 0;
+  }
+}
+
+/* Top to bottom scroll animation for main title */
+.main-title {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  animation: scrollFromTop 1.2s ease-out forwards;
+  opacity: 0;
+  transform-origin: center top;
+  color: '#000000';
+}
+
+@keyframes scrollFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  20% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keep the existing shine effect, but trigger it after scroll completes */
+.main-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: titleShine 3s ease-in-out;
+  animation-delay: 1.2s; /* Start after scroll animation completes */
+}
+
+@keyframes titleShine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Add subtle bounce at the end of scroll */
+@keyframes titleFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-120px);
+  }
+  70% {
+    transform: translateY(10px);
+  }
+  85% {
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced slide-down animation for main title - từ trên xuống (sửa để mượt hơn) */
+.main-title[data-animate] {
+  opacity: 0;
+  transform: translateY(-60px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+  animation: none;
+  /* Thêm font styling mới */
+  font-family: 'Fz Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0%;
+}
+
+.main-title[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Sửa section header animation (mượt hơn) */
+.section-header[data-animate] {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.section-header[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Loại bỏ animation tự động và hiệu ứng ánh sáng cho main title */
+.main-title {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  /* Loại bỏ animation tự động */
+  animation: none !important;
+  opacity: 1;
+  transform: translateY(0);
+  /* Thêm font styling cho main title không có animation */
+  font-family: 'Fz Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0%;
+}
+
+/* Loại bỏ hoàn toàn hiệu ứng ánh sáng */
+.main-title::before {
+  display: none !important;
+}
+
+/* Loại bỏ hiệu ứng hover ánh sáng */
+.main-title:hover::before {
+  display: none !important;
+}
+
+/* Sửa animation mặc định để mượt hơn */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+[data-animate].animated {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Sửa slide-down animation để mượt hơn */
+[data-animate].slide-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition-delay: 0s;
+}
+
+[data-animate].slide-down.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Loại bỏ các keyframes animation không cần thiết */
+@keyframes scrollFromTop {
+  /* Xóa keyframe này */
+}
+
+@keyframes titleShine {
+  /* Xóa keyframe này */
+}
+
+@keyframes titleFadeIn {
+  /* Xóa keyframe này */
+}
+
+@keyframes titleShineHover {
+  /* Xóa keyframe này */
+}
+
+/* Tối ưu scroll animation observer */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Giảm độ phức tạp của transition cho performance tốt hơn */
+.tab-content-intro,
+.tab-content-team,
+.tab-content-ecoSystem {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  contain: layout style paint;
+  will-change: auto;
+}
+
+/* Description content styling và animation từ phải qua trái */
+/* .description-content {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: justify;
+} */
+
+.description-content[data-animate] {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.description-content[data-animate].animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Styling cho từng paragraph trong description */
+/* .description-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+.description-paragraph:last-child {
+    margin-bottom: 0;
+} */
+
+/* Responsive cho description content */
+@media (max-width: 768px) {
+  .description-content,
+  .description-paragraph {
+    font-size: 16px;
+    line-height: 110%;
+  }
+}
+
+@media (max-width: 480px) {
+  .description-content,
+  .description-paragraph {
+    font-size: 14px;
+    line-height: 120%;
+  }
+}
+
+/* Responsive cho main title */
+@media (max-width: 768px) {
+  .main-title,
+  .main-title[data-animate] {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title,
+  .main-title[data-animate] {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+/* Mission header animation từ trên xuống */
+.mission-header[data-animate] {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.mission-header[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Section subtitle animation từ dưới lên */
+.section-subtitle[data-animate] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition-delay: 0.2s; /* Delay nhỏ để xuất hiện sau title */
+  will-change: opacity, transform;
+}
+.section-subtitle {
+  font-size: 24px;
+}
+.section-subtitle[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scale up animation - từ từ phóng to chữ ra */
+[data-animate].scale-up {
+  opacity: 0;
+  transform: scale(0.3);
+  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+[data-animate].scale-up.animated {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Quote text specific scale animation with smooth curve */
+.quote-text[data-animate='scale-up'] {
+  opacity: 0;
+  transform: scale(0.2);
+  transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.quote-text[data-animate='scale-up'].animated {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Zoom slide right animation - chữ phóng to dần từ trái sang phải */
+[data-animate='zoom-slide-right']:not(.animated) {
+  opacity: 0;
+  transform: translateX(-100px) scale(0.5);
+  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+[data-animate='zoom-slide-right'].animated {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/* Enhanced quote text specific animation */
+.quote-text[data-animate='zoom-slide-right']:not(.animated) {
+  opacity: 0;
+  transform: translateX(-150px) scale(0.3);
+  transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.quote-text[data-animate='zoom-slide-right'].animated {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/* Quote author section slide up animation - từ dưới lên trên - FIXED */
+.quote-author-section[data-animate='slide-up']:not(.animated) {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.quote-author-section[data-animate='slide-up'].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Override any conflicting styles for quote-author-section */
+.chairman-quote-section .quote-author-section {
+  margin-top: 30px;
+  /* Remove any conflicting animation delays */
+  animation-delay: 0s !important;
+  /* Ensure the element is visible for intersection observer */
+  visibility: visible !important;
+}
+
+/* Additional fallback for quote-author-section animation */
+.quote-author-section:not(.animated) {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.quote-author-section.animated {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* ===== RESPONSIVE DESIGN - TINH TẾ & ĐẸP MẮT ===== */
+
+/* Tablet Portrait & Mobile Landscape (768px - 991px) */
+@media (max-width: 991px) {
+  /* Hero Banner */
+  .hero-banner .hero-content h1 {
+    font-size: 48px !important;
+    line-height: 1.2;
+  }
+
+  .hero-banner .hero-content h5 {
+    font-size: 28px !important;
+  }
+
+  /* Navigation About */
+  .navbar-about {
+    padding: 15px 0;
+  }
+
+  .nav-menu-about {
+    gap: 20px;
+  }
+
+  .nav-link-about {
+    font-size: 16px !important;
+    padding: 8px 15px;
+  }
+
+  /* Content Wrapper */
+  .content-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .text-content,
+  .image-content {
+    width: 100%;
+  }
+
+  /* Main Title */
+  .main-title,
+  .main-title[data-animate] {
+    font-size: 36px !important;
+    line-height: 1.3;
+  }
+
+  /* Description */
+  .description-content {
+    text-align: left;
+    padding: 0 15px;
+  }
+
+  .description-paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  /* Image Grid */
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .image-item {
+    max-width: 100%;
+  }
+
+  /* Profile Content */
+  .profile-content {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 30px;
+  }
+
+  .profile-text-section {
+    order: 2;
+    padding: 0 20px;
+  }
+
+  .profile-image-section {
+    order: 1;
+    align-self: center;
+  }
+
+  /* Core Values Grid */
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .value-card {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .card-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Vision & Mission Sections */
+  .vision-section,
+  .mission-section {
+    padding: 60px 0;
+    height: auto;
+    min-height: 500px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .vision-slogan,
+  .mission-slogan {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  .mission-slogan {
+    font-size: 24px;
+  }
+.mission-content p{
+  width: 40%;
+}
+.mission-content-wrap{
+  width: 100%;
+}
+.mission-content-wrap .mission-content{
+    display: flex;
+    gap: 40px;
+}
+.mission-content-wrap{
+  width: 100%;
+}
+  /* Quote Section */
+  .quote-text {
+    font-size: 24px !important;
+    line-height: 1.4;
+    padding: 0 20px;
+  }
+
+  .author-title {
+    font-size: 18px !important;
+  }
+
+  /* Chairman Quote */
+  .chairman-quote-section .quote-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .quote-text-section {
+    order: 1;
+    margin-top: 0;
+  }
+
+  .quote-image-section {
+    order: 1;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  /* Bio System Grid */
+  .bio-system-grid {
+    grid-template-columns: repeat(1, 1fr);
+    border: none;
+    gap: 16px;
+  }
+
+  .bio-system-card {
+    background: linear-gradient(#1e4966 0%, #163142 100%);
+  }
+
+  .bio-system-card .bio-system-card-bg {
+    opacity: 0.5;
+  }
+
+  .bio-system-card-title {
+    color: white;
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .bio-system-card {
+    padding: 20px 15px;
+    min-height: 120px;
+    aspect-ratio: 4/3;
+  }
+
+  /* Investment Containers */
+  .investment-container {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+
+  .investment-content {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .investment-image-section {
+    height: 550px;
+    flex: auto;
+  }
+
+  .investment-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .investment-description {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .investment-companies-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .investment-company-item {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
+
+/* Mobile Portrait (480px - 767px) */
+@media (max-width: 767px) {
+  /* Hero Banner */
+  .hero-banner .hero-content h1 {
+    font-size: 36px !important;
+    line-height: 1.2;
+  }
+
+  .hero-banner .hero-content h5 {
+    font-size: 24px !important;
+    margin-bottom: 15px;
+  }
+
+  /* Navigation About - Mobile Optimized */
+  .navbar-about {
+    padding: 10px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-menu-about {
+    display: flex;
+    min-width: max-content;
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .nav-item-about {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .nav-link-about {
+    font-size: 14px !important;
+    padding: 8px 12px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .nav-item-about.active .nav-link-about {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  /* Main Title */
+  .main-title,
+  .main-title[data-animate] {
+    font-size: 28px !important;
+    line-height: 1.3;
+  }
+
+  /* Content Sections */
+  .hero-section,
+  .vision-section,
+  .mission-section,
+  .core-values-section {
+    padding: 60px 0;
+  }
+
+  /* Description */
+  .description-paragraph {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: left;
+    margin-bottom: 18px;
+  }
+
+  /* Core Values - Single Column */
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .value-card {
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+
+  .card-description {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* Vision & Mission Sections */
+  .vision-section,
+  .mission-section {
+    padding: 60px 0;
+    height: auto;
+    min-height: 500px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .vision-slogan,
+  .mission-slogan {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  /* Quote Section */
+  .quote-text {
+    font-size: 20px !important;
+    line-height: 1.5;
+    padding: 0 15px;
+    margin-bottom: 25px;
+  }
+
+  .author-title {
+    font-size: 16px !important;
+  }
+
+  /* Profile Section Mobile */
+  .profile-description {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .achievements-list {
+    padding-left: 20px;
+  }
+
+  .achievement-item {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  /* Bio System - Single Column */
+  .bio-system-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-system-card {
+    padding: 25px 20px;
+    min-height: 100px;
+    text-align: center;
+  }
+
+  .bio-system-card-title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  /* Investment Mobile */
+  .investment-title {
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+
+  .investment-title-main {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .investment-description {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+  }
+
+  .investment-companies-label {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .investment-company-item {
+    font-size: 12px;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  /* Vice Director & Manage Cards */
+  .vice-director-grid,
+  .manage-grid,
+  .manage-grid-bottom {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .vice-director-card,
+  .manage-card {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .vice-director-title,
+  .manage-title {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}
+
+/* Small Mobile (320px - 479px) */
+@media (max-width: 479px) {
+  /* Extra small screens optimization */
+  .hero-banner .hero-content h1 {
+    font-size: 32px !important;
+  }
+
+  .hero-banner .hero-content h5 {
+    font-size: 20px !important;
+  }
+
+  .main-title,
+  .main-title[data-animate] {
+    font-size: 24px !important;
+    line-height: 1.4;
+  }
+
+  .nav-link-about {
+    font-size: 13px !important;
+    padding: 6px 10px;
+  }
+
+  .description-paragraph {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .quote-text {
+    font-size: 18px !important;
+    line-height: 1.6;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .investment-title {
+    font-size: 20px;
+  }
+
+  .investment-description {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .value-card {
+    padding: 20px 15px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-description {
+    font-size: 14px;
+  }
+}
+
+/* Landscape Mobile & Small Tablet */
+@media (max-width: 991px) and (orientation: landscape) {
+  .hero-banner {
+    height: 70vh;
+  }
+
+  .vision-section,
+  .mission-section {
+    min-height: 400px;
+  }
+
+  .navbar-about {
+    padding: 8px 0;
+  }
+
+  .nav-link-about {
+    font-size: 13px !important;
+    padding: 6px 10px;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .nav-item-about:hover {
+    transform: none;
+  }
+
+  .nav-item-about {
+    transition: background-color 0.2s ease;
+  }
+
+  .nav-item-about:active {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .manage-card,
+  .vice-director-card,
+  .bio-system-card {
+    transition: transform 0.2s ease;
+  }
+
+  .manage-card:active,
+  .vice-director-card:active,
+  .bio-system-card:active {
+    transform: scale(0.98);
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-banner img,
+  .profile-image-section img,
+  .quote-image-section img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Performance Optimizations for Mobile */
+@media (max-width: 767px) {
+  [data-animate] {
+    transition-duration: 0.4s !important;
+  }
+
+  .vision-bg img,
+  .background-image img {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  /* Reduce motion on mobile for better performance */
+  @media (prefers-reduced-motion: reduce) {
+    [data-animate] {
+      transition: none !important;
+    }
+
+    .nav-item-about {
+      transition: none !important;
+    }
+  }
+}
+
+/* Print Styles */
+@media print {
+  .hero-banner,
+  .navbar-about,
+  .nav-menu-about {
+    display: none !important;
+  }
+
+  .tab-content-intro,
+  .tab-content-team,
+  .tab-content-ecoSystem {
+    display: block !important;
+    position: static !important;
+    height: auto !important;
+  }
+
+  .main-title,
+  .section-title {
+    color: #000 !important;
+  }
+
+  .description-paragraph,
+  .profile-description {
+    color: #333 !important;
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* ===== RESPONSIVE ANIMATIONS - TINH TẾ & MƯỢT MÀ ===== */
+
+/* Mobile Animation Adjustments */
+@media (max-width: 991px) {
+  /* Faster animations for mobile performance */
+  [data-animate] {
+    transition-duration: 0.6s !important;
+  }
+
+  [data-animate].slide-right,
+  [data-animate].slide-left {
+    transition-duration: 0.8s !important;
+  }
+
+  /* Profile sections responsive animation */
+  .profile-content {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 30px;
+  }
+
+  .profile-text-section[data-animate='slide-left'] {
+    transform: translateY(30px) !important;
+    opacity: 0;
+  }
+
+  .profile-text-section[data-animate='slide-left'].animated {
+    transform: translateY(0) !important;
+    opacity: 1;
+  }
+
+  .profile-image-section[data-animate='slide-right'] {
+    transform: translateY(-30px) !important;
+    opacity: 0;
+  }
+
+  .profile-image-section[data-animate='slide-right'].animated {
+    transform: translateY(0) !important;
+    opacity: 1;
+  }
+
+  /* Chairman quote responsive */
+  .chairman-quote-section .quote-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .quote-text-section {
+    margin-top: 20px;
+  }
+
+  .quote-image-section {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .opening-quote img,
+  .close-quote img {
+    width: 40px;
+    height: auto;
+  }
+
+  .opening-quote {
+    position: absolute;
+    left: -40px;
+    top: -24px;
+    margin-left: 0 !important;
+  }
+  .close-quote {
+    position: absolute;
+    right: -40px;
+    bottom: 40%;
+    margin: 0 !important;
+  }
+
+  .quote-image-section[data-animate='slide-left'] {
+    transform: translateY(-30px) !important;
+  }
+
+  .quote-image-section[data-animate='slide-left'].animated {
+    transform: translateY(0) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Mobile-specific animations */
+
+  /* Hero content animations */
+  .hero-banner .hero-content h1,
+  .hero-banner .hero-content h5 {
+    animation: mobileSlideUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .hero-banner .hero-content h5 {
+    animation-delay: 0.2s;
+  }
+
+  .hero-banner .hero-content h1 {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes mobileSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Navigation mobile animation */
+  .nav-menu-about {
+    animation: mobileNavSlide 0.5s ease-out;
+  }
+
+  @keyframes mobileNavSlide {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Mobile tab content animations */
+  .tab-content-intro.tab-active,
+  .tab-content-team.tab-active,
+  .tab-content-ecoSystem.tab-active {
+    animation: mobileTabFadeIn 0.4s ease-out;
+  }
+
+  @keyframes mobileTabFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Content wrapper mobile animation */
+  .content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .content-wrapper .text-content,
+  .content-wrapper .image-content {
+    animation: mobileContentSlide 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .content-wrapper .image-content {
+    animation-delay: 0.2s;
+  }
+
+  @keyframes mobileContentSlide {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Image grid mobile animation */
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .image-item[data-animate='slide-right'],
+  .image-item[data-animate='slide-left'] {
+    transform: translateY(30px) !important;
+    opacity: 0;
+  }
+
+  .image-item[data-animate='slide-right'].animated,
+  .image-item[data-animate='slide-left'].animated {
+    transform: translateY(0) !important;
+    opacity: 1;
+    transition: all 0.6s ease-out;
+  }
+
+  /* Values grid mobile stagger animation */
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .value-card[data-animate='slide-up'] {
+    animation: mobileValueCardSlide 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .value-card:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .value-card:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .value-card:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .value-card:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  .value-card:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+
+  @keyframes mobileValueCardSlide {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Bio system mobile animation */
+  .bio-system-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-system-card {
+    animation: mobileBioCardSlide 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  .bio-system-card:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .bio-system-card:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .bio-system-card:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .bio-system-card:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .bio-system-card:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .bio-system-card:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  .bio-system-card:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+  .bio-system-card:nth-child(8) {
+    animation-delay: 0.8s;
+  }
+
+  @keyframes mobileBioCardSlide {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Vice director mobile animation */
+  .vice-director-grid,
+  .manage-grid,
+  .manage-grid-bottom {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .vice-director-card,
+  .manage-card {
+    animation: mobileCardPop 0.5s ease-out forwards;
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  .vice-director-card:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .vice-director-card:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .vice-director-card:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  @keyframes mobileCardPop {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+/* Extra CSS animation cho leadership section */
+
+/* Leadership section specific animations - FIXED */
+
+/* Profile text section slide-right animation - từ trái qua phải */
+.leadership-section
+  .profile-text-section[data-animate='slide-right']:not(.animated) {
+  opacity: 0;
+  transform: translateX(-80px) !important;
+  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+.leadership-section .container{
+  
+    background-image: url(../img/investment-bg.png);
+    background-repeat: no-repeat;
+          object-fit: contain;
+    background-position: -29% 26%;
+    background-size: initial;}
+.leadership-section .profile-text-section[data-animate='slide-right'].animated {
+  opacity: 1;
+  transform: translateX(0) !important;
+}
+
+/* Profile image section slide-left animation - từ phải qua trái */
+.leadership-section
+  .profile-image-section[data-animate='slide-left']:not(.animated) {
+  opacity: 0;
+  transform: translateX(80px) !important;
+  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.leadership-section .profile-image-section[data-animate='slide-left'].animated {
+  opacity: 1;
+  transform: translateX(0) !important;
+}
+
+/* Responsive animation fixes for leadership section */
+@media (max-width: 991px) {
+  /* Mobile: change to vertical animations */
+  .leadership-section .profile-text-section[data-animate='slide-right'] {
+    transform: translateY(30px) !important;
+    opacity: 0;
+  }
+
+  .leadership-section
+    .profile-text-section[data-animate='slide-right'].animated {
+    transform: translateY(0) !important;
+    opacity: 1;
+  }
+
+  .leadership-section .profile-image-section[data-animate='slide-left'] {
+    transform: translateY(-30px) !important;
+    opacity: 0;
+  }
+
+  .leadership-section
+    .profile-image-section[data-animate='slide-left'].animated {
+    transform: translateY(0) !important;
+    opacity: 1;
+  }
+
+  /* Profile content layout adjustment */
+  .leadership-section .profile-content {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 30px;
+  }
+
+  .leadership-section .profile-text-section {
+    order: 2;
+    padding: 0 20px;
+  }
+
+  .leadership-section .profile-image-section {
+    order: 1;
+    align-self: center;
+  }
+}
+
+/* Chairman quote section background styling - UPDATED */
+.chairman-quote-section {
+  position: relative;
+  min-height: 700px;
+  padding: 80px 0;
+  overflow: hidden;
+  background-color: #1a3d54;
+  background-image: url('../img/gioi-thieu/location-image.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.chairman-quote-section .background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.chairman-quote-section .background-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 73, 102, 0.4);
+  z-index: 1;
+}
+
+.chairman-quote-section .background-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.05) 50%,
+    transparent 60%
+  );
+  z-index: 2;
+}
+
+.chairman-quote-section .background-dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 2px,
+    transparent 2px
+  );
+  background-size: 40px 40px;
+  animation: dotFlow 25s infinite linear;
+  z-index: 2;
+}
+
+@keyframes dotFlow {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(15px) translateY(-10px);
+  }
+  50% {
+    transform: translateX(-8px) translateY(-8px);
+  }
+  75% {
+    transform: translateX(-12px) translateY(8px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.chairman-quote-section .container {
+  position: relative;
+  z-index: 3;
+}
+
+.chairman-quote-section .quote-content {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+
+/* Enhanced text styling for chairman quote */
+.chairman-quote-section .quote-text {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+}
+
+.chairman-quote-section .author-name {
+  color: #c78f50;
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 8px;
+}
+
+.chairman-quote-section .author-title {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.chairman-quote-section .opening-quote,
+.chairman-quote-section .close-quote {
+  filter: brightness(1.3) drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
+}
+
+.chairman-quote-section .closing-quote {
+  position: absolute;
+  bottom: -30px;
+  right: -15px;
+  font-size: 150px;
+  color: rgba(200, 143, 80, 0.25);
+  font-family: Georgia, serif;
+  line-height: 1;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .chairman-quote-section {
+    background-position: center center;
+    min-height: 600px;
+  }
+
+  .chairman-quote-section .background-container::before {
+    background: rgba(30, 73, 102, 0.6);
+  }
+
+  .chairman-quote-section .quote-text {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .chairman-quote-section {
+    padding: 60px 0;
+    min-height: 500px;
+    background-size: contain;
+    background-position: center bottom;
+  }
+  .vision-slogan{
+        padding-right: 0px;
+  }
+  .description-container{
+    width: 100%;
+  }
+  .mission-content-wrap .mission-content{
+    display: unset;
+  }
+  .mission-content-wrap .mission-content p{
+    width: 100%;
+  }
+  .quote-section .quote-content{
+   text-align: center;
+    color: white;
+    position: relative;
+    z-index: 3;
+  }
+  .quote-content blockquote{
+    line-height: 6px;
+  }
+  .card-icon{
+position: absolute;
+    top: -30px;
+    left: 30px;  }
+  .mission-content-wrap .mission-content .mission-body{
+    width: 100%;
+    line-height: 1.8;
+    font-weight: 700;
+    font-family: 'Roboto';
+  }
+  .vision-description{
+    padding-right: 0px;
+  }
+.vision-body{
+      display: unset;
+}
+.mission-content{
+        display: unset;
+
+}
+.vision-body .slogan-container{
+      width: 100%;
+      
+    margin-bottom: 20px;
+}
+.vision-section .vision-bg .vision-bg-img{
+width: 128%;
+        position: 38% top;
+        height: 133%;
+        object-fit: cover;
+        opacity: 0.8;
+        margin-top: -53px;
+        display: block;
+        margin-left: -6%;
+        margin-top: -120px;
+}
+  .chairman-quote-section .background-container::before {
+    background: rgba(30, 73, 102, 0.7);
+  }
+
+  .chairman-quote-section .quote-text {
+    font-size: 24px;
+    padding: 0 15px;
+  }
+
+  .quote-text-section {
+    width: 80% !important;
+  }
+}
+
+/* Quote image section specific animation - từ phải qua trái */
+.quote-image-section img[data-animate='slide-left']:not(.animated) {
+  opacity: 0;
+  transform: translateX(80px) !important;
+  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.quote-image-section img[data-animate='slide-left'].animated {
+  opacity: 1;
+  transform: translateX(0) !important;
+}
+
+/* Chairman quote section image animation - enhanced */
+.chairman-quote-section .quote-image-section img {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/* Thêm responsive center cho .chairman-quote-section chỉ ở màn nhỏ, không ảnh hưởng desktop */
+@media (max-width: 1024px) {
+  .chairman-quote-section .quote-content {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    display: grid !important; /* đảm bảo không bị flex hoặc dạng khác */
+  }
+  .chairman-quote-section .quote-text-section,
+  .chairman-quote-section .quote-author-section,
+  .chairman-quote-section .quote-image-section {
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100%;
+  }
+  .chairman-quote-section .quote-image-section img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 460px;
+  }
+
+  .chairman-quote-section .quote-text-section blockquote {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px !important;
+  }
+}
+
+/* Thêm cho mobile nhỏ hơn */
+@media (max-width: 768px) {
+  .chairman-quote-section {
+    padding: 40px 0 !important;
+    min-height: 400px !important;
+  }
+  .chairman-quote-section .quote-content {
+    gap: 25px !important;
+  }
+  .chairman-quote-section .quote-text {
+    font-size: 1.15rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 32px !important;
+    text-align: center !important;
+  }
+  .chairman-quote-section .author-name,
+  .chairman-quote-section .author-title {
+    font-size: 1rem !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media (max-width: 1024px) {
+  .chairman-quote-section .quote-line,
+  .chairman-quote-section .quote-line-pulse {
+    margin: 0 auto !important;
+    width: 80% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+@media (max-width: 768px) {
+  .chairman-quote-section .quote-line,
+  .chairman-quote-section .quote-line-pulse {
+    width: 95% !important;
+  }
+}
+@media (max-width: 1024px) {
+  .hero-content.container.text-left.text-white p {
+    width: 100% !important;
+  }
+}
+.hero-content.container.text-left.text-white p {
+  width: 33%;
+}
+.chairman-quote-section .quote-line,
+.chairman-quote-section .quote-line-pulse,
+.chairman-quote-section .quote-line-pulse.animated {
+  height: 1px !important;
+  margin-bottom: 10px !important;
+
+  min-height: 1px !important;
+  max-height: 1px !important;
+}
+.chairman-quote-section .quote-line hr,
+.chairman-quote-section .quote-line-pulse hr {
+  height: 1px !important;
+  min-height: 1px !important;
+  max-height: 1px !important;
+  border: none;
+  background: #fff;
+}
+
+.vision-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none; /* không ảnh hưởng click */
+  /* Nếu muốn màu mờ đi: */
+  opacity: 0.5;
+}
+
+/* .manage-card.hover-profile {
+  background: #e4e4e4;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover vào card thứ 2 đổi nền và chữ giống card 1 */
+.manage-card.hover-profile:hover {
+  background: #2c5f7a;
+  color: #fff;
+} */
+
+.manage-card.hover-profile:hover .manage-name {
+  color: #c78f50; /* màu vàng nổi bật giống card 1 */
+}
+.manage-card.hover-profile:hover .manage-position {
+  color: white; /* màu vàng nổi bật giống card 1 */
+}
+.nav-menu-about .nav-item-about.active {
+box-shadow: 0 10px 15px rgba(0,0,0,0.1)
+}
