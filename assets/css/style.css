@@ -825,6 +825,12 @@ h2 {
   text-transform: capitalize;
   font-family: 'FZ Poppins', sans-serif !important;
 }
+.txt-poppin{
+  font-family: 'FZ Poppins', sans-serif !important;
+}
+.txt-svn{
+  font-family: 'SVN-Gotham';
+}
 .real-estate-feature .content-box h4,
 .hero-content h1,
 .hero-stats .stat,

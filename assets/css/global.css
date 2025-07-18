@@ -1,24 +1,38 @@
-@media only screen and  (min-width: 390px) {
-    html{
-        font-size: 2.5641025641vw;
+html {
+    font-size: 0.69444444444vw;
+    vertical-align: baseline;
+  }
+  
+  @media screen and (min-width: 2560px) {
+    html {
+      font-size: 17.7777777778px;
     }
-    
-}
-@media only screen and  (min-width: 768px) {
-    html{
-        font-size: 1.30208333333vw;
+  }
+  
+  @media screen and (max-width: 991px) {
+    html {
+      font-size: 1.1990407674vw;
     }
-}
-@media only screen and  (min-width: 992px) {
-    html{
-        font-size: 0.69444444444vw;
+  }
+  
+  @media screen and (min-device-aspect-ratio: 16 / 8) {
+    @media screen and (min-width: 991px) {
+      html {
+        font-size: 1.1vh;
+      }
     }
-}
-@media only screen and  (min-width: 1441px) {
-    html{
-        font-size: 10px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    html {
+      font-size: 2.5445292621vw;
     }
-}
+  
+    .no-br br {
+      display: none;
+    }
+  }
+  
 .image__full img{
     width: 100%;
     object-fit: cover;
@@ -35,4 +49,8 @@ body{
 }
 *{
     box-sizing: border-box;
+}
+.kl-container {
+    max-width: 2560px;
+    padding-inline: 80px;
 }
