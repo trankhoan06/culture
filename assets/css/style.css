@@ -1,4 +1,38 @@
 /* Black */
+html {
+  font-size: 0.69444444444vw;
+  vertical-align: baseline;
+}
+
+@media screen and (min-width: 2560px) {
+  html {
+    font-size: 17.7777777778px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 1.1990407674vw;
+  }
+}
+
+@media screen and (min-device-aspect-ratio: 1912/1080) {
+  @media screen and (min-width: 991px) {
+    html {
+      font-size: 1vh;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 2.5445292621vw;
+  }
+
+  .no-br br {
+    display: none;
+  }
+}
 @font-face {
   font-family: 'SVN-Gotham';
   src: url('../fonts/Black.otf') format('opentype');
@@ -213,12 +247,12 @@ body {
 .main-header .nav-link {
   color: white;
   font-weight: 500;
-  padding: 0.8rem 1.6rem 0.8rem 0;
+  padding: 0.8rem 0 0.8rem 0;
   text-transform: uppercase;
   font-size: 1.44rem;
 }
 #mainHeader .nav {
-  gap: 2rem;
+  gap: 5.6rem;
 }
 
 a:hover {
@@ -253,6 +287,11 @@ a:hover {
   font-weight: bold;
   color: #f5b042;
   text-align: center;
+  width: 8.9rem;
+  margin-inline: 5.6rem;
+  img {
+    width: 100%;
+  }
 }
 
 .main-header .language-selector {
@@ -261,11 +300,7 @@ a:hover {
   cursor: pointer;
 }
 
-.nav-center-logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
+
 
 @media (max-width: 992px) {
   .nav-center-logo {
@@ -542,7 +577,12 @@ h4,
 h6 {
   line-height: 1.3em !important;
 }
-
+h6{
+  font-size: 1.6rem;
+}
+.btn {
+  font-size: 1.4rem;
+}
 .content-box {
   background-color: #f5f5f5;
   position: absolute;
@@ -893,8 +933,8 @@ h2 {
 /* Nút 3 gạch */
 .mobile-menu-toggle {
   position: absolute;
-  left: 2.0rem;
-  top: 1.5rem;
+  right: 2.0rem;
+  top: 2rem;
   font-size: 2.4rem;
   color: white;
   cursor: pointer;
@@ -1242,9 +1282,10 @@ h2 {
   .bar1,
   .bar2,
   .bar3 {
-    width: 3.5rem;
-    height: .5rem;
+    width: 3rem;
+    height: .3rem;
     background-color: #fff;
+    border-radius: 1rem;
     margin: .6rem 0;
     transition: 0.4s;
   }

@@ -1,40 +1,6 @@
-html {
-    font-size: 0.69444444444vw;
-    vertical-align: baseline;
-  }
-  
-  @media screen and (min-width: 2560px) {
-    html {
-      font-size: 17.7777777778px;
-    }
-  }
-  
-  @media screen and (max-width: 991px) {
-    html {
-      font-size: 1.1990407674vw;
-    }
-  }
-  
-  @media screen and (min-device-aspect-ratio: 1912/1080) {
-    @media screen and (min-width: 991px) {
-      html {
-        font-size: 1vh;
-      }
-    }
-  }
-  
-  @media screen and (max-width: 767px) {
-    html {
-      font-size: 2.5445292621vw;
-    }
-  
-    .no-br br {
-      display: none;
-    }
-  }
+
   .image__full img{
     width: 100%;
-    object-fit: cover;
   }
   .image__fullfill img{
     width: 100%;
@@ -44,11 +10,12 @@ html {
   body{
     color: #333;
     font-size: 1.8rem;
+    line-height: 1.4;
     box-sizing: border-box;
   }
   @media screen and (max-width: 991px){
     body{
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
   }
 *{
@@ -67,3 +34,49 @@ html {
 .kl-line {
   overflow: hidden;
 }
+.invert-border.top-left {
+  top: -.5rem;
+  left: 0;
+}
+.invert-inner.bot-left {
+  box-shadow: 0rem .5rem 0 0 white;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0.5rem;
+}
+.invert-border.bot-right {
+  bottom: -0;
+  right: -.5rem;
+}
+.invert-inner.bot-right {
+  box-shadow: 0rem .5rem 0 0 white;
+  border-bottom-right-radius: .0;
+  border-bottom-left-radius: 0.5rem;
+}
+.invert-inner {
+  box-shadow: 0 0rem 0 0 white;
+  width: 100%;
+  height: 200%;
+}
+.invert-border {
+  pointer-events: none;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: .5rem;
+  height: .5rem;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+.df_hide_onload {
+  opacity: 0;
+}
+ @media only screen and (max-width: 991px) {
+  .kl-container {
+    padding-inline: 4rem !important;
+  }
+ }
+ @media only screen and (max-width: 767px) {
+  .kl-container {
+    padding-inline: 2rem !important;
+  }
+ }
