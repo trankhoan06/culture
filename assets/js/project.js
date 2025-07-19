@@ -29,10 +29,10 @@ function projectHero() {
       }
     }
   });
-  let title =  new SplitType('.project_hero_content_title',{types: 'lines, words', lineClass: 'kl-line'})
+  let title =  new SplitType('.project_hero_content_title',{types: 'lines, words', lineClass: 'klc-line'})
   let sub =  new SplitType('.project_hero_content_sub',{types: 'lines, words', lineClass: 'kl-line'})
   let label =  new SplitType('.project_hero_content_label',{types: 'lines, words', lineClass: 'kl-line'})
-  gsap.set('.project_hero_content_title .word', {yPercent: 101})
+  gsap.set('.project_hero_content_title .word', {yPercent: 101, autoAlpha:0})
   gsap.set('.project_hero_content_sub .word', {yPercent: 100})
   gsap.set('.project_hero_content_label .word', {yPercent: 100})
   gsap.set('.project_hero_content_btn ', {y: 40, autoAlpha: 0})
@@ -49,12 +49,12 @@ function projectHero() {
     gsap.fromTo($('.project_hero_bg_inner').eq(index).find('img'), {scale: 1.3}, {scale: 1, duration:1, easing: 'power4.in'})
     $('.project_hero_content_title_wrap').height(height);
     if(index > lastIndex) {
-      gsap.to('.project_hero_content_title.active .word', {yPercent: -100, stagger: .025})
-      gsap.to($('.project_hero_content_title').eq(index).find('.word'), {yPercent: 0, stagger: .025})
+      gsap.to('.project_hero_content_title.active .word', {yPercent: -100, autoAlpha:0, stagger: .025})
+      gsap.to($('.project_hero_content_title').eq(index).find('.word'), {yPercent: 0, autoAlpha:1, stagger: .025})
     }
     else{
-      gsap.to('.project_hero_content_title.active .word', {yPercent: 100, stagger: .025})
-      gsap.to($('.project_hero_content_title').eq(index).find('.word'), {yPercent: 0, stagger: .025})
+      gsap.to('.project_hero_content_title.active .word', {yPercent: 100, autoAlpha:0, stagger: .025})
+      gsap.to($('.project_hero_content_title').eq(index).find('.word'), {yPercent: 0, autoAlpha:1, stagger: .025})
     }
     $('.project_hero_content_title').removeClass('active')
     $('.project_hero_content_title').eq(index).addClass('active')
@@ -65,9 +65,9 @@ function projectHero() {
     }
   });
   tl  
-    .to('.project_hero_bg_inner.active', {scale:1, duration: 2})
-    .to('.project_hero_content_label .word', {yPercent:0, duration: .6, stagger: .02},'<=0')
-    .to('.project_hero_content_title:first-child .word', {yPercent:0, duration: .6, stagger: .025},'<=.4')
+  .to('.project_hero_content_label .word', {yPercent:0, duration: .6, stagger: .02})
+  .to('.project_hero_content_title:first-child .word', {yPercent:0, autoAlpha:1, duration: .6, stagger: .025},'<=.4')
+  .to('.project_hero_bg_inner.active', {scale:1, duration: 2},'<=0')
     .to('.project_hero_content_sub .word', {yPercent:0, duration: .4, stagger: .015},'<=.2')
     .to('.project_hero_swiper_slide', {x:0, autoAlpha:1, duration: .6, stagger: .1},'<=0')
     .to('.project_hero_content_btn', {y:0, autoAlpha:1, duration: .6, stagger: .015},'<=0')
@@ -77,15 +77,15 @@ projectHero();
 function projectRealstate() {
   let lastIndex =0;
   let title =  new SplitType('.project__realestate__smalltitle',{types: 'lines, words', lineClass: 'kl-line'})
-  gsap.set('.project__realestate__smalltitle:not(:first-child) .word', {yPercent: 100});
+  gsap.set('.project__realestate__smalltitle:not(:first-child) .word', {yPercent: 100, autoAlpha:0});
   function activeTitle (index) {
     if(index > lastIndex) {
-      gsap.to('.project__realestate__smalltitle.active .word', {yPercent: -100, stagger: .025})
-      gsap.to($('.project__realestate__smalltitle').eq(index).find('.word'), {yPercent: 0, stagger: .025})
+      gsap.to('.project__realestate__smalltitle.active .word', {yPercent: -100,autoAlpha:1, stagger: .025})
+      gsap.to($('.project__realestate__smalltitle').eq(index).find('.word'), {yPercent: 0, autoAlpha:1, stagger: .025})
     }
     else{
-      gsap.to('.project__realestate__smalltitle.active .word', {yPercent: 100, stagger: .025})
-      gsap.to($('.project__realestate__smalltitle').eq(index).find('.word'), {yPercent: 0, stagger: .025})
+      gsap.to('.project__realestate__smalltitle.active .word', {yPercent: 100, autoAlpha:0, stagger: .025})
+      gsap.to($('.project__realestate__smalltitle').eq(index).find('.word'), {yPercent: 0, autoAlpha:1, stagger: .025})
     }
     $('.project__realestate__smalltitle').removeClass('active')
     $('.project__realestate__smalltitle').eq(index).addClass('active')

@@ -33,6 +33,22 @@ html {
     display: none;
   }
 }
+.kl-container {
+  max-width: 2560px;
+  padding-inline: 12rem;
+  width: 100%;
+  margin-inline: auto;
+}
+@media only screen and (max-width: 991px) {
+  .kl-container {
+    padding-inline: 4rem !important;
+  }
+ }
+ @media only screen and (max-width: 767px) {
+  .kl-container {
+    padding-inline: 2rem !important;
+  }
+ }
 @font-face {
   font-family: 'SVN-Gotham';
   src: url('../fonts/Black.otf') format('opentype');

@@ -21,12 +21,7 @@
 *{
     box-sizing: border-box;
 }
-.kl-container {
-    max-width: 2560px;
-    padding-inline: 12rem;
-    width: 100%;
-    margin-inline: auto;
-}
+
 .txt-36 {
   font-size: 3.6rem;
   line-height: 1.2em;
@@ -70,13 +65,3 @@
 .df_hide_onload {
   opacity: 0;
 }
- @media only screen and (max-width: 991px) {
-  .kl-container {
-    padding-inline: 4rem !important;
-  }
- }
- @media only screen and (max-width: 767px) {
-  .kl-container {
-    padding-inline: 2rem !important;
-  }
- }
