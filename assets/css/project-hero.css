@@ -1,0 +1,222 @@
+.project_hero {
+  height: 100vh;
+  padding-block: 20vh 6vh;
+  position: relative;
+  overflow: hidden;
+
+  .kl-container {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    padding-right: 0;
+    column-gap: .4rem;
+    height: 76vh;
+  }
+}
+
+.project_hero_content {
+  width: 59rem;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project_hero_swiper {
+  flex: 1;
+  width: 100%;
+  cursor: pointer;
+  overflow: visible;
+  width: 32rem;
+  margin-inline: 0;
+  /* padding-left: 1rem; */
+}
+.project_hero_swiper_wrap {
+  width: 100%;
+  overflow: hidden;
+  margin-top: auto;
+  padding-right: 4.4rem;
+  padding-left: 1.6rem;
+  padding-block: 2rem;
+  margin-bottom: -2rem;
+}
+
+.project_hero_swiper_slide {
+  width: 32rem;
+  border-radius: 1rem;
+  border: .2rem solid #FFF;
+  overflow: hidden;
+  margin-top: auto;
+  transition: box-shadow .4s ease;
+  &.swiper-slide-active {
+    box-shadow: 0px 0px 1rem .5rem rgba(255, 255, 255, 0.25);
+  .project_hero_swiper_slide_inner {
+      height: 40rem;
+    }
+  } 
+}
+.project_hero_swiper_slide_inner {
+  height: 35rem;
+  transition: height ease .4s;
+}
+.project_hero_swiper {
+  margin-top: auto;
+}
+.project_hero_content_title_wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  transition: height ease .6s;
+  overflow: hidden;
+}
+
+.project_hero_content_label {
+  font-weight: 700;
+  color: #C78F50;
+  font-size: 3.6rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.2;
+}
+
+.project_hero_content_title {
+  margin-bottom: 2.4rem;
+  font-size: 6.4rem !important;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  color: white !important;
+  font-weight: 700;
+  height: max-content;
+}
+
+.project_hero_content_sub {
+  max-width: 39rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.project_hero_overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(90deg, rgba(26, 61, 84, 0.50) 0%, rgba(26, 61, 84, 0.00) 100%);
+}
+
+.project_hero_overlay_horizontal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 40%;
+  z-index: 3;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 100%);
+}
+
+.project_hero_bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.project_hero_bg_inner {
+  height: 100%;
+}
+
+.project_hero_content_btn {
+  padding: 1rem 2rem !important;
+  border-radius: .5rem;
+  background-color: white !important;
+  display: flex;
+  column-gap: 1rem;
+  width: max-content;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 1em;
+  font-weight: 700;
+  border: none;
+  transition: background-color ease .4s;
+
+  * {
+    color: #1A3D54 !important;
+    transition: color ease .4s;
+  }
+
+  svg {
+    width: 2.4rem;
+    transition: transform .4s ease;
+  }
+
+  &.btn:hover {
+    background-color: #1A3D54 !important;
+
+    * {
+      color: white !important;
+    }
+
+    svg {
+      transform: translateX(.6rem);
+    }
+  }
+}
+.project_hero_bg {
+  display: grid;
+  grid-template-columns: 1fr;
+  pointer-events: none;
+}
+.project_hero_bg_inner {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  opacity: 0;
+  transition: .6s ease opacity;
+  &.active {
+    opacity: 1;
+  }
+}
+.project_hero_control_main {
+  display: flex;
+  gap: 1rem;
+  flex: none;
+}
+
+.project_hero_control {
+  display: flex;
+  gap: 8.8rem;
+  align-items: end;
+}
+
+.project_hero_control_item {
+  color: white;
+  border: 1px solid white;
+  border-radius: .5rem;
+  background-color: transparent;
+  transition: background-color ease .4s;
+  cursor: pointer;
+  width: 3.6rem;
+  height: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.swiper-button-disabled {
+    pointer-events: none;
+    opacity: .4;
+  }
+  svg {
+    width: 1.6rem;
+  }
+
+  &:hover {
+    background-color: white;
+    color: #1A3D54;
+
+  }
+}
+
+.project_hero_control_progress {
+  flex: 1;
+  border-radius: 1rem;
+  height: .5rem;
+  background: rgba(255, 255, 255, 0.50);
+  position: relative;
+  .swiper-scrollbar-drag{
+    border-radius: 1rem;
+    background:  linear-gradient(180deg, #E6AF6C 0%, #AA7136 100%);
+  }
+}
