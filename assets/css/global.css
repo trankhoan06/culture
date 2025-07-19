@@ -1,6 +1,36 @@
-/* 1.6 1.8 */
+/* 1.6 1.8 banner la hero*/
   .image__full img{
     width: 100%;
+  }
+  .subtitle__banner{
+      font-weight: 300 !important;
+      font-family: Roboto !important;
+    }
+    .title__banner{
+      font-family: FZ Poppins !important;
+      font-weight: 700 !important;
+  }
+  .subtitle__section{
+      font-weight: 700 !important;
+      font-family: Roboto !important;
+    }
+  .title__section{
+    font-weight: 700 !important;
+  font-family: FZ Poppins !important;
+  } 
+  @media screen and (min-width:992px) {
+    .subtitle__banner{
+      font-size: 3.6rem !important;
+    }
+    .title__banner{
+      font-size: 5.6rem !important;
+  }
+  .subtitle__section{
+      font-size: 2.4rem !important;
+    }
+  .title__section{
+  font-size: 4.5rem !important;
+  } 
   }
   .image__fullfill img{
     width: 100%;
@@ -12,11 +42,38 @@
     font-size: 1.8rem;
     line-height: 1.4;
     box-sizing: border-box;
+    font-family: Roboto;
   }
   @media screen and (max-width: 991px){
     body{
       font-size: 1.6rem;
     }
+    .subtitle__banner{
+      font-size: 2.4rem !important;
+    }
+    .title__banner{
+      font-size: 4.4rem !important;
+  }
+  .subtitle__section{
+      font-size: 1.8rem !important;
+    }
+  .title__section{
+    font-size: 2.8rem !important;
+  } 
+  }
+  @media screen and (max-width: 767px){
+    .subtitle__banner, h2.subtitle__banner{
+    font-size: 2rem !important;
+  }
+.title__banner, h1.title__banner{
+font-size: 2.8rem !important;
+}
+.subtitle__section, h2.subtitle__section{
+    font-size: 1.8rem !important;
+  }
+.title__section, h2.title__section{
+font-size: 2.4rem !important;
+}
   }
 *{
     box-sizing: border-box;

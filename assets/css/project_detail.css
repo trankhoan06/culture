@@ -12,15 +12,9 @@
 
 .project__detail__hero__subtitle {
     color: #C78F50;
-    font-size: 3.6rem;
-    font-weight: bold;
-    font-family: Roboto;
 }
 
 .project__detail__hero__smalltitle {
-    font-family: Fz Poppins;
-    font-size: 6.4rem;
-    font-weight: bold;
     line-height: 8.4rem;
     color: #fff;
 }
@@ -37,9 +31,7 @@
 
     }
 
-    .project__detail__other__smalltitle {
-        font-size: 3.2rem !important;
-    }
+
 
     .project__detail__hero__txt {
         top: 5rem;
@@ -56,11 +48,9 @@
 
     .project__detail__hero__subtitle {
         margin-bottom: 1rem !important;
-        font-size: 1.8rem !important;
     }
 
     .project__detail__hero__smalltitle {
-        font-size: 3.2rem !important;
         line-height: 1.2;
     }
 
@@ -231,15 +221,9 @@
 /* other */
 .project__detail__other__subtitle {
     color: #C78F50;
-    font-size: 2.4rem;
-    font-weight: bold;
-    font-family: Roboto;
 }
 
 .project__detail__other__smalltitle {
-    font-size: 3.6rem;
-    font-weight: bold;
-    font-family: Roboto;
     margin-top: 1rem;
     margin-bottom: 6rem;
 }
@@ -330,6 +314,13 @@
     inset: 0;
     z-index: 2;
     background: linear-gradient(to bottom, #1a3d5400 0%, #1a3d5400 80%, #1A3D54 100%);
+}
+@media screen and (max-width:991px) {
+
+    .project__detail__other__smalltitle {
+        font-size: 3.2rem;
+    }
+
 }
 
 .project_detail_thumb {
@@ -470,13 +461,10 @@
         padding-left: 2rem;
     }
     .project__detail__other__smalltitle {
-        font-size: 2.8rem !important;
         margin-bottom: 4rem;
         margin-top: .4rem;
     }
-    .project__detail__other__subtitle {
-        font-size: 1.8rem !important;
-    }
+
     .project__detail__head__left {
         padding-right:  2rem;
     }

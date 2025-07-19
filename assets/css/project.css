@@ -225,13 +225,9 @@ position: relative;
     padding-top: 10rem;
     margin-bottom: 1rem;
     color: #C78F50;
-    font-size: 3.6rem;
-    font-weight: bold;
 }
 .project__realestate__smalltitle{
     color: #fff;
-    font-size: 4.8rem;
-    font-weight: bold;
     line-height: 6.4rem;
     padding-bottom: 6rem;
     text-transform: uppercase;
@@ -340,7 +336,6 @@ position: relative;
     .project__realestate__subtitle{
         padding-top: 2rem;
         font-size: 2.5rem;
-        margin-bottom: 0;
     }
     .project__realestate__smalltitle{
         font-size: 2.8rem;
@@ -381,13 +376,8 @@ position: relative;
         padding: 1.4rem 1.2rem 1rem 1.2rem;
     }
     .project__realestate__smalltitle{
-        font-size: 2.8rem;
         line-height: 4rem;
         padding-bottom: 2rem;
-    }
-    .project__realestate__subtitle{
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
     }
 }
 .project_hero {
@@ -462,9 +452,7 @@ position: relative;
   }
   
   .project_hero_content_label {
-    font-weight: 700;
     color: #C78F50;
-    font-size: 3.6rem;
     margin-bottom: 3.2rem;
     line-height: 1.2;
   }
@@ -633,14 +621,9 @@ position: relative;
   }
   .project__cta__subtitle{
     color: #C78F50;
-    font-size: 1.8rem;
-    font-weight: bold;
-    font-family: Roboto;
   }
   .project__cta__smalltitle{
     color: #fff;
-    font-weight: bold;
-    font-size: 3.6rem;
     margin-top: 2rem;
   }
   .project__cta__des{
@@ -695,7 +678,6 @@ position: relative;
         margin-top: 4rem;
     }
     .project_hero_content_label {
-        font-size: 1.6rem;
         margin-bottom: 1.2rem;
     }
     .project_hero_content_title {
@@ -731,16 +713,12 @@ position: relative;
         padding: 6rem 2rem 6rem 2rem;
     }
     .project__cta__smalltitle {
-        font-size: 2.8rem;
         margin-top: 1rem;
     }
     .project__cta__left {
         width: 100%;
     }
     .project__cta__des {
-        font-size: 1.6rem;
-    }
-    .project__cta__subtitle {
         font-size: 1.6rem;
     }
   }
