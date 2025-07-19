@@ -16,13 +16,13 @@ html {
   }
 }
 
-@media screen and (min-device-aspect-ratio: 1912/1080) {
+/* @media screen and (min-device-aspect-ratio: 1912/1080) {
   @media screen and (min-width: 991px) {
     html {
       font-size: 1vh;
     }
   }
-}
+} */
 
 @media screen and (max-width: 767px) {
   html {
