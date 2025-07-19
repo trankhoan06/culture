@@ -15,10 +15,10 @@ html {
     }
   }
   
-  @media screen and (min-device-aspect-ratio: 1912/1080) {
+  @media screen and (min-device-aspect-ratio: 16 / 8) {
     @media screen and (min-width: 991px) {
       html {
-        font-size: 1vh;
+        font-size: 1.1vh;
       }
     }
   }
@@ -32,38 +32,25 @@ html {
       display: none;
     }
   }
-  .image__full img{
+  
+.image__full img{
     width: 100%;
     object-fit: cover;
-  }
-  .image__fullfill img{
+}
+.image__fullfill img{
     width: 100%;
     object-fit: cover;
     height: 100%;
-  }
-  body{
+}
+body{
     color: #333;
     font-size: 1.8rem;
     box-sizing: border-box;
-  }
-  @media screen and (max-width: 991px){
-    body{
-      font-size: 1.5rem;
-    }
-  }
+}
 *{
     box-sizing: border-box;
 }
 .kl-container {
     max-width: 2560px;
-    padding-inline: 12rem;
-    width: 100%;
-    margin-inline: auto;
-}
-.txt-36 {
-  font-size: 3.6rem;
-  line-height: 1.2em;
-}
-.kl-line {
-  overflow: hidden;
+    padding-inline: 80px;
 }
