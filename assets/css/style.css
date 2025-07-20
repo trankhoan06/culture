@@ -43,6 +43,9 @@ html {
   .kl-container {
     padding-inline: 4rem !important;
   }
+  body{
+      font-size: 1.6rem;
+    }
  }
  @media only screen and (max-width: 767px) {
   .kl-container {

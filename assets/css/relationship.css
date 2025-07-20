@@ -32,6 +32,32 @@ line-height: 7rem;
 font-weight: bold;
 }
 
+@media screen and (max-width:991px) {
+    .relationship__hero__content{
+        top: 5rem;
+        left: 5rem;
+    }
+    .relationship__hero__content__subtitle{
+        line-height: 4rem;
+        margin-bottom: 0;
+    }
+    .relationship__hero__content__smalltitle{
+        line-height: 6rem;
+    }
+}
+@media screen and (max-width:767px) {
+    .relationship__hero__content{
+        top: 2rem;
+        left: 1rem;
+    }
+    .relationship__hero__content__subtitle{
+        line-height: 2.5rem;
+        margin-bottom: 0;
+    }
+    .relationship__hero__content__smalltitle{
+        line-height: 5rem;
+    }
+}
 
 /* relationship__content */
 
@@ -152,4 +178,77 @@ height: max-content;
 .relationship__content__timeline__item__update{
     margin-left: 15rem;
     max-width: 18.75rem;
+}
+@media screen and (max-width:991px) {
+    .relationship__content__hero__left{
+        font-size: 2.4rem;
+        width: 54.25%;
+    }
+    .relationship__content__hero__right{
+        font-size: 2.4rem;
+    }
+    .relationship__content__hero{
+        margin: 3rem 2rem 0;
+    }
+    .relationship__content__history{
+        margin-top: 4rem;
+    }
+    .relationship__content__history__time{
+        margin: 3rem 2rem 0;
+    }
+    .relationship__content__history__year__item::after{
+        bottom: -.7rem;
+    }
+    .relationship__content__history__title{
+        font-size: 3.6rem;
+    }
+    .relationship__content__timeline__title{
+        font-size: 3.6rem;
+    }
+    .relationship__content__timeline__item__des{
+        font-size: 1.6rem;
+        width: 80%;
+    }
+    .relationship__content__timeline__item{
+        min-height: auto;
+        margin-bottom: 1rem;
+
+    }
+    .relationship__content__timeline__item__update{
+        margin-left: 2rem;
+        font-size: 1.6rem;
+        max-width: 11rem;
+    }
+    .relationship__content__timeline__item__view{
+        margin-left: 1rem;
+    }
+    .relationship__content__timeline__item__dow{
+        margin-left: 1rem;
+    }
+    .relationship__content__timeline {
+        margin: 3rem 2rem 0;
+    }
+    .relationship__content__item .relationship__content__timeline:first-child{
+        margin: 5rem 2rem 0;
+    }
+}
+@media screen and (max-width:767px) {
+    .relationship__content__history__time{
+        overflow: hidden;
+        padding-bottom: 1rem;
+        margin-right: 0;
+    }
+    .relationship__content__hero{
+        flex-direction: column;
+    }
+    .relationship__content__hero__left, .relationship__content__hero__right{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .relationship__content__hero__right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
 }
