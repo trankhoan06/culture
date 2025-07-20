@@ -1,3 +1,4 @@
+
 .relationship__hero__img img{
     aspect-ratio: 192/98;
 }
@@ -7,31 +8,42 @@
 .relationship__hero__content{
     position: absolute;
     left: 9rem;
-    top: 36.4rem;
+    top: 27rem;
+    z-index: 3;
 }
 .relationship__hero__content__subtitle{
-    font-size: 3.8rem;
     line-height: 6.8rem;
     margin-bottom: 1rem;
     color: #fff;
     
 }
+.relationship__hero__overlay{
+    position: absolute;
+    background: #243b5a2c;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 .relationship__hero__content__smalltitle{
-font-size: 6rem;
 color: #fff;
 line-height: 7rem;
 font-weight: bold;
-word-spacing: 1rem;
 }
+
+
+/* relationship__content */
+
 .relationship__content__hero{
     display: flex;
-    margin: 0 9rem;
+    margin: 0 6.75rem;
     justify-content: space-between;
-    margin-top: 11.5rem;
+    margin-top:8.625rem;
 }
 .relationship__content__hero__left, .relationship__content__hero__right{
-    font-size: 4rem;
-    line-height: 5rem;
+    font-size: 3rem;
+    line-height: 3.75rem;
     color: #555;
 
 }
@@ -41,7 +53,8 @@ word-spacing: 1rem;
 .relationship__content__hero__right{
 border: 1px #C79156 solid;
 border-radius: 1rem;
-padding: 2rem 5rem;
+padding: 1.5rem 3.75rem;
+height: max-content;
 }
 .relationship__content__history{
     margin-top: 6.2rem;
@@ -49,11 +62,11 @@ padding: 2rem 5rem;
 .relationship__content__history__title{
     text-align: center;
     color: #C79156;
-    font-size: 6rem;
-    line-height: 5rem;
+    font-size: 4.5rem;
+    line-height: 3.75rem;
 }
 .relationship__content__history__time{
-    margin: 5.5rem 9rem 0;
+    margin: 4.125rem 6.75rem 0;
     position: relative;
 }
 .relationship__content__history__year{
@@ -63,27 +76,27 @@ padding: 2rem 5rem;
 }
 .relationship__content__history__year__item{
     color: #989898;
-    font-size: 3rem;
-    line-height: 7rem;
+    font-size: 2.25rem;
+    line-height: 5.25rem;
     font-weight: bold;
-    width: 13.6rem;
+    width: 10.2rem;
     text-align: center;
     position: relative;
 }
 .relationship__content__history__year__item::after{
     content: "";
     position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.125rem;
+    height: 1.125rem;
     border-radius: 50%;
     background-color: #989898;
-        bottom: -1.1rem;
+        bottom: -.825rem;
     left: 45%;
 }
 .relationship__content__history__bottom{
     position: absolute;
     right: -2px;
-    bottom: -1.5rem;
+    bottom: -1.125rem;
 }
 .relationship__content__history__year__item.active{
     color: #C79156;
@@ -93,31 +106,41 @@ padding: 2rem 5rem;
 }
 .relationship__content__timeline__title{
     color: #C79156;
-    font-size: 6rem;
-    line-height: 6.8rem;
-    padding-bottom: 2.2rem;
+    font-size: 4.5rem;
+    line-height: 5.1rem;
+    padding-bottom: 1.65rem;
     border-bottom: 1px #989898 solid;
 }
+.relationship__content__item{
+    margin-bottom: 8.5rem;
+    display: none;
+}
+.relationship__content__item.active{
+    display: block;
+}
+.relationship__content__item .relationship__content__timeline:first-child{
+    margin: 8.625rem 6.75rem 0;
+}
 .relationship__content__timeline{
-    margin: 11.5rem 9rem 0;
+    margin: 4.625rem 6.75rem 0;
 }
 .relationship__content__timeline__wrap .relationship__content__timeline__item:first-child{
-    margin-top: 2.6rem;
+    margin-top: 1.95rem;
 
 }
 .relationship__content__timeline__item{
     display: flex;
-    max-width: 163rem;
-    min-height: 10.6rem;
+    max-width: 122.25rem;
+    min-height: 7.95rem;
 }
 .relationship__content__timeline__item__view{
-    width: 3.8rem;
+    width: 2.85rem;
     cursor: pointer;
-    margin-left: 5rem;
+    margin-left: 3.75rem;
 }
  .relationship__content__timeline__item__dow{
-    width: 3.1rem;
-    margin-left: 5rem;
+    width: 2.325rem;
+    margin-left: 3.75rem;
     cursor: pointer;
 }
 .relationship__content__timeline__item__des{
@@ -127,6 +150,6 @@ padding: 2rem 5rem;
     width: 61.5337%;
 }
 .relationship__content__timeline__item__update{
-    margin-left: 20rem;
-    max-width: 25rem;
+    margin-left: 15rem;
+    max-width: 18.75rem;
 }
