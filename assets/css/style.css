@@ -385,12 +385,17 @@ a:hover {
     font-size: 2.4rem;
   }
 }
-body *{
+body {
     color: #333;
     font-size: 1.8rem;
     line-height: 1.4;
     box-sizing: border-box;
     font-family: Roboto;
+    --bs-body-font-size : 1.6rem  !important;
+  }
+  .btn {
+    --bs-btn-font-size: 1.6rem !important
+
   }
 .hero-stats {
   margin-top: 6rem;
@@ -600,7 +605,7 @@ h6 {
   line-height: 1.3em !important;
 }
 h6{
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
 }
 .btn {
   font-size: 1.4rem;
@@ -782,7 +787,7 @@ p.text-muted {
 .footer {
   background-color: #1a3d54;
   padding: 4.0rem 0;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .footer input {
