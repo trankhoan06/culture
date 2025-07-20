@@ -37,13 +37,6 @@
     object-fit: cover;
     height: 100%;
   }
-  body{
-    color: #333;
-    font-size: 1.8rem;
-    line-height: 1.4;
-    box-sizing: border-box;
-    font-family: Roboto;
-  }
   @media screen and (max-width: 991px){
     body{
       font-size: 1.6rem;

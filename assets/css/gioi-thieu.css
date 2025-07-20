@@ -1292,7 +1292,6 @@ html {
     font-size: 48px !important;
     line-height: 1.2;
   }
-
   .hero-banner .hero-content h5 {
     font-size: 28px !important;
   }
@@ -2614,7 +2613,8 @@ width: 128%;
   }
 }
 .hero-content.container.text-left.text-white p {
-  width: 33%;
+  width: 50%;
+  color: #fff;
 }
 .chairman-quote-section .quote-line,
 .chairman-quote-section .quote-line-pulse,
