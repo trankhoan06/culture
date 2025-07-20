@@ -4,26 +4,24 @@
 }
 .contact__hero__txt{
     position: absolute;
-    top: 36.4rem;
-    left: 9rem;
+    top: 27rem;
+    left: 6.75rem;
     z-index: 2;
 }
 .contact__hero__subtitle{
-    font-size: 3.8rem;
     line-height: 2.6rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     color: #fff;
 }
 .contact__hero__smalltitle{
     font-weight: bold;
-    font-size: 6rem;
-    line-height: 7rem;
+    line-height: 5.25rem;
     color: #fff;
 }
 .contact__hero__des{
     color: #fff;
     line-height: 2.6rem;
-    max-width: 72rem;
+    max-width: 54rem;
 }
 .contact__hero__overlay{
     position: absolute;
@@ -34,6 +32,9 @@
     z-index: 1;
 }
 /* contact content */
+.contact__content{
+    margin-bottom: 7.5rem;
+}
 .contact__content__inner{
     display: flex;
     justify-content: space-between;
@@ -41,32 +42,59 @@
 .contact__content__left{
     width: 42.55%;
     background-color: #EDEDED;
-    padding-left: 8.9rem;
-    border-radius: 0 2rem 2rem 0;
+    padding-left: 6.675rem;
+    border-radius: 0 1.5rem 1.5rem 0;
 }
 .contact__content__right{
     width: 46.04%;
-    margin-top: 6.8rem;
+    margin-top: 5.1rem;
 }
 .contact__content{
-    margin-right: 6.3rem;
-    margin-top: 10rem;
+    margin-right: 4.725rem;
+    margin-top: 7.5rem;
 }
 .contact__content__left__title{
     color: #C48C5E;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 2.6rem;
-    margin-bottom: 1.6rem;
-    margin-top: 6.8rem;
+    margin-bottom: 1.2rem;
+    margin-top: 5.1rem;
 }
 .contact__content__right__title{
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
 }
 .contact__content__right__des{
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
     color: #555;
 }
 .contact__content__right__inner{
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+.contact__content__left__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    max-width: 42rem;
+}
+.contact__content__left__inner input, .contact__content__left__inner textarea{
+    background-color: #EDEDED;
+    border: none;
+    border-bottom: 1px #989898 solid;
+    color: #555555;
+    margin-bottom: 1.875rem;
+    width: 100%;
+}
+.contact__content__submit{
+    margin-bottom: 5.7rem;
+    border: 1px #C48C5E solid;
+    color: #C48C5E;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    padding: .5rem 1.525rem;
+    max-width: 12.25rem;
+    &:hover{
+        background-color: #C48C5E;
+        color: #fff;
+    }
 }
