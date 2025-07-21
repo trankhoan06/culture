@@ -23,13 +23,15 @@
     line-height: 2.6rem;
     max-width: 54rem;
 }
-.contact__hero__overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
+.contact__hero__img {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: #05131D;
+        opacity: .3;
+    }
 }
 /* contact content */
 .contact__content{
@@ -81,9 +83,12 @@
     background-color: #EDEDED;
     border: none;
     border-bottom: 1px #989898 solid;
-    color: #555555;
+    color: black;
     margin-bottom: 1.875rem;
     width: 100%;
+    &:focus-visible {
+        outline: none;
+    }
 }
 .contact__content__submit{
     margin-bottom: 5.7rem;
@@ -98,3 +103,70 @@
         color: #fff;
     }
 }
+.contact__content__left__inner input::placeholder, .contact__content__left__inner textarea::placeholder {
+    color: #555555;
+}
+ @media only screen and (max-width: 991px) {
+    .contact__hero__txt {
+        top: 16rem;
+        left: 4rem;
+    }
+    .contact__content__inner {
+        flex-direction: column;
+        /* padding-inline: 4rem; */
+    }
+    .contact__content{
+        margin-inline: 4rem;
+    }
+    .contact__content__left, .contact__content__right{
+        width: 100%;
+    }
+    .contact__content__left {
+        border-radius: 1.6rem;
+        padding-inline: 4rem;
+    }
+    .contact__content__left__inner{
+        max-width: 100%;
+    }
+ }
+ @media only screen and (max-width: 767px) {
+    .contact__hero__txt {
+        top: 12rem;
+        left: 4rem;
+    }
+    .contact__content__inner {
+        flex-direction: column;
+        /* padding-inline: 4rem; */
+    }
+    .contact__content{
+        margin-inline: 2rem;
+    }
+    .contact__content__left, .contact__content__right{
+        width: 100%;
+    }
+    .contact__content__left {
+        padding-inline: 2rem;
+    }
+    .contact__hero__subtitle {
+        margin-bottom: 1rem;
+    }
+    .contact__hero__img {
+        height: 32rem;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+        &:after {
+            opacity: .6;
+        }
+    }
+    .contact__content__right{
+        margin-top: 4rem;
+    }
+    .contact__content__submit {
+        margin-bottom: 4rem;
+    }
+    .contact__content__left__title{
+        margin-top: 4rem;
+    }
+ } 

@@ -47,15 +47,18 @@ font-weight: bold;
 }
 @media screen and (max-width:767px) {
     .relationship__hero__content{
-        top: 2rem;
-        left: 1rem;
+        top: 11rem;
+        left: 0rem;
+        width: 100%;
     }
     .relationship__hero__content__subtitle{
         line-height: 2.5rem;
+        text-align: center;
         margin-bottom: 0;
     }
     .relationship__hero__content__smalltitle{
         line-height: 5rem;
+        text-align: center;
     }
 }
 
@@ -108,6 +111,31 @@ height: max-content;
     width: 10.2rem;
     text-align: center;
     position: relative;
+    cursor: pointer;
+    transition: color ease .6s;
+    &:last-child:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -.925rem;
+        width: .8rem;
+        height: 1.6rem;
+        background-image: url(../img/icon-arrow.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &.swiper-slide-active {
+        color: #C79156 !important ;
+    }
+    &.active, &:hover {
+        color: #C79156 ;
+    }
+    &.swiper-slide-active:after{
+        background-color: #C79156 !important;
+    }
+    &.active::after, &:hover::after{
+        background-color: #C79156;
+    }
 }
 .relationship__content__history__year__item::after{
     content: "";
@@ -116,7 +144,8 @@ height: max-content;
     height: 1.125rem;
     border-radius: 50%;
     background-color: #989898;
-        bottom: -.825rem;
+    transition: background-color ease .6s;
+    bottom: -.7rem;
     left: 45%;
 }
 .relationship__content__history__bottom{
@@ -124,18 +153,12 @@ height: max-content;
     right: -2px;
     bottom: -1.125rem;
 }
-.relationship__content__history__year__item.active{
-    color: #C79156;
-}
-.relationship__content__history__year__item.active::after{
-    background-color: #C79156;
-}
 .relationship__content__timeline__title{
     color: #C79156;
     font-size: 4.5rem;
     line-height: 5.1rem;
     padding-bottom: 1.65rem;
-    border-bottom: 1px #989898 solid;
+    border-bottom: .2rem #989898 solid;
 }
 .relationship__content__item{
     margin-bottom: 8.5rem;
@@ -179,22 +202,27 @@ height: max-content;
     margin-left: 15rem;
     max-width: 18.75rem;
 }
+
 @media screen and (max-width:991px) {
     .relationship__content__hero__left{
-        font-size: 2.4rem;
+        font-size: 2rem;
         width: 54.25%;
+    }
+    .relationship__content__history__year__item {
+        font-size: 2rem;
+        line-height: 2.4em;
     }
     .relationship__content__hero__right{
         font-size: 2.4rem;
     }
     .relationship__content__hero{
-        margin: 3rem 2rem 0;
+        margin: 3rem 4rem 0;
     }
     .relationship__content__history{
         margin-top: 4rem;
     }
     .relationship__content__history__time{
-        margin: 3rem 2rem 0;
+        margin: 3rem 4rem 0;
     }
     .relationship__content__history__year__item::after{
         bottom: -.7rem;
@@ -203,7 +231,7 @@ height: max-content;
         font-size: 3.6rem;
     }
     .relationship__content__timeline__title{
-        font-size: 3.6rem;
+        font-size: 2.8rem;
     }
     .relationship__content__timeline__item__des{
         font-size: 1.6rem;
@@ -226,13 +254,16 @@ height: max-content;
         margin-left: 1rem;
     }
     .relationship__content__timeline {
-        margin: 3rem 2rem 0;
+        margin: 3rem 4rem 0;
     }
     .relationship__content__item .relationship__content__timeline:first-child{
-        margin: 5rem 2rem 0;
+        margin: 5rem 4rem 0;
     }
 }
 @media screen and (max-width:767px) {
+    .relationship__content__history__year__item {
+        line-height: 2em;
+    } 
     .relationship__content__history__time{
         overflow: hidden;
         padding-bottom: 1rem;
@@ -243,12 +274,91 @@ height: max-content;
     }
     .relationship__content__hero__left, .relationship__content__hero__right{
         width: 100%;
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        text-align: center;
     }
     .relationship__content__hero__right{
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 2rem;
+        padding: .8rem 2rem;
+        width: max-content;
+        margin-inline: auto;
+    }
+    .relationship__hero__img {
+        height: 32rem;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .relationship__hero__overlay {
+        background-color: #243b5a6e;
+    }
+    .relationship__content__hero {
+        margin: 6rem 2rem 0;
+    }
+    .relationship__content__history__title {
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+    .relationship__content__history__time {
+        margin: 2rem 0rem 0;
+        width: 12.2rem;
+        margin-left: auto;
+        overflow: visible;
+    }
+    .relationship__content__history__time__wrap {
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: .8rem;
+            left: 0;
+            right: 0;
+            border-bottom: .2rem solid #989898;
+        }
+    }
+    .relationship__content__history__year {
+        border: none;
+    }
+    .relationship__content__history__year__item{
+        &.active, &:hover {
+            color: #989898 ;
+        }
+        &.active::after, &:hover::after{
+            background-color: #989898 ;
+        }
+    }
+    .relationship__content__item .relationship__content__timeline{
+        margin-inline: 2rem !important;
+    }
+    .relationship__content__history {
+        overflow: hidden;
+        margin-inline: 2rem;
+    }
+    .relationship__content__timeline__item {
+        flex-wrap: wrap;
+        align-items: end;
+        margin-bottom: 4rem;
+    }
+    .relationship__content__timeline__item__des{
+        width: 100%;
+        margin-bottom: .6rem;
+    }
+    .relationship__content__timeline__item__update {
+        margin-left: 0;
+        flex: 1;
+        max-width: none;
+    }
+    .relationship__content__timeline__item__dow {
+        margin-bottom: .2rem;
+    }
+    .relationship__content__timeline__title {
+        font-size: 2rem;
+        line-height: 1.3em;
+        padding-bottom: 1rem;
     }
 }
