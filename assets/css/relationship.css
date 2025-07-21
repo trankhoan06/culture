@@ -48,17 +48,15 @@ font-weight: bold;
 @media screen and (max-width:767px) {
     .relationship__hero__content{
         top: 11rem;
-        left: 0rem;
+        left: 2rem;
         width: 100%;
     }
     .relationship__hero__content__subtitle{
         line-height: 2.5rem;
-        text-align: center;
         margin-bottom: 0;
     }
     .relationship__hero__content__smalltitle{
         line-height: 5rem;
-        text-align: center;
     }
 }
 
