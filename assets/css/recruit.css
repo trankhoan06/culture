@@ -53,7 +53,7 @@
 .recruit__benefit__inner{
     display: flex;
     justify-content: space-between;
-    margin-left: 6.75rem;
+    margin-left: 12rem;
 }
 .recruit__benefit__right{
     width: 45%;
@@ -87,7 +87,7 @@
     text-align: center;
 }
 .recruit__opportunity__table{
-    margin: 3.75rem 6.75rem 0;
+    margin: 3.75rem 12rem 0;
 }
 .recruit__opportunity__table__name{
 background-color: #20446F;

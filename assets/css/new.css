@@ -39,9 +39,9 @@
 .new__hero__menu {
     position: absolute;
     bottom: 0;
-    left: 6.75rem;
+    left: 12rem;
     background-color: #C79156;
-    right: 6.75rem;
+    right: 12rem;
     border-radius: 1rem 1rem 0 0;
     display: flex;
     justify-content: center;
@@ -88,7 +88,7 @@
 
 .new__update__inner {
     display: flex;
-    margin: 0 6.75rem;
+    margin: 0 12rem;
 }
 
 .new__update__card__time {
@@ -162,7 +162,7 @@
 
 /* new__relate */
 .new__relate {
-    margin: 6rem 6.75rem 0;
+    margin: 6rem 12rem 0;
 }
 
 .new__relate__item {
@@ -221,8 +221,13 @@
     font-weight: 500;
     font-size: 1.7rem;
     line-height: 1.2em;
-    min-height: 6.075rem;
+     max-height: 2.4em; 
     transition: color ease .6s;
+    display: -webkit-box;
+  -webkit-line-clamp: 2;        /* số dòng tối đa */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .new__relate__item__img {
@@ -273,6 +278,7 @@
 .new__relate__paging__item:hover {
     color: #fff;
     background-color: #C79156;
+    border-color: #C79156;
 }
 
 @media only screen and (max-width: 991px) {
