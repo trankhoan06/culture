@@ -32,6 +32,9 @@ html {
   .no-br br {
     display: none;
   }
+   br{
+    display: none !important
+  }
 }
 .kl-container {
   max-width: 2560px;
