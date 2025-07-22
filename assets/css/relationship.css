@@ -7,7 +7,7 @@
 }
 .relationship__hero__content{
     position: absolute;
-    left: 9rem;
+    left: 12rem;
     top: 27rem;
     z-index: 3;
 }
@@ -90,7 +90,8 @@ height: max-content;
     text-align: center;
     color: #C79156;
     font-size: 4.5rem;
-    line-height: 3.75rem;
+    line-height: 1.2;
+    font-weight: 700;
 }
 .relationship__content__history__time{
     margin: 4.125rem 6.75rem 0;
@@ -258,7 +259,7 @@ height: max-content;
         margin: 5rem 4rem 0;
     }
 }
-@media screen and (max-width:767px) {
+@media only screen and (max-width:767px) {
     .relationship__content__history__year__item {
         line-height: 2em;
     } 
@@ -359,4 +360,5 @@ height: max-content;
         line-height: 1.3em;
         padding-bottom: 1rem;
     }
+    
 }

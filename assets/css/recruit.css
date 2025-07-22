@@ -6,8 +6,11 @@
 .recruit__hero__txt{
     position: absolute;
     top: 27rem;
-    left: 6.75rem;
+    left: 12rem;
     z-index: 2;
+}
+.recruit__opportunity__table__label {
+    display: none;
 }
 .recruit__hero__subtitle{
     line-height: 2.6rem;
@@ -163,7 +166,7 @@ color: #555 !important;
 }
 .recruit__opportunity__apply{
     color: #555;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.6rem;
     display: block;
     border-radius: .5rem;
@@ -184,6 +187,9 @@ color: #555 !important;
 .recruit__opportunity__table__pos {
     transition: color .6s ease;
     text-transform: uppercase;
+}
+.recruit__opportunity__table__btn{
+    display: none;
 }
  @media only screen and (max-width: 991px) {
     .recruit__benefit__inner {
@@ -241,6 +247,21 @@ color: #555 !important;
     }
 }
 @media only screen and (max-width: 767px) {
+    .recruit__opportunity__table__btn {
+        display: block;
+        text-align: center;
+        border-radius: .6rem;
+        border: 1px solid #C79156;
+        font-size: 1.6rem;
+        color: black;
+        width: max-content;
+        padding: .4rem 1.2rem;
+        margin-top: 1rem;
+        
+    }
+    .recruit__opportunity__table__row__detail {
+        margin-left: 0;
+    }
     .recruit__hero__img{
         height: 36rem;
         img {
@@ -291,5 +312,34 @@ color: #555 !important;
     } 
     .recruit__opportunity__table__num {
         width: 6rem;
+    }
+    .recruit__opportunity__table__row__inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .recruit__opportunity__table__name {
+        display: none;
+    }
+    .recruit__txt, .recruit__txt1 {
+        width: 100%;
+        display: flex;
+    }
+    .recruit__opportunity__table__label {
+        display: block;
+        font-size: 1.2rem !important;
+        color: #55555593 !important;
+        margin-right: 1rem;
+        text-transform: uppercase;
+        min-width: 12rem;
+        text-align: start;
+    }
+    .recruit__opportunity__apply {
+        font-size: 1.6rem;
+    }
+    .recruit__txt1 {
+        font-size: 1.6rem !important;
+    }
+    .recruit__opportunity__table__icon {
+        display: none;
     }
  }
