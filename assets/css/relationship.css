@@ -64,7 +64,7 @@ font-weight: bold;
 
 .relationship__content__hero{
     display: flex;
-    margin: 0 6.75rem;
+    margin: 0 12rem;
     justify-content: space-between;
     margin-top:8.625rem;
 }
@@ -94,7 +94,7 @@ height: max-content;
     font-weight: 700;
 }
 .relationship__content__history__time{
-    margin: 4.125rem 6.75rem 0;
+    margin: 4.125rem 12rem 0;
     position: relative;
 }
 .relationship__content__history__year{
@@ -170,7 +170,7 @@ height: max-content;
     margin: 8.625rem 6.75rem 0;
 }
 .relationship__content__timeline{
-    margin: 4.625rem 6.75rem 0;
+    margin: 4.625rem 12rem 0;
 }
 .relationship__content__timeline__wrap .relationship__content__timeline__item:first-child{
     margin-top: 1.95rem;

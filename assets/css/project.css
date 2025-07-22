@@ -616,7 +616,7 @@ position: relative;
     background-size: 100% 100%;
     display: flex;
     min-height: 40rem;
-    padding: 11rem 0 6rem 14rem;
+    padding: 11rem 0 6rem 12rem;
     justify-content: space-between;
   }
   .project__cta__subtitle{
