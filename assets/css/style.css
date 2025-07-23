@@ -1133,7 +1133,30 @@ h2 {
     background: #193e54;
   }
 }
+ @media screen and (max-width:1440px) {
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 6rem;
+    height: .6rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: .9rem 0;
+    transition: 0.4s;
+  }
+    footer .col_middle {
+    margin-top: 4.8rem;
+    justify-content: start !important;
+  }
+  .mobile-logo img{
+    max-width: 9.5rem;
+  }
+ }
  @media screen and (max-width:991px) {
+    footer .col_middle {
+    margin-top: 4.8rem;
+    justify-content: start !important;
+  }
   .bar1,
   .bar2,
   .bar3 {
@@ -1144,9 +1167,8 @@ h2 {
     margin: .6rem 0;
     transition: 0.4s;
   }
-    footer .col_middle {
-    margin-top: 4.8rem;
-    justify-content: start !important;
+  .mobile-logo img{
+    max-width: 6.5rem;
   }
  }
 @media (max-width: 767px) {

@@ -61,6 +61,7 @@
 .recruit__benefit__left__title{
     font-size: 4.5rem;
     line-height: 5.625rem;
+    padding-right: 4rem;
     color:#C79156;
     margin-top: 7.5rem;
     margin-bottom: 3.75rem;
@@ -70,10 +71,21 @@
     font-size: 1.7rem;
     color: #555;
     margin-bottom: .75rem;
+    padding-left: 3.5rem;
+    position: relative;
+    &::after{
+        content: url(../img/icon-dot.svg);
+        width: 2.2rem;
+        height: 2.2rem;
+        position: absolute;
+        left: 0;
+        top: .2rem;
+
+    }
 }
 .recruit__benefit__left{
     width: 54%;
-    padding-right: 4rem;
+    padding-right: 0rem;
 }
 /* recruit__opportunity */
 .recruit__opportunity{
@@ -91,7 +103,7 @@
 }
 .recruit__opportunity__table__name{
 background-color: #20446F;
-padding: .5rem 0;
+padding: 1.5rem 0;
 }
 .recruit__opportunity__table__name .recruit__txt{
     color: #fff !important;
@@ -131,7 +143,7 @@ padding: .5rem 0;
     cursor: pointer;
 }
 .recruit__opportunity__table__row__inner{
-    padding: 1.35rem 0;
+    padding: 2.35rem 0;
     position: relative;
     &.active {
         .recruit__opportunity__table__icon {
@@ -179,6 +191,7 @@ color: #555 !important;
     margin-bottom: 5.775rem;
     margin-top: 2.25rem;
     transition: ease all .6s;
+    cursor: pointer;
 }
 .recruit__opportunity__apply:hover{
     color: #fff  !important;
@@ -190,6 +203,160 @@ color: #555 !important;
 }
 .recruit__opportunity__table__btn{
     display: none;
+}
+.recruit__opportunity__form{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #0000006b;
+    z-index: 100000;
+    display: none;
+}
+.recruit__opportunity__form.active{
+    display: block;
+}
+.recruit__opportunity__form__inner{
+ background-color: #fff;  
+ max-width: 134.7rem; 
+ width: 90%;
+ max-height: 64.8rem;
+ margin-top: 10rem;
+ margin-inline: auto;
+}
+.recruit__opportunity__form__wrap{
+    max-width: 108.5rem;
+    margin-inline: auto;
+    padding-top: 5.25rem;
+    padding-bottom: 6.375rem;
+    input{
+        min-height: 3.75rem;
+        margin-bottom: 2.625rem;
+        border:1px solid #D9D9D9;
+        color: #555555;
+        border-radius: .5rem;
+
+        &::placeholder{
+            padding-left: 1.5rem;
+        }
+    }
+    
+}
+.recruit__opportunity__form__input__right textarea, .recruit__opportunity__form__input__right select{
+    margin-bottom: 2.625rem;
+     min-height: 3.75rem;
+        border-radius: .5rem;
+     color: #555555;
+     border: 1px solid #D9D9D9;
+     appearance: none;
+     width: 100%;
+     cursor: pointer;
+     &::placeholder{
+            padding-left: 1.5rem;
+        }
+}
+.recruit__opportunity__form__input__right select{
+    padding-left: 1.5rem;
+}
+.recruit__opportunity__form__input__right__select{
+    position: relative;
+    width: 100%;
+}
+.recruit__opportunity__form__input__right__selecticon{
+    position: absolute;
+    top: .8rem;
+    pointer-events: none;
+    width: 2rem;
+    right: 1.3rem;
+}
+.recruit__opportunity__form__input__right section option{
+         border-color: #D9D9D9;
+        padding-left: 1.5rem;
+
+}
+.recruit__opportunity__form__input__right textarea{
+    min-height:10.2rem ;
+}
+.recruit__opportunity__form__input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.recruit__opportunity__form__input__right, .recruit__opportunity__form__input__left{
+    display: flex;
+    flex-direction: column;
+    width: 48.48%;
+}
+.recruit__opportunity__form__input__cv{
+    width: 100%;
+}
+.recruit__opportunity__form__title{
+    font-size: 2.75rem;
+    color: #C79156;
+    line-height: 5.1rem;
+    margin-bottom: 2.55rem;
+}
+.recruit__opportunity__form__input__cv input{
+    display: none;
+}
+.recruit__opportunity__form__input__cv{
+    cursor:pointer;
+    position: relative;
+    border: 1px solid #D9D9D9;
+    min-height: 3.75rem;
+    label{
+        margin-top:.67rem ;
+        margin-left: 1.5rem;
+        color: #555;
+        width: 100%;
+    cursor: pointer;    
+    }
+}
+.upload-icon{
+    position: absolute;
+    pointer-events: none;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    top: .2rem;
+
+}
+.recruit__opportunity__form__submit{
+    margin-top: 3rem;
+    border: 1px solid #C79156;
+    color: #C79156;
+    font-weight: bold;
+    min-width: 12.975rem;
+    text-align: center;
+    line-height: 2.25rem;
+    padding-block: .8rem;
+    border-radius: .5rem;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: color .4s ease;
+    &:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #C79156;
+        position: absolute;
+        inset: 0;
+        transform: translateX(-101%);
+        transition: transform .2s ease;
+        z-index: 1 ;
+    }
+    span {
+        position: relative;
+        z-index: 2;
+    }
+    &:hover{
+        color: #fff;
+    }
+    &:hover:after {
+        transform: translateX(0);
+    }
 }
  @media only screen and (max-width: 991px) {
     .recruit__benefit__inner {
