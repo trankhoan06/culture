@@ -1,4 +1,512 @@
-/* 1.6 1.8 banner la hero*/
+/* Black */
+body {
+    color: #333;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    --bs-body-font-size : 1.6rem  !important;
+  }
+html {
+  font-size: 0.69444444444vw;
+  vertical-align: baseline;
+}
+
+@media screen and (min-width: 2560px) {
+  html {
+    font-size: 17.7777777778px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 1.1990407674vw;
+  }
+}
+
+/* @media screen and (min-device-aspect-ratio: 1912/1080) {
+  @media screen and (min-width: 991px) {
+    html {
+      font-size: 1vh;
+    }
+  }
+} */
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 2.5445292621vw;
+  }
+
+  .no-br br {
+    display: none;
+  }
+   br{
+    display: none !important
+  }
+}
+
+
+/* header */
+.main-header {
+  width: 100%;
+  background: none;
+  padding: 1.5rem 0;
+  color: white;
+  position: fixed;
+  z-index: 999;
+}
+
+#mainHeader {
+  background-color: transparent;
+  transition: background-color 1s ease, transform 0.3s ease;
+  z-index: 999;
+  background-color: transparent;
+}
+.header-hidden {
+  transform: translateY(-100%);
+  background-color: transparent;
+}
+
+.header-visible {
+  transform: translateY(0);
+  background-color: #193e54 !important;
+}
+
+.main-header .nav-link {
+  color: white;
+  font-weight: 500;
+  padding: 0.8rem 0 0.8rem 0;
+  text-transform: uppercase;
+  font-size: 1.44rem !important;
+  font-family: Roboto;
+}
+#mainHeader .nav {
+  gap: 5.6rem;
+}
+
+a:hover {
+  color: #c48c5e !important;
+}
+
+.nav-item-about a {
+  transition: color 0.3s ease;
+}
+.nav-item-about a:hover {
+  color: #eadfdf !important;
+}
+
+.total_hero_start {
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+}
+
+.main-header .nav-link.active {
+  color: #c48c5e; /* màu cam cho TRANG CHỦ */
+}
+
+.main-header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f5b042;
+  text-align: center;
+  width: 8.9rem;
+  margin-inline: 5.6rem;
+  img {
+    width: 100%;
+  }
+}
+
+.main-header .language-selector {
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 992px) {
+  .nav-center-logo {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+/*menu mobile*/
+
+/* Nút 3 gạch */
+.mobile-menu-toggle {
+  position: absolute;
+  right: 2.0rem;
+  top: 2rem;
+  font-size: 2.4rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Overlay tối nền */
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 999;
+}
+
+/* Menu popup */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 32.0rem;
+  height: 100%;
+  background-color: #193e54;
+  transition: right 0.3s ease;
+  z-index: 10000;
+  padding: 3.0rem 2.0rem;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu-overlay.active {
+  display: block;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2.0rem;
+}
+
+.mobile-menu .close-menu {
+  font-size: 2.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mobile-nav li {
+  margin: 1.5rem 0;
+}
+
+.mobile-nav li a {
+  color: white;
+  font-size: 1.76rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.mobile-logo img {
+  max-width: 6.5rem;
+}
+.mobile-logo {
+  text-align: center;
+  padding: 1.0rem 0;
+}
+@media (min-width: 1600px) {
+  .main-header {
+    padding: 2.5rem 0;
+  }
+  .logo img {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  #mainHeader {
+    display: none;
+  }
+  .header_mobile {
+    height: 70px;
+    background: #193e54;
+  }
+}
+ @media screen and (max-width:991px) {
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 3rem;
+    height: .3rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: .6rem 0;
+    transition: 0.4s;
+  }
+    footer .col_middle {
+    margin-top: 4.8rem;
+    justify-content: start !important;
+  }
+ }
+@media (max-width: 767px) {
+  h2 {
+    font-size: 2.8rem !important;
+  }
+  .news-card h6 {
+    line-height: 1.4;
+    margin-bottom: 2.0rem !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Giới hạn 4 dòng */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  h2,
+  h2.mb-5,
+  h2.mb-4,
+  h2.mb-3 {
+    margin-bottom: 2.0rem !important;
+  }
+  footer .col_middle {
+    margin-top: 4.8rem;
+    justify-content: start !important;
+  }
+  .col_middle h6,
+  .col_final h6 {
+    margin-top: 0px;
+  }
+  .real-estate .real-estate-feature {
+    padding-top: 0 !important;
+    margin-bottom: 0px;
+  }
+  .img-banner {
+    min-height: 45.0rem;
+    object-fit: cover;
+    height: unset !important;
+  }
+  .footer .overlay-pattern {
+    background-size: 80%;
+  }
+  .footer-bottom p,
+  .footer-bottom .social-icons {
+    width: 100%;
+    text-align: center;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 1.8rem;
+    height: .1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: .6rem 0;
+    transition: 0.4s;
+  }
+  .mobile-menu-toggle{
+    top: .5rem;
+  }
+  .mobile-logo{
+    padding-top: .5rem;
+  }
+  .mobile-logo img{
+    width: 3rem;
+  }
+  .user {
+    bottom: 8%;
+  }
+}
+
+/*end menumobile*/
+@media only screen and (max-width: 767px) {
+  br{
+    display: none !important
+  }
+}
+
+
+/* footer */
+
+
+.footer {
+  background-color: #1a3d54;
+  padding: 4.0rem 0;
+  font-size: 1.6rem;
+}
+
+.footer input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #c2c2c2;
+  color: #c2c2c2;
+  width: 100%;
+}
+.footer input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-subscribe {
+  background-color: #d29560;
+  color: #fff;
+  border: none;
+  margin-top: 1.0rem;
+}
+.footer-bottom {
+  margin-top: 4.0rem;
+  padding-top: 2.0rem;
+  font-size: 1.3rem;
+}
+.social-icons i {
+  font-size: 1.8rem;
+  margin-left: 1.0rem;
+  cursor: pointer;
+}
+.social-icons svg {
+  width: 4.7rem;
+}
+
+a.btn {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+footer p {
+  color: #fff;
+}
+footer h5 {
+  color: #dba45b !important;
+  margin-bottom: 5.0rem;
+  font-weight: 700;
+  font-family: 'FZ Poppins', sans-serif !important;
+}
+footer h6 {
+  font-family: 'FZ Poppins', sans-serif !important;
+  color: #dba45b !important;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.col_final > p {
+  margin-bottom: 3.5rem;
+}
+
+.col_middle h6,
+.col_final h6 {
+  margin-bottom: 1.0rem;
+  margin-top: 2.0rem;
+}
+
+.footer input {
+  margin-bottom: 2.0rem;
+}
+.footer button {
+  background: #dba45b;
+  color: #fff;
+  padding: .7rem 2.5rem;
+}
+
+.footer {
+  position: relative;
+}
+.footer .overlay-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: url('../img/bg_footer.png'); /* ảnh vòng tròn mờ nếu có */
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 27%;
+  z-index: -1;
+}
+ul.list-unstyled {
+  display: grid;
+  gap: 1.0rem;
+}
+
+.list-unstyled li a,
+footer p {
+  font-weight: 300;
+}
+.social-icons i {
+  color: #fff;
+}
+a {
+  text-decoration: unset !important;
+}
+h2 {
+  text-transform: capitalize;
+  font-family: 'FZ Poppins', sans-serif !important;
+}
+.txt-poppin{
+  font-family: 'FZ Poppins', sans-serif !important;
+}
+.txt-svn{
+  font-family: 'SVN-Gotham';
+}
+.back-to-top {
+  background-color: #c79156;
+  text-decoration: none;
+  cursor: pointer;
+  width: 4.0rem;
+  height: 4.0rem;
+  z-index: 999;
+  /*position: fixed;*/
+  /*right: 3.2rem;*/
+  position: relative;
+  right: -95%;
+  bottom: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 100%;
+}
+
+.back-to-top:hover {
+  background-color: #ecb87f; /* lighten(deeppink, ~12%) */
+}
+
+.back-to-top:active {
+  box-shadow: none;
+  background-color: #c79156; /* darken(deeppink, ~12%) */
+}
+
+.back-to-top svg.icon__arrow-up {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.user {
+  text-decoration: none;
+  cursor: pointer;
+  width: 4.5rem;
+  height: 4.5rem;
+  z-index: 999;
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+/* global  1.6 1.8 banner la hero*/
+
+.kl-container {
+  max-width: 2560px;
+  padding-inline: 12rem;
+  width: 100%;
+  margin-inline: auto;
+}
+@media only screen and (max-width: 991px) {
+  .kl-container {
+    padding-inline: 4rem !important;
+  }
+ }
+ @media only screen and (max-width: 767px) {
+  .kl-container {
+    padding-inline: 2rem !important;
+  }
+ }
   .image__full img{
     width: 100%;
   }

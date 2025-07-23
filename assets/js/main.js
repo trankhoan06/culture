@@ -95,6 +95,9 @@ $(document).ready(function () {
     //     ]
     // });
 
+
+    // header
+
     let lastScrollTop = 0;
     let header = $('#mainHeader');
 
@@ -134,6 +137,7 @@ $(document).ready(function () {
             }, index * 300); // Stagger animations by 300ms
         });
     }
+    // end header
 
     function animateOnScroll() {
         // Get all animated elements

@@ -321,7 +321,7 @@ a:hover {
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .nav-center-logo {
     position: static;
     transform: none;
@@ -641,7 +641,7 @@ h6{
 .content-box p.text-muted {
   margin-bottom: 2rem !important;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .content-box {
     position: static;
     transform: none;
@@ -1133,6 +1133,22 @@ h2 {
     background: #193e54;
   }
 }
+ @media screen and (max-width:991px) {
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 3rem;
+    height: .3rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: .6rem 0;
+    transition: 0.4s;
+  }
+    footer .col_middle {
+    margin-top: 4.8rem;
+    justify-content: start !important;
+  }
+ }
 @media (max-width: 767px) {
   .total_hero_start {
     position: unset;
@@ -1247,10 +1263,7 @@ h2 {
   .left_brand_message p {
     font-size: 1.5rem;
   }
-  footer .col_middle {
-    margin-top: 4.8rem;
-    justify-content: start !important;
-  }
+
   .col_middle h6,
   .col_final h6 {
     margin-top: 0px;
@@ -1312,14 +1325,22 @@ h2 {
   .bar1,
   .bar2,
   .bar3 {
-    width: 3rem;
-    height: .3rem;
+    width: 1.8rem;
+    height: .1rem;
     background-color: #fff;
     border-radius: 1rem;
     margin: .6rem 0;
     transition: 0.4s;
   }
-
+  .mobile-menu-toggle{
+    top: .5rem;
+  }
+  .mobile-logo{
+    padding-top: .5rem;
+  }
+  .mobile-logo img{
+    width: 3rem;
+  }
   .flip-card:hover .flip-card-inner {
     transform: inherit;
   }
