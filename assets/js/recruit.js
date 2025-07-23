@@ -21,7 +21,10 @@ $('.recruit__opportunity__table__row__inner').click(function () {
     e.stopPropagation();
     $(".recruit__opportunity__form").addClass("active");
   });
-
+$(".recruit__opportunity__form__close").on("click", function (e) {
+    e.stopPropagation();
+    $(".recruit__opportunity__form").removeClass("active");
+  });
   // Ngăn không đóng khi click trong form
   $(".recruit__opportunity__form__inner").on("click", function (e) {
     e.stopPropagation();

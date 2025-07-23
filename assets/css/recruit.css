@@ -219,11 +219,14 @@ color: #555 !important;
 }
 .recruit__opportunity__form__inner{
  background-color: #fff;  
+ position: absolute;
  max-width: 134.7rem; 
  width: 90%;
  max-height: 64.8rem;
- margin-top: 10rem;
- margin-inline: auto;
+ left: 50%;
+ top: 50%;
+ /* transform: translateY(-50%); */
+ transform: translate(-50%, -50%);
 }
 .recruit__opportunity__form__wrap{
     max-width: 108.5rem;
@@ -309,6 +312,7 @@ color: #555 !important;
         margin-top:.67rem ;
         margin-left: 1.5rem;
         color: #555;
+        opacity: .8;
         width: 100%;
     cursor: pointer;    
     }
@@ -321,6 +325,18 @@ color: #555 !important;
     height: 3rem;
     top: .2rem;
 
+}
+.tablet{
+    display: none;
+}
+.recruit__opportunity__form__close {
+    position: absolute;
+    z-index: 1000000;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    right: 0;
+    line-height: 3rem;
+    color: #555
 }
 .recruit__opportunity__form__submit{
     margin-top: 3rem;
@@ -359,6 +375,9 @@ color: #555 !important;
     }
 }
  @media only screen and (max-width: 991px) {
+    .tablet{
+        display: block;
+    }
     .recruit__benefit__inner {
         margin-inline: 4rem;
     }
@@ -411,6 +430,9 @@ color: #555 !important;
     }
     .recruit__benefit__left{
         padding-right: 0;
+    }
+    .recruit__opportunity__form__wrap{
+        max-width: 68.5rem;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -509,4 +531,30 @@ color: #555 !important;
     .recruit__opportunity__table__icon {
         display: none;
     }
+    .recruit__opportunity__form{
+        overflow: auto;
+    }
+    .recruit__opportunity__form__input__right, .recruit__opportunity__form__input__left{
+        width: 100%;
+    }
+    .recruit__opportunity__form__wrap{
+        padding-inline: 2rem;
+        padding-top: 2rem;
+    }
+    .recruit__opportunity__form__inner{
+        margin-bottom: 4rem;
+    }
+    .recruit__opportunity__form__title{
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+    }
+    .recruit__opportunity__form__input__left input{
+        margin-bottom: 1rem;
+    }
+    .recruit__opportunity__form__close {
+    font-size: 2rem;
+    right: 0;
+    line-height: 2rem;
+    color: #555
+}
  }
