@@ -220,7 +220,8 @@ color: #555 !important;
 .recruit__opportunity__form__inner{
  background-color: #fff;  
  position: absolute;
- max-width: 134.7rem; 
+ border-radius: .8rem;
+ max-width: 100rem; 
  width: 90%;
  max-height: 64.8rem;
  left: 50%;
@@ -229,7 +230,8 @@ color: #555 !important;
  transform: translate(-50%, -50%);
 }
 .recruit__opportunity__form__wrap{
-    max-width: 108.5rem;
+    padding-inline: 8rem;
+    width: 100%;
     margin-inline: auto;
     padding-top: 5.25rem;
     padding-bottom: 6.375rem;
@@ -331,6 +333,7 @@ color: #555 !important;
 }
 .recruit__opportunity__form__close {
     position: absolute;
+    cursor: pointer;
     z-index: 1000000;
     padding: 1rem 2rem;
     font-size: 3rem;
@@ -432,7 +435,7 @@ color: #555 !important;
         padding-right: 0;
     }
     .recruit__opportunity__form__wrap{
-        max-width: 68.5rem;
+        padding-inline: 5rem;
     }
 }
 @media only screen and (max-width: 767px) {
