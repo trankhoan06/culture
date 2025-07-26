@@ -225,9 +225,15 @@ a:hover {
     display: none;
   }
   .header_mobile {
-    height: 70px;
+    height: auto;
+    position: relative;
     background: #193e54;
   }
+  .mobile-menu-toggle {
+    top: 50%  !important;
+    transform: translateY(-50%);
+}
+
 }
  @media screen and (max-width:991px) {
   .bar1,
@@ -302,11 +308,9 @@ a:hover {
   .mobile-menu-toggle{
     top: .5rem;
   }
-  .mobile-logo{
-    padding-top: .5rem;
-  }
+
   .mobile-logo img{
-    width: 3rem;
+    width: 4rem;
   }
   .user {
     bottom: 8%;

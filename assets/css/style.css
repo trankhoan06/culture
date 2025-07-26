@@ -53,111 +53,6 @@ html {
   }
  }
 @font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/Black.otf') format('opentype');
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/Black Italic.otf') format('opentype');
-  font-weight: 900;
-  font-style: italic;
-}
-
-/* Bold */
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/Bold Italic.otf') format('opentype');
-  font-weight: 700;
-  font-style: italic;
-}
-
-/* Book Italic (assumed weight 500) */
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/Book Italic.otf') format('opentype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-/* Regular & Italic */
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/Italic.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* Light */
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/Light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/Light Italic.otf') format('opentype');
-  font-weight: 300;
-  font-style: italic;
-}
-
-/* Thin */
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/Thin.otf') format('opentype');
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/Thin Italic.otf') format('opentype');
-  font-weight: 100;
-  font-style: italic;
-}
-
-/* Ultra */
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/Ultra.otf') format('opentype');
-  font-weight: 950;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/Ultra Italic.otf') format('opentype');
-  font-weight: 950;
-  font-style: italic;
-}
-
-/* XLight */
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/XLight.otf') format('opentype');
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SVN-Gotham';
-  src: url('../fonts/XLight Italic.otf') format('opentype');
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
   font-family: 'Roboto-italic';
   src: url('../fonts/Roboto-BoldItalic.ttf') format('opentype');
   font-weight: 600;
@@ -898,9 +793,7 @@ h2 {
 .txt-poppin{
   font-family: 'FZ Poppins', sans-serif !important;
 }
-.txt-svn{
-  font-family: 'SVN-Gotham';
-}
+
 .real-estate-feature .content-box h4,
 .hero-content h1,
 .hero-stats .stat,
